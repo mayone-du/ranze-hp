@@ -1,30 +1,34 @@
 import Link from "next/link";
-import classes from "./Header.module.css";
 
-const Header: React.FC<{ title: string}> = ({title}) => {
+const Header: React.FC<{ title: string }> = ({ title }) => {
   return (
     <>
-      <header className={classes.header}>
-        <h1 className={classes.h1}>
+      <header className="container px-24 flex justify-between py-4 fixed w-full mx-auto inset-x-0 z-50">
+        <h1 className="text-xl">
           <Link href="/">
             <a>Ranze HP {title}</a>
           </Link>
         </h1>
         <nav>
-          <ul className={classes.ul}>
-            <li className={classes.li}>
-              <Link href="/">
-                <a>HOME</a>
+          <ul className="flex">
+            <li>
+              <Link href="/profile">
+                <a className="py-3 px-4 mx-2">PROFILE</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/service">
+                <a className="py-3 px-4 mx-2">SERVICE</a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a>WORKS</a>
+                <a className="py-3 px-4 mx-2">WORKS</a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a>CONTACT</a>
+                <a className="py-3 px-4 mx-2">CONTACT</a>
               </Link>
             </li>
           </ul>
