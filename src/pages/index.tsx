@@ -16,6 +16,7 @@ const Home: React.FC = () => {
       <Header title="home" />
       <main className={classes.main}>
         <section>
+          <p className="text-6xl">test</p>
         </section>
       </main>
     </>
