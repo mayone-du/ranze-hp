@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components/header/Header";
+import { Header } from "../components/Header";
 import { Wrapper } from "../components/Wrapper";
 
 const Contact: React.FC = () => {
