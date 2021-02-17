@@ -1,8 +1,22 @@
+import Head from "next/head";
 import { Header } from "../components/header/Header";
+import { Wrapper } from "../components/Wrapper";
+
 
 const Service: React.FC = () => {
   return (
+    <>
+    <Head>
+      <title>service</title>
+      <meta name="description" content="meta description" />
+    </Head>
     <Header title="service" />
+    <Wrapper>
+      <div>
+        <section></section>
+      </div>
+    </Wrapper>
+    </>
   )
 }
 

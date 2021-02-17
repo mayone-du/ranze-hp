@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Header } from "../components/header/Header";
+import { Wrapper } from "../components/Wrapper";
 
 const Home: React.FC = () => {
-  const siteTitle = "Ranze";
-  const metaDescription = "meta description";
+  const siteTitle = "Ranze official site";
+  const metaDescription = "イラストレーターRanzeの公式HPです。LINEスタンプ・イラスト制作";
   return (
     <>
       <Head>
@@ -16,17 +17,17 @@ const Home: React.FC = () => {
         <title>{siteTitle}</title>
       </Head>
       <Header title="home" />
-      <div className="overflow-x-hidden">
-        <main
+      <Wrapper>
+        <div
           className="mx-auto px-24 bg"
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen">
-            <h2 className="text-6xl transform translate-y-96 text-center">Ranze イラスト・LINEスタンプ制作</h2>
-            <div style={{ height: "3000px" }}></div>
+            <h2 className="text-6xl transform translate-y-96 text-center">イラスト・LINEスタンプ制作</h2>
+            <div style={{ height: "1500px" }}></div>
           </section>
-        </main>
-      </div>
+        </div>
+      </Wrapper>
     </>
   );
 };

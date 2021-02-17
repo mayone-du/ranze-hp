@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/header/Header";
+import { Wrapper } from "../components/Wrapper";
 
 const Works: React.FC = () => {
   return (
@@ -8,11 +9,13 @@ const Works: React.FC = () => {
         <title>works</title>
       </Head>
       <Header title="works" />
-      <main>
-        <section>
-          <h2>Works</h2>
-        </section>
-      </main>
+      <Wrapper>
+        <div>
+          <section>
+            <h2>Works</h2>
+          </section>
+        </div>
+      </Wrapper>
     </>
   );
 };
