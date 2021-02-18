@@ -5,11 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
-          <meta
-            name="viewport"
-            content="width=device-width,height=device-height"
-            key="viewport"
-          />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <link
             rel="shortcut icon"

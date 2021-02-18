@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Wrapper } from "../components/Wrapper";
+import { Footer } from "../components/Footer";
 
 const Home: React.FC = () => {
   const siteTitle = "Ranze official site";
@@ -27,6 +28,7 @@ const Home: React.FC = () => {
             <div style={{ height: "1500px" }}></div>
           </section>
         </div>
+        <Footer />
       </Wrapper>
     </>
   );
