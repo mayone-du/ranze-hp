@@ -1,5 +1,5 @@
-module.exports = {
-  env: {
-    WEBHOOK_URL: process.env.WEBHOOK_URL,
-  }
-}
+// module.exports = {
+//   env: {
+//     WEBHOOK_URL: process.env.WEBHOOK_URL,
+//   }
+// }

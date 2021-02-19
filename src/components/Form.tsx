@@ -80,11 +80,7 @@ const Form: React.FC = () => {
     };
 
     // Slackのwebhook(Vercelで設定する本番用)
-    const url = process.env.WEBHOOK_URL;
-
-    
-    // ↓ローカル開発用
-    // const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
+    const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
     
     fetch(url, {
       method: "POST",
