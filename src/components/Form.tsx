@@ -81,7 +81,7 @@ const Form: React.FC = () => {
 
     // Slackのwebhook(Vercelで設定する本番用)
     const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
-    
+
     fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
@@ -136,6 +136,14 @@ const Form: React.FC = () => {
           />
         </div>
         <div>
+          <TextField
+            type="text"
+            multiline
+            rows={4}
+            label="お問い合わせ内容"
+            variant="outlined"
+          />
+          <div></div>
           <Button
             size="large"
             disabled={formErrors ? true : false}
