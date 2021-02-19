@@ -69,15 +69,22 @@ const Form: React.FC = () => {
   // フォーム送信
   const submitForm = () => {
     const payload = {
-      text: `お問い合わせがありました。\n
-            名前: ${formName}\n
-            メールアドレス: ${formEmail}`,
+      text: `
+      お問い合わせがありました。\n
+      名前: ${formName}\n
+      メールアドレス: ${formEmail}
+      電話番号${formTel === null ? "なし" : formTel}
+      お問い合わせ内容
+      テキスト。
+      `,
     };
 
-    // Slackのwebhook
-    const url =
-      "https://hooks.slack.com/services/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";
+    // Slackのwebhook(Vercelで設定する本番用)
+    const url = process.env.WEBHOOK_URL;
 
+    // ↓ローカル開発用
+    // const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
+    
     fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
@@ -106,7 +113,7 @@ const Form: React.FC = () => {
         </div>
         <div className="flex">
           {inputEmailError ? <p className="text-red-600">Error</p> : <p>ok</p>}
-          
+
           <TextField
             type="email"
             label="メールアドレス"
