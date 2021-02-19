@@ -24,8 +24,8 @@ const Contact: React.FC = () => {
             <Form />
           </section>
         </div>
-        <Link href="/api/hello">
-          <a>from api</a>
+        <Link href="/">
+          <a>back home</a>
         </Link>
       </Wrapper>
     </>
