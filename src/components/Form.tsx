@@ -73,18 +73,18 @@ const Form: React.FC = () => {
       お問い合わせがありました。\n
       名前: ${formName}\n
       メールアドレス: ${formEmail}
-      電話番号${formTel === null ? "なし" : formTel}
+      電話番号: ${formTel === "" ? "なし" : formTel}
       お問い合わせ内容
       テキスト。
       `,
     };
 
     // Slackのwebhook(Vercelで設定する本番用)
-    const url = process.env.WEBHOOK_URL;
+    // const url = process.env.WEBHOOK_URL;
 
     
     // ↓ローカル開発用
-    // const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
+    const url = process.env.NEXT_PUBLIC_WEBHOOK_URL;
     
     fetch(url, {
       method: "POST",

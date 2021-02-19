@@ -8,7 +8,7 @@ const Custom404: React.FC = () => {
         <title>404 Not Found</title>
       </Head>
       <h1>404 Not Found</h1>
-      <p>Sorry :)</p>
+      <p>Sorry :）</p>
       <My404 />
     </>
   );
