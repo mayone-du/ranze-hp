@@ -6,10 +6,14 @@ import { Form } from "../components/Form";
 
 
 const Contact: React.FC = () => {
+
+
+
+  
   return (
     <>
       <Head>
-        <title>contact</title>
+        <title>Ranze official site | contact</title>
         <meta name="description" content="meta description" />
       </Head>
       <Header title="contact" />

@@ -6,7 +6,7 @@ const Works: React.FC = () => {
   return (
     <>
       <Head>
-        <title>works</title>
+        <title>Ranze official site | works</title>
       </Head>
       <Header title="works" />
       <Wrapper>

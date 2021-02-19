@@ -7,7 +7,7 @@ const Profile: React.FC = () => {
   return (
     <>
       <Head>
-        <title>profile</title>
+        <title>Ranze official site | profile</title>
         <meta name="description" content="meta description" />
       </Head>
       <Header title="profile" />

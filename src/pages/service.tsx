@@ -7,7 +7,7 @@ const Service: React.FC = () => {
   return (
     <>
     <Head>
-      <title>service</title>
+      <title>Ranze official site | service</title>
       <meta name="description" content="meta description" />
     </Head>
     <Header title="service" />
