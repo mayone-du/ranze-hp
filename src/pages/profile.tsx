@@ -2,22 +2,24 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Wrapper } from "../components/Wrapper";
 
-const Works: React.FC = () => {
+
+const Profile: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Ranze official site | works</title>
+        <title>Ranze official site | profile</title>
+        <meta name="description" content="meta description" />
       </Head>
-      <Header title="works" />
+      <Header title="profile" />
       <Wrapper>
         <div>
           <section>
-            <h2>Works</h2>
+            
           </section>
         </div>
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default Works;
+export default Profile;

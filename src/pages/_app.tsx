@@ -1,7 +1,8 @@
 import "../styles/globalResets.css";
 import "../styles/globals.css";
+import "tailwindcss/tailwind.css";
 
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
