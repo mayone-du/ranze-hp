@@ -13,6 +13,7 @@ const Works: React.FC = () => {
         <div>
           <section>
             <h2>Works</h2>
+            <h3>実績</h3>
           </section>
         </div>
       </Wrapper>
