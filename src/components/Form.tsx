@@ -2,6 +2,7 @@ import { TextField, Button } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
+
 const Form: React.FC = () => {
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
