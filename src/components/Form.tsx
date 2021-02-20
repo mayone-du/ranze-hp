@@ -1,9 +1,4 @@
 import { TextField, Button } from "@material-ui/core";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import FormLabel from "@material-ui/core/FormLabel";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
@@ -76,10 +71,10 @@ const Form: React.FC = () => {
       text: `
       お問い合わせがありました。\n
       名前: ${formName}\n
-      メールアドレス: ${formEmail}
-      電話番号: ${formTel === "" ? "なし" : formTel}
-      お問い合わせ内容
-      テキスト。
+      メールアドレス:${formEmail}\n
+      電話番号: ${formTel === "" ? "なし" : formTel}\n
+      お問い合わせ内容\n
+      テキスト。テキスト。
       `,
     };
 
@@ -91,7 +86,7 @@ const Form: React.FC = () => {
       body: JSON.stringify(payload),
     }).then(() => {
       resetForm();
-      alert("送信が完了しました。");
+      alert(`送信が完了しました。\n 1~3日以内に、送信していただいたメールアドレス(${formEmail})宛にご連絡致します。`);
 
       // ホーム画面へ戻す
       Router.push("/");
@@ -144,21 +139,6 @@ const Form: React.FC = () => {
             helperText={"任意項目"}
             value={formTel}
           />
-        </div>
-        <div>
-
-        <FormControl component="fieldset">
-          <FormLabel component="legend">相談内容</FormLabel>
-          <RadioGroup aria-label="gender" name="gender1">
-            <FormControlLabel
-              value="normal"
-              control={<Radio />}
-              label="普通に"
-            />
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-          </RadioGroup>
-        </FormControl>
         </div>
         <div>
           {/* 問い合わせ内容 */}
