@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { Wrapper } from "../components/Wrapper";
 
 
-const Profile: React.FC = () => {
+const About: React.FC = () => {
   return (
     <>
       <Head>
@@ -22,4 +22,4 @@ const Profile: React.FC = () => {
   )
 }
 
-export default Profile;
+export default About;
