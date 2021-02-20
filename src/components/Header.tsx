@@ -15,23 +15,23 @@ const Header: React.FC<{ title: string }> = ({ title }) => {
               {title}
             </li>
             <li>
-              <Link href="/profile">
-                <a className="py-3 px-4 mx-2">PROFILE</a>
+              <Link href="/about">
+                <a className="py-3 px-4 mx-2">About</a>
               </Link>
             </li>
             <li>
               <Link href="/service">
-                <a className="py-3 px-4 mx-2">SERVICE</a>
+                <a className="py-3 px-4 mx-2">Service</a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a className="py-3 px-4 mx-2">WORKS</a>
+                <a className="py-3 px-4 mx-2">Works</a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className="py-3 px-4 mx-2">CONTACT</a>
+                <a className="py-3 px-4 mx-2">Contact</a>
               </Link>
             </li>
           </ul>

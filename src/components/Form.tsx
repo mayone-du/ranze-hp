@@ -1,4 +1,9 @@
 import { TextField, Button } from "@material-ui/core";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControl from "@material-ui/core/FormControl";
+import FormLabel from "@material-ui/core/FormLabel";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
@@ -10,20 +15,19 @@ const Form: React.FC = () => {
   // inputのstate
   const [inputNameError, setInputNameError] = useState(false);
   const [inputEmailError, setInputEmailError] = useState(false);
-  // const [emailDoubleCheckError, setEmailDoubleCheckError] = useState(false);
   // const [inputTelError, setInputTelError] = useState(false);
+  // const [textAreaError, setTextAreaError] = useState(false);
 
   // form全体でエラーが有るかのチェック用state
   const [formErrors, setFormErrors] = useState(true);
 
+  // 入力欄に変更があったときの処理
   const onChangeName = (e) => {
     setFormName(e.target.value);
   };
-
   const onChangeEmail = (e) => {
     setFormEmail(e.target.value);
   };
-
   const onChangeTel = (e) => {
     setFormTel(e.target.value);
   };
@@ -97,6 +101,7 @@ const Form: React.FC = () => {
   return (
     <>
       <form className="container mx-auto py-28 flex flex-col">
+        {/* 名前 */}
         <div className="my-8">
           <TextField
             type="text"
@@ -108,9 +113,13 @@ const Form: React.FC = () => {
             value={formName}
           />
         </div>
+        {/* メールアドレス */}
         <div className="flex">
-          {inputEmailError ? <p className="text-red-600">Error</p> : <p>ok</p>}
-
+          {inputEmailError ? (
+            <p className="text-red-600 w-4">×</p>
+          ) : (
+            <p className="text-blue-600 w-4">○</p>
+          )}
           <TextField
             type="email"
             label="メールアドレス"
@@ -125,6 +134,7 @@ const Form: React.FC = () => {
             value={formEmail}
           />
         </div>
+        {/* 電話番号（任意） */}
         <div>
           <TextField
             type="tel"
@@ -136,6 +146,22 @@ const Form: React.FC = () => {
           />
         </div>
         <div>
+
+        <FormControl component="fieldset">
+          <FormLabel component="legend">相談内容</FormLabel>
+          <RadioGroup aria-label="gender" name="gender1">
+            <FormControlLabel
+              value="normal"
+              control={<Radio />}
+              label="普通に"
+            />
+            <FormControlLabel value="male" control={<Radio />} label="Male" />
+            <FormControlLabel value="other" control={<Radio />} label="Other" />
+          </RadioGroup>
+        </FormControl>
+        </div>
+        <div>
+          {/* 問い合わせ内容 */}
           <TextField
             type="text"
             multiline
@@ -143,7 +169,9 @@ const Form: React.FC = () => {
             label="お問い合わせ内容"
             variant="outlined"
           />
-          <div></div>
+        </div>
+        {/* 送信ボタン */}
+        <div>
           <Button
             size="large"
             disabled={formErrors ? true : false}
