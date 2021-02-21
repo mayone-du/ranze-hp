@@ -8,6 +8,7 @@ import {
   FormLabel,
   FormControlLabel,
 } from "@material-ui/core";
+import { RadioButtonUnchecked, Clear, Send } from '@material-ui/icons';
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
@@ -39,7 +40,7 @@ const Form: React.FC = () => {
   };
   const onChangeText = (e) => {
     setFormText(e.target.value);
-  }
+  };
 
   // 名前欄のエラーチェック
   const validateName = () => {
@@ -76,11 +77,16 @@ const Form: React.FC = () => {
     } else {
       setInputTextError(false);
     }
-  }
+  };
 
   // form全体のエラーチェック
   const validateForm = () => {
-    if (!inputNameError && !inputEmailError && !inputRadioError && !inputTextError) {
+    if (
+      !inputNameError &&
+      !inputEmailError &&
+      !inputRadioError &&
+      !inputTextError
+    ) {
       setFormErrors(false);
     } else {
       setFormErrors(true);
@@ -99,7 +105,7 @@ const Form: React.FC = () => {
     setFormName("");
     setFormEmail("");
     setFormRadio("");
-    setFormText("")
+    setFormText("");
   };
 
   // フォーム送信
@@ -143,9 +149,9 @@ const Form: React.FC = () => {
         {/* 名前 */}
         <div className="flex my-4">
           {inputNameError ? (
-            <p className="text-red-600 w-4">×</p>
+            <Clear color="error" />
           ) : (
-            <p className="text-blue-600 w-4">○</p>
+            <RadioButtonUnchecked color="primary" />
           )}
           <TextField
             type="text"
@@ -162,9 +168,9 @@ const Form: React.FC = () => {
         {/* メールアドレス */}
         <div className="flex my-4">
           {inputEmailError ? (
-            <p className="text-red-600 w-4">×</p>
+            <Clear color="error" />
           ) : (
-            <p className="text-blue-600 w-4">○</p>
+            <RadioButtonUnchecked color="primary" />
           )}
           <TextField
             type="email"
@@ -185,9 +191,9 @@ const Form: React.FC = () => {
         {/* ラジオボタン */}
         <div className="flex my-4">
           {inputRadioError ? (
-            <p className="text-red-600 w-4">×</p>
+            <Clear color="error" />
           ) : (
-            <p className="text-blue-600 w-4">○</p>
+            <RadioButtonUnchecked color="primary" />
           )}
           <FormControl component="fieldset">
             <FormLabel component="legend">
@@ -218,7 +224,7 @@ const Form: React.FC = () => {
           </FormControl>
         </div>
 
-          {/* 問い合わせ内容 */}
+        {/* 問い合わせ内容 */}
         <div className="my-4">
           <TextField
             type="textarea"
@@ -228,7 +234,9 @@ const Form: React.FC = () => {
             variant="outlined"
             value={formText}
             onChange={onChangeText}
-            helperText={inputTextError ? "1000文字以内で入力してください。" : "ok"}
+            helperText={
+              inputTextError ? "1000文字以内で入力してください。" : "ok"
+            }
           />
         </div>
 
@@ -241,7 +249,7 @@ const Form: React.FC = () => {
             color={formErrors ? "secondary" : "primary"}
             onClick={submitForm}
           >
-            <span className={formErrors ? "line-through" : null}>送信する</span>
+            <span className={formErrors ? "line-through" : null}>送信する<Send /></span>
           </Button>
           <FormHelperText>
             {!formErrors
