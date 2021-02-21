@@ -68,9 +68,18 @@ const Form: React.FC = () => {
     }
   };
 
+  // radio欄のエラーチェック
+  const validationRadio = () => {
+    if (formRadio === "") {
+      setInputRadioError(true);
+    } else {
+      setInputRadioError(false);
+    }
+  }
+
   // form全体のエラーチェック
   const validateForm = () => {
-    if (!inputNameError && !inputEmailError) {
+    if (!inputNameError && !inputEmailError && !inputRadioError) {
       setFormErrors(false);
     } else {
       setFormErrors(true);
@@ -80,6 +89,7 @@ const Form: React.FC = () => {
   // state(inputのvalue)が更新された際にエラーチェックを走らせる
   useEffect(validateName, [formName]);
   useEffect(validateEmail, [formEmail]);
+  useEffect(validationRadio, [formRadio]);
   useEffect(validateForm);
 
   // フォーム送信
