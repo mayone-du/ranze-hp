@@ -17,14 +17,14 @@ const Home: React.FC = () => {
         />
         <title>{siteTitle}</title>
       </Head>
-      <Header />
       <Wrapper>
+      <Header />
         <div
-          className="mx-auto px-24"
+          className="mx-auto md:px-24"
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen">
-            <h2 className="text-6xl transform translate-y-96 text-center">イラスト・LINEスタンプ制作</h2>
+            <h2 className="md:text-6xl text-2xl transform translate-y-96 text-center">イラスト・LINEスタンプ制作</h2>
           </section>
         </div>
         <Footer />
