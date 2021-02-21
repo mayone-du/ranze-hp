@@ -7,21 +7,21 @@ import { Footer } from "../components/shared/Footer";
 const Service: React.FC = () => {
   return (
     <>
-    <Head>
-      <title>Ranze official site | service</title>
-      <meta name="description" content="meta description" />
-    </Head>
-    <Wrapper>
-    <Header />
-      <div>
-        <section>
-          <PageTitle title="Service" />
-        </section>
-      </div>
-      <Footer />
-    </Wrapper>
+      <Head>
+        <title>Ranze official site | service</title>
+        <meta name="description" content="meta description" />
+      </Head>
+      <Wrapper>
+        <Header />
+        <article>
+          <section>
+            <PageTitle title="Service" />
+          </section>
+        </article>
+        <Footer />
+      </Wrapper>
     </>
-  )
-}
+  );
+};
 
 export default Service;

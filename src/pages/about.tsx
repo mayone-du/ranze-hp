@@ -15,11 +15,11 @@ const About: React.FC = () => {
       </Head>
       <Wrapper>
       <Header />
-        <div className="h-screen">
+        <article className="h-screen">
           <section>
             <PageTitle title="About" />
           </section>
-        </div>
+        </article>
         <Footer />
       </Wrapper>
     </>

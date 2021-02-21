@@ -11,7 +11,11 @@ const SiteMap: React.FC = () => {
       </Head>
       <Wrapper>
         <Header />
-        <h2>サイトマップ</h2>
+        <article>
+          <section>
+            <h2>サイトマップ</h2>
+          </section>
+        </article>
         <Footer />
       </Wrapper>
     </>

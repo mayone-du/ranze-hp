@@ -12,11 +12,11 @@ const Works: React.FC = () => {
       </Head>
       <Wrapper>
         <Header />
-        <div>
+        <article>
           <section>
             <PageTitle title="Works" />
           </section>
-        </div>
+        </article>
         <Footer />
       </Wrapper>
     </>

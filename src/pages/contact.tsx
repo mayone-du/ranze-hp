@@ -16,13 +16,13 @@ const Contact: React.FC = () => {
       </Head>
       <Wrapper>
       <Header />
-        <div>
+        <article>
           <section>
             <PageTitle title="Contact" />
             <h3 className="py-40">まずはお気軽にご相談ください！ご連絡を頂いた後、チャットサービスを利用して詳細についてお話致します！</h3>
             <Form />
           </section>
-        </div>
+        </article>
         <Footer />
       </Wrapper>
     </>
