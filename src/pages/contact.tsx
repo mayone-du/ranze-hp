@@ -1,23 +1,20 @@
 import Head from "next/head";
-import Link from "next/link";
 import { Header } from "../components/Header";
 import { Wrapper } from "../components/Wrapper";
+import { Footer } from "../components/Footer";
 import { Form } from "../components/Form";
 
 
 const Contact: React.FC = () => {
 
-
-
-  
   return (
     <>
       <Head>
         <title>Ranze official site | contact</title>
         <meta name="description" content="meta description" />
       </Head>
-      <Header title="contact" />
       <Wrapper>
+      <Header />
         <div>
           <section>
             <h2>Contact</h2>
@@ -25,9 +22,7 @@ const Contact: React.FC = () => {
             <Form />
           </section>
         </div>
-        <Link href="/">
-          <a>back home</a>
-        </Link>
+        <Footer />
       </Wrapper>
     </>
   );

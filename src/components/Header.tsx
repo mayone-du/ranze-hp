@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-const Header: React.FC<{ title: string }> = ({ title }) => {
+// const Header: React.FC<{ title: string }> = ({ title }) => {
+const Header: React.FC = () => {
   return (
     <>
       <header className="container px-24 flex justify-between py-6 fixed w-full mx-auto inset-x-0 z-50">
@@ -11,9 +12,6 @@ const Header: React.FC<{ title: string }> = ({ title }) => {
         </h1>
         <nav>
           <ul className="flex">
-            <li>
-              {title}
-            </li>
             <li>
               <Link href="/about">
                 <a className="py-3 px-4 mx-2">About</a>
