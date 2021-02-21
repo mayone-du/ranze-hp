@@ -8,7 +8,7 @@ import {
   FormLabel,
   FormControlLabel,
 } from "@material-ui/core";
-import { RadioButtonUnchecked, Clear, Send } from '@material-ui/icons';
+import { RadioButtonUnchecked, Clear, Send } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
@@ -211,12 +211,12 @@ const Form: React.FC = () => {
                 label="気軽な相談"
               />
               <FormControlLabel
-                value="Offer"
+                value="JobOffer"
                 control={<Radio />}
                 label="依頼したい"
               />
               <FormControlLabel
-                value="Other"
+                value="Others"
                 control={<Radio />}
                 label="その他"
               />
@@ -240,6 +240,7 @@ const Form: React.FC = () => {
           />
         </div>
 
+
         {/* 送信ボタン */}
         <div>
           <Button
@@ -249,7 +250,10 @@ const Form: React.FC = () => {
             color={formErrors ? "secondary" : "primary"}
             onClick={submitForm}
           >
-            <span className={formErrors ? "line-through" : null}>送信する<Send /></span>
+            <span className={formErrors ? "line-through flex items-center" : "flex items-center"}>
+              送信する
+              <Send />
+            </span>
           </Button>
           <FormHelperText>
             {!formErrors
