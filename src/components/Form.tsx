@@ -16,12 +16,13 @@ const Form: React.FC = () => {
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [formRadio, setFormRadio] = useState("");
+  const [formText, setFormText] = useState("");
 
   // inputのerrorのstate
   const [inputNameError, setInputNameError] = useState(false);
   const [inputEmailError, setInputEmailError] = useState(false);
   const [inputRadioError, setInputRadioError] = useState(false);
-  // const [textAreaError, setTextAreaError] = useState(false);
+  const [inputTextError, setInputTextError] = useState(false);
 
   // form全体でエラーがあるかのチェック用state
   const [formErrors, setFormErrors] = useState(true);
@@ -36,6 +37,9 @@ const Form: React.FC = () => {
   const onChangeRadio = (e) => {
     setFormRadio(e.target.value);
   };
+  const onChangeText = (e) => {
+    setFormText(e.target.value);
+  }
 
   // 名前欄のエラーチェック
   const validateName = () => {
@@ -57,7 +61,7 @@ const Form: React.FC = () => {
   };
 
   // radio欄のエラーチェック
-  const validationRadio = () => {
+  const validateRadio = () => {
     if (formRadio === "") {
       setInputRadioError(true);
     } else {
@@ -65,9 +69,18 @@ const Form: React.FC = () => {
     }
   };
 
+  // textAreaのエラーチェック
+  const validateText = () => {
+    if (formText.length >= 1000) {
+      setInputTextError(true);
+    } else {
+      setInputTextError(false);
+    }
+  }
+
   // form全体のエラーチェック
   const validateForm = () => {
-    if (!inputNameError && !inputEmailError && !inputRadioError) {
+    if (!inputNameError && !inputEmailError && !inputRadioError && !inputTextError) {
       setFormErrors(false);
     } else {
       setFormErrors(true);
@@ -77,7 +90,8 @@ const Form: React.FC = () => {
   // state(inputのvalue)が更新された際にエラーチェックを走らせる
   useEffect(validateName, [formName]);
   useEffect(validateEmail, [formEmail]);
-  useEffect(validationRadio, [formRadio]);
+  useEffect(validateRadio, [formRadio]);
+  useEffect(validateText, [formText]);
   useEffect(validateForm);
 
   // formのリセット
@@ -85,6 +99,7 @@ const Form: React.FC = () => {
     setFormName("");
     setFormEmail("");
     setFormRadio("");
+    setFormText("")
   };
 
   // フォーム送信
@@ -96,7 +111,7 @@ const Form: React.FC = () => {
       メールアドレス:${formEmail}\n
       お問い合わせ種別: ${formRadio}\n
       お問い合わせ内容\n
-      テキスト。テキスト。
+      ${formText}
       `,
     };
 
@@ -123,8 +138,10 @@ const Form: React.FC = () => {
   return (
     <>
       <form className="container mx-auto py-28 flex flex-col">
+        <h3>お問合せフォーム</h3>
+
         {/* 名前 */}
-        <div className="my-8 flex">
+        <div className="flex my-4">
           {inputNameError ? (
             <p className="text-red-600 w-4">×</p>
           ) : (
@@ -141,8 +158,9 @@ const Form: React.FC = () => {
             value={formName}
           />
         </div>
+
         {/* メールアドレス */}
-        <div className="flex">
+        <div className="flex my-4">
           {inputEmailError ? (
             <p className="text-red-600 w-4">×</p>
           ) : (
@@ -163,15 +181,19 @@ const Form: React.FC = () => {
             value={formEmail}
           />
         </div>
+
         {/* ラジオボタン */}
-        <div className="flex">
-            {inputRadioError ? (
-              <p className="text-red-600 w-4">×</p>
-            ) : (
-              <p className="text-blue-600 w-4">○</p>
-            )}
+        <div className="flex my-4">
+          {inputRadioError ? (
+            <p className="text-red-600 w-4">×</p>
+          ) : (
+            <p className="text-blue-600 w-4">○</p>
+          )}
           <FormControl component="fieldset">
-            <FormLabel component="legend">お問い合わせの種類</FormLabel>
+            <FormLabel component="legend">
+              お問い合わせの種類
+              <FormHelperText>必須項目です。</FormHelperText>
+            </FormLabel>
             <RadioGroup
               onChange={onChangeRadio}
               value={formRadio}
@@ -193,21 +215,23 @@ const Form: React.FC = () => {
                 label="その他"
               />
             </RadioGroup>
-            <FormHelperText>helperText</FormHelperText>
           </FormControl>
         </div>
 
-        <div>
           {/* 問い合わせ内容 */}
+        <div className="my-4">
           <TextField
-            type="text"
+            type="textarea"
             multiline
-            rows={5}
-            label="お問い合わせ内容"
+            rows={4}
+            label="お問い合わせ内容（任意）"
             variant="outlined"
-            helperText="お問い合わせ内容を記述してください。"
+            value={formText}
+            onChange={onChangeText}
+            helperText={inputTextError ? "1000文字以内で入力してください。" : "ok"}
           />
         </div>
+
         {/* 送信ボタン */}
         <div>
           <Button
@@ -217,8 +241,21 @@ const Form: React.FC = () => {
             color={formErrors ? "secondary" : "primary"}
             onClick={submitForm}
           >
-            {formErrors ? "エラーがあります" : "送信する"}
+            <span className={formErrors ? "line-through" : null}>送信する</span>
           </Button>
+          <FormHelperText>
+            {!formErrors
+              ? "ok"
+              : inputNameError
+              ? "名前を入力してください"
+              : inputEmailError
+              ? "メールアドレスを入力してください。"
+              : inputRadioError
+              ? "お問い合わせ種別を選択してください。"
+              : inputTextError
+              ? "お問い合わせ内容に不備があります。"
+              : null}
+          </FormHelperText>
         </div>
       </form>
     </>
