@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Header } from "../components/Header";
-import { Wrapper } from "../components/Wrapper";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/shared/Header";
+import { Wrapper } from "../components/shared/Wrapper";
+import { Footer } from "../components/shared/Footer";
 import { Form } from "../components/Form";
 
 
