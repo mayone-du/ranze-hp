@@ -12,24 +12,19 @@ import { useEffect, useState } from "react";
 import Router from "next/router";
 
 const Form: React.FC = () => {
-  
   // inputのvalueのstate
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [formRadio, setFormRadio] = useState("");
 
-  
   // inputのerrorのstate
   const [inputNameError, setInputNameError] = useState(false);
   const [inputEmailError, setInputEmailError] = useState(false);
   const [inputRadioError, setInputRadioError] = useState(false);
   // const [textAreaError, setTextAreaError] = useState(false);
 
-  // form全体でエラーが有るかのチェック用state
+  // form全体でエラーがあるかのチェック用state
   const [formErrors, setFormErrors] = useState(true);
-
-
-  const radioHelperText = "error"
 
   // 入力欄に変更があったときの処理
   const onChangeName = (e) => {
@@ -40,13 +35,6 @@ const Form: React.FC = () => {
   };
   const onChangeRadio = (e) => {
     setFormRadio(e.target.value);
-  };
-
-  // formのリセット
-  const resetForm = () => {
-    setFormName("");
-    setFormEmail("");
-    setFormRadio("");
   };
 
   // 名前欄のエラーチェック
@@ -75,7 +63,7 @@ const Form: React.FC = () => {
     } else {
       setInputRadioError(false);
     }
-  }
+  };
 
   // form全体のエラーチェック
   const validateForm = () => {
@@ -91,6 +79,13 @@ const Form: React.FC = () => {
   useEffect(validateEmail, [formEmail]);
   useEffect(validationRadio, [formRadio]);
   useEffect(validateForm);
+
+  // formのリセット
+  const resetForm = () => {
+    setFormName("");
+    setFormEmail("");
+    setFormRadio("");
+  };
 
   // フォーム送信
   const submitForm = () => {
@@ -129,10 +124,16 @@ const Form: React.FC = () => {
     <>
       <form className="container mx-auto py-28 flex flex-col">
         {/* 名前 */}
-        <div className="my-8">
+        <div className="my-8 flex">
+          {inputNameError ? (
+            <p className="text-red-600 w-4">×</p>
+          ) : (
+            <p className="text-blue-600 w-4">○</p>
+          )}
           <TextField
             type="text"
             label="名前、法人名"
+            placeholder="山田 太郎"
             variant="outlined"
             onChange={onChangeName}
             color={inputNameError ? "secondary" : "primary"}
@@ -150,6 +151,7 @@ const Form: React.FC = () => {
           <TextField
             type="email"
             label="メールアドレス"
+            placeholder="example@info.com"
             variant="outlined"
             onChange={onChangeEmail}
             color={inputEmailError ? "secondary" : "primary"}
@@ -162,14 +164,23 @@ const Form: React.FC = () => {
           />
         </div>
         {/* ラジオボタン */}
-        <div>
+        <div className="flex">
+            {inputRadioError ? (
+              <p className="text-red-600 w-4">×</p>
+            ) : (
+              <p className="text-blue-600 w-4">○</p>
+            )}
           <FormControl component="fieldset">
-            <FormLabel component="legend">ご相談の種類</FormLabel>
-            <RadioGroup onChange={onChangeRadio} value={formRadio} aria-label="ご相談の種類">
+            <FormLabel component="legend">お問い合わせの種類</FormLabel>
+            <RadioGroup
+              onChange={onChangeRadio}
+              value={formRadio}
+              aria-label="お問い合わせの種類"
+            >
               <FormControlLabel
                 value="Consultation"
                 control={<Radio />}
-                label="気軽に相談してみたい"
+                label="気軽な相談"
               />
               <FormControlLabel
                 value="Offer"
@@ -182,7 +193,7 @@ const Form: React.FC = () => {
                 label="その他"
               />
             </RadioGroup>
-            <FormHelperText>{radioHelperText}</FormHelperText>
+            <FormHelperText>helperText</FormHelperText>
           </FormControl>
         </div>
 
@@ -191,9 +202,10 @@ const Form: React.FC = () => {
           <TextField
             type="text"
             multiline
-            rows={4}
+            rows={5}
             label="お問い合わせ内容"
             variant="outlined"
+            helperText="お問い合わせ内容を記述してください。"
           />
         </div>
         {/* 送信ボタン */}
