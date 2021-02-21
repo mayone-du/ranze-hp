@@ -1,20 +1,35 @@
-import { TextField, Button } from "@material-ui/core";
+import {
+  TextField,
+  Button,
+  Radio,
+  RadioGroup,
+  FormHelperText,
+  FormControl,
+  FormLabel,
+  FormControlLabel,
+} from "@material-ui/core";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
 const Form: React.FC = () => {
+  
+  // inputのvalueのstate
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
-  const [formTel, setFormTel] = useState("");
+  const [formRadio, setFormRadio] = useState("");
 
-  // inputのstate
+  
+  // inputのerrorのstate
   const [inputNameError, setInputNameError] = useState(false);
   const [inputEmailError, setInputEmailError] = useState(false);
-  // const [inputTelError, setInputTelError] = useState(false);
+  const [inputRadioError, setInputRadioError] = useState(false);
   // const [textAreaError, setTextAreaError] = useState(false);
 
   // form全体でエラーが有るかのチェック用state
   const [formErrors, setFormErrors] = useState(true);
+
+
+  const radioHelperText = "error"
 
   // 入力欄に変更があったときの処理
   const onChangeName = (e) => {
@@ -23,14 +38,15 @@ const Form: React.FC = () => {
   const onChangeEmail = (e) => {
     setFormEmail(e.target.value);
   };
-  const onChangeTel = (e) => {
-    setFormTel(e.target.value);
+  const onChangeRadio = (e) => {
+    setFormRadio(e.target.value);
   };
 
   // formのリセット
   const resetForm = () => {
     setFormName("");
     setFormEmail("");
+    setFormRadio("");
   };
 
   // 名前欄のエラーチェック
@@ -52,6 +68,7 @@ const Form: React.FC = () => {
     }
   };
 
+  // form全体のエラーチェック
   const validateForm = () => {
     if (!inputNameError && !inputEmailError) {
       setFormErrors(false);
@@ -72,7 +89,7 @@ const Form: React.FC = () => {
       お問い合わせがありました。\n
       名前: ${formName}\n
       メールアドレス:${formEmail}\n
-      電話番号: ${formTel === "" ? "なし" : formTel}\n
+      お問い合わせ種別: ${formRadio}\n
       お問い合わせ内容\n
       テキスト。テキスト。
       `,
@@ -81,16 +98,17 @@ const Form: React.FC = () => {
     // Slackのwebhook(Vercelで設定する本番用)
     // const url = process.env.SLACK_WEBHOOK_URL;
 
-    // 開発用
+    // 開発用（挙動確認は本番にmergeしないと無理）
     const url = process.env.TEST_WEBHOOK_URL;
 
-    
     fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
     }).then(() => {
       resetForm();
-      alert(`送信が完了しました。\n 1~3日以内に、送信していただいたメールアドレス(${formEmail})宛にご連絡致します。`);
+      alert(
+        `送信が完了しました。\n 1~3日以内に、送信していただいたメールアドレス(${formEmail})宛にご連絡致します。`
+      );
 
       // ホーム画面へ戻す
       Router.push("/");
@@ -133,17 +151,31 @@ const Form: React.FC = () => {
             value={formEmail}
           />
         </div>
-        {/* 電話番号（任意） */}
+        {/* ラジオボタン */}
         <div>
-          <TextField
-            type="tel"
-            label="電話番号"
-            variant="outlined"
-            onChange={onChangeTel}
-            helperText={"任意項目"}
-            value={formTel}
-          />
+          <FormControl component="fieldset">
+            <FormLabel component="legend">ご相談の種類</FormLabel>
+            <RadioGroup onChange={onChangeRadio} value={formRadio} aria-label="ご相談の種類">
+              <FormControlLabel
+                value="Consultation"
+                control={<Radio />}
+                label="気軽に相談してみたい"
+              />
+              <FormControlLabel
+                value="Offer"
+                control={<Radio />}
+                label="依頼したい"
+              />
+              <FormControlLabel
+                value="Other"
+                control={<Radio />}
+                label="その他"
+              />
+            </RadioGroup>
+            <FormHelperText>{radioHelperText}</FormHelperText>
+          </FormControl>
         </div>
+
         <div>
           {/* 問い合わせ内容 */}
           <TextField
