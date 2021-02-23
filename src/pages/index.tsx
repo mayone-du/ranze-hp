@@ -1,22 +1,12 @@
-import Head from "next/head";
 import { Layout } from "../components/shared/layout/Layout";
 
 const Home: React.FC = () => {
-  const siteTitle = "Ranze official site";
-  const metaDescription =
-    "イラストレーターRanzeの公式HPです。LINEスタンプ・イラスト制作";
   return (
     <>
-      <Head>
-        <meta name="description" content={metaDescription} />
-        <link
-          rel="shortcut icon"
-          href="/images/favicon.ico"
-          type="image/x-icon"
-        />
-        <title>{siteTitle}</title>
-      </Head>
-      <Layout>
+      <Layout
+        metaTitle="Ranze official site"
+        metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作を承ります！"
+      >
         <article
           className="mx-auto md:px-24"
           style={{ backgroundImage: "url(./images/bg.jpg)" }}

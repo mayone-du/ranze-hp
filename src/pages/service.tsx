@@ -1,15 +1,10 @@
-import Head from "next/head";
 import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
 
 const Service: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Ranze official site | service</title>
-        <meta name="description" content="meta description" />
-      </Head>
-      <Layout>
+      <Layout metaTitle="Ranze official site | Service" metaDescription="meta description">
         <article>
           <section>
             <PageTitle title="Service" />

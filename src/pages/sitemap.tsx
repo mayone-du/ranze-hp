@@ -1,13 +1,9 @@
-import Head from "next/head";
 import { Layout } from "../components/shared/layout/Layout";
 
 const SiteMap: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Ranze official site | sitemap</title>
-      </Head>
-      <Layout>
+      <Layout metaTitle="Ranze official site | SiteMap" metaDescription="meta description">
         <article>
           <section>
             <h2>サイトマップ</h2>

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
 import { Form } from "../components/Form";
@@ -6,11 +5,7 @@ import { Form } from "../components/Form";
 const Contact: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Ranze official site | contact</title>
-        <meta name="description" content="meta description" />
-      </Head>
-      <Layout>
+      <Layout metaTitle="Ranze official site | contact" metaDescription="meta description" >
         <article>
           <section>
             <PageTitle title="Contact" />

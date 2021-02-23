@@ -1,15 +1,14 @@
-import Head from "next/head";
+import { Layout } from "../components/shared/layout/Layout";
 import { My404 } from "../components/My404";
 
 const Custom404: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>404 Not Found</title>
-      </Head>
-      <h1>404 Not Found</h1>
-      <p>Sorry :）</p>
-      <My404 />
+      <Layout metaTitle="404" metaDescription="">
+        <h1>404 Not Found</h1>
+        <p>Sorry :）</p>
+        <My404 />
+      </Layout>
     </>
   );
 };
