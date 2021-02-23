@@ -1,10 +1,6 @@
 import Head from "next/head";
-import { Header } from "../components/shared/Header";
+import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
-import { Wrapper } from "../components/shared/Wrapper";
-import { Footer } from "../components/shared/Footer";
-
-
 
 const About: React.FC = () => {
   return (
@@ -13,17 +9,15 @@ const About: React.FC = () => {
         <title>Ranze official site | about</title>
         <meta name="description" content="meta description" />
       </Head>
-      <Wrapper>
-      <Header />
+      <Layout>
         <article className="h-screen">
           <section>
             <PageTitle title="About" />
           </section>
         </article>
-        <Footer />
-      </Wrapper>
+      </Layout>
     </>
-  )
-}
+  );
+};
 
 export default About;

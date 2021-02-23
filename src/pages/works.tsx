@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { Header } from "../components/shared/Header";
+import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
-import { Wrapper } from "../components/shared/Wrapper";
-import { Footer } from "../components/shared/Footer";
 
 const Works: React.FC = () => {
   return (
@@ -10,15 +8,13 @@ const Works: React.FC = () => {
       <Head>
         <title>Ranze official site | works</title>
       </Head>
-      <Wrapper>
-        <Header />
+      <Layout>
         <article>
           <section>
             <PageTitle title="Works" />
           </section>
         </article>
-        <Footer />
-      </Wrapper>
+      </Layout>
     </>
   );
 };

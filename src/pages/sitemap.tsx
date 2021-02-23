@@ -1,7 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components/shared/Header";
-import { Wrapper } from "../components/shared/Wrapper";
-import { Footer } from "../components/shared/Footer";
+import { Layout } from "../components/shared/layout/Layout";
 
 const SiteMap: React.FC = () => {
   return (
@@ -9,15 +7,13 @@ const SiteMap: React.FC = () => {
       <Head>
         <title>Ranze official site | sitemap</title>
       </Head>
-      <Wrapper>
-        <Header />
+      <Layout>
         <article>
           <section>
             <h2>サイトマップ</h2>
           </section>
         </article>
-        <Footer />
-      </Wrapper>
+      </Layout>
     </>
   );
 };

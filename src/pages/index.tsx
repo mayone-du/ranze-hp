@@ -1,11 +1,10 @@
 import Head from "next/head";
-import { Header } from "../components/shared/Header";
-import { Wrapper } from "../components/shared/Wrapper";
-import { Footer } from "../components/shared/Footer";
+import { Layout } from "../components/shared/layout/Layout";
 
 const Home: React.FC = () => {
   const siteTitle = "Ranze official site";
-  const metaDescription = "イラストレーターRanzeの公式HPです。LINEスタンプ・イラスト制作";
+  const metaDescription =
+    "イラストレーターRanzeの公式HPです。LINEスタンプ・イラスト制作";
   return (
     <>
       <Head>
@@ -17,18 +16,18 @@ const Home: React.FC = () => {
         />
         <title>{siteTitle}</title>
       </Head>
-      <Wrapper>
-      <Header />
+      <Layout>
         <article
           className="mx-auto md:px-24"
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen">
-            <h2 className="md:text-6xl text-2xl transform translate-y-96 text-center">イラスト・LINEスタンプ制作</h2>
+            <h2 className="md:text-6xl text-2xl transform translate-y-96 text-center">
+              イラスト・LINEスタンプ制作
+            </h2>
           </section>
         </article>
-        <Footer />
-      </Wrapper>
+      </Layout>
     </>
   );
 };
