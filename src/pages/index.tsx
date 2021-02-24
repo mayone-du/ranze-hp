@@ -31,15 +31,15 @@ const Home: React.FC = () => {
             <div className="flex w-11/12 mx-auto">
               <div className="bg-gray-300 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
-                hoge
+                <p>サンプルテキスト</p>
               </div>
               <div className="bg-gray-300 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
-                hoge
+                <p>サンプルテキスト</p>
               </div>
               <div className="bg-gray-300 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
-                hoge
+                <p>サンプルテキスト</p>
               </div>
             </div>
             <CustomOutlinePinkBtn variant="outlined" size="large">もっと見る</CustomOutlinePinkBtn>
