@@ -43,16 +43,16 @@ const Header: React.FC = () => {
             <CustomButton
               toLink="/service"
               text="無料見積り"
-              color="red"
               outline={true}
+              size="small"
             />
           </li>
           <li>
             <CustomButton
               toLink="/contact"
               text="お問い合わせ"
-              color="red"
-              outline={true}
+              outline={false}
+              size="small"
             />
           </li>
         </ul>

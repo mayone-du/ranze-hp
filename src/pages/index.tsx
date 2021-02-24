@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import Link from "next/link";
 import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButtons";
 
@@ -19,10 +18,10 @@ const Home: React.FC = () => {
             <h2 className="md:text-6xl text-2xl">イラスト・LINEスタンプ制作</h2>
             <p>イラストやLINEスタンプの制作等を承ります！</p>
             <CustomButton
-              outline={true}
-              color="red"
+              outline={false}
               text="お問い合わせ"
               toLink="/contact"
+              size="large"
             />
           </section>
         </article>
@@ -34,18 +33,27 @@ const Home: React.FC = () => {
               お客様に選んでいただける理由が3つあります
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="bg-gray-300 mx-4 w-screen text-center">
+              <div className="bg-gray-100 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
                 <p>サンプルテキスト</p>
               </div>
-              <div className="bg-gray-300 mx-4 w-screen text-center">
+              <div className="bg-gray-100 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
                 <p>サンプルテキスト</p>
               </div>
-              <div className="bg-gray-300 mx-4 w-screen text-center">
+              <div className="bg-gray-100 mx-4 w-screen text-center">
                 <Image src="/images/bg.jpg" width="full" height="full" />
                 <p>サンプルテキスト</p>
               </div>
+            </div>
+            <div className="flex justify-center">
+              <CustomButton
+                text="もっと見る"
+                toLink="/"
+                outline={true}
+                size="medium"
+                className="mx-auto"
+              />
             </div>
           </section>
         </article>
