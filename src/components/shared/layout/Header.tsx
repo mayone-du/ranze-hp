@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { CustomOutlinePinkBtn, CustomPinkBtn } from "../../shared/CustomColorButtons";
+import { CustomButton } from "../../shared/CustomColorButtons";
 
-// const Header: React.FC<{ title: string }> = ({ title }) => {
 const Header: React.FC = () => {
   return (
     <>
@@ -41,18 +40,20 @@ const Header: React.FC = () => {
         </nav>
         <ul className="flex items-center">
           <li>
-            <Link href="/service">
-              <a className="mx-4">
-                <CustomOutlinePinkBtn variant="outlined">見積もり</CustomOutlinePinkBtn>
-              </a>
-            </Link>
+            <CustomButton
+              toLink="/service"
+              text="無料見積り"
+              color="red"
+              outline={true}
+            />
           </li>
           <li>
-            <Link href="/contact">
-              <a className="mx-4">
-                <CustomPinkBtn variant="contained">お問い合わせ</CustomPinkBtn>
-              </a>
-            </Link>
+            <CustomButton
+              toLink="/contact"
+              text="お問い合わせ"
+              color="red"
+              outline={true}
+            />
           </li>
         </ul>
       </header>

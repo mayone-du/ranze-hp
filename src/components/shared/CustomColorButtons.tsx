@@ -1,24 +1,21 @@
-import { Button, withStyles } from "@material-ui/core";
+import Link from "next/link";
 
-const CustomPinkBtn = withStyles((props) => ({
-  root: {
-    color: "white",
-    backgroundColor: "#FCA5A5",
-    "&:hover": {
-      backgroundColor: "#F87171",
-    },
-  },
-}))(Button);
+const CustomButton: React.FC<{ toLink: string; text: string, outline: boolean, color: string }> = ({
+  toLink,
+  text,
+  outline,
+  color,
+}) => {
+  return (
+    <>
+      <Link href={toLink}>
+        <a className={`
+          ${outline === true ? "border" : "bg-red-600" }
+          `
+        }>{text}</a>
+      </Link>
+    </>
+  );
+};
 
-const CustomOutlinePinkBtn = withStyles(() => ({
-  root: {
-    color: "#FCA5A5",
-    backgroundColor: "transparent",
-    borderColor: "#FCA5A5",
-    "&:hover": {
-      backgroundColor: "#F3F4F6",
-    },
-  },
-}))(Button);
-
-export { CustomPinkBtn, CustomOutlinePinkBtn };
+export { CustomButton };

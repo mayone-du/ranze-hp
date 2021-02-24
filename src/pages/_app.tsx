@@ -1,7 +1,7 @@
 import "../styles/globalResets.css";
 import "../styles/globals.css";
 
-const App = ({ Component, pageProps }) => {
+const App: React.FC<{Component, pageProps}> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
