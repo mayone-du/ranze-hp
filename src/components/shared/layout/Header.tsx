@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@material-ui/core";
+import { CustomOutlinePinkBtn, CustomPinkBtn } from "../../shared/CustomColorButtons";
 
 // const Header: React.FC<{ title: string }> = ({ title }) => {
 const Header: React.FC = () => {
@@ -43,14 +43,14 @@ const Header: React.FC = () => {
           <li>
             <Link href="/service">
               <a className="mx-4">
-                <Button variant="outlined">見積もり</Button>
+                <CustomOutlinePinkBtn variant="outlined">見積もり</CustomOutlinePinkBtn>
               </a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
               <a className="mx-4">
-                <Button variant="outlined">お問い合わせ</Button>
+                <CustomPinkBtn variant="contained">お問い合わせ</CustomPinkBtn>
               </a>
             </Link>
           </li>

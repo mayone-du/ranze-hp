@@ -1,5 +1,5 @@
 import { Layout } from "../components/shared/layout/Layout";
-import { My404 } from "../components/My404";
+import { My404 } from "../components/shared/My404";
 
 const Custom404: React.FC = () => {
   return (

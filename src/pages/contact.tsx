@@ -1,6 +1,6 @@
 import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
-import { Form } from "../components/Form";
+import { Form } from "../components/separate/Form";
 
 const Contact: React.FC = () => {
   return (
