@@ -4,7 +4,7 @@ import { CustomButton } from "../../shared/CustomColorButtons";
 const Header: React.FC = () => {
   return (
     <>
-      <header className="flex items-center justify-between py-2 px-8 fixed w-full inset-x-0 z-50 bg-white">
+      <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white">
         <nav className="flex items-center">
           <h1 className="text-xl text-center">
             <Link href="/">

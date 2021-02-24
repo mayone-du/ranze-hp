@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           <section className="py-40">
             <p className="text-center">特徴</p>
             <h2 className="md:text-3xl text-center">
-              お客様に選んでいただける理由が3つあります
+              お客様に選んでいただける理由が3つあります！
             </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="bg-gray-100 mx-4 w-screen text-center">
@@ -57,6 +57,25 @@ const Home: React.FC = () => {
             </div>
           </section>
         </article>
+
+        <article>
+          <section>
+            <h2>ゆるくてかわいいイラストを作成可能です！</h2>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h2>たくさんの方にご依頼頂き、大変満足していただいております！</h2>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h2>お問い合わせ</h2>
+          </section>
+        </article>
+
       </Layout>
     </>
   );
