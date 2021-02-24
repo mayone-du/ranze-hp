@@ -17,7 +17,7 @@ const CustomButton: React.FC<{
               ? "border border-red-300 text-red-300 hover:bg-gray-100"
               : "bg-red-300 text-white hover:bg-red-400"
           }
-          px-4 py-2 mx-2 font-light rounded-md transition block
+          px-4 py-2 mx-2 font-light rounded transition block
           ${size === "large" ? "px-24 py-4 text-xl"
           : size === "medium" ? "px-16" : ""}
           ${className ? className : ""}
