@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           <section className="py-20">
             <p className="text-center">特徴</p>
             <h2 className="md:text-3xl text-center">
-              お客様に選んでいただける理由が3つあります！
+              ゆるくて可愛いイラスト制作が得意です！
             </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="bg-gray-100 mx-4 w-screen text-center">
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           <section>
             <p className="text-center">サービス</p>
             <h2 className="text-center text-3xl">
-              ゆるくてかわいいイラストを作成可能です！
+              LINEスタンプやアイコンに使えるイラスト制作などをしています！
             </h2>
 
             {/* row */}
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>イラストサンプル</h3>
+                  <h3 className="text-xl">LINEスタンプ制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>イラストサンプル</h3>
+                  <h3 className="text-xl">イラスト制作（アイコンなど）</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>イラストサンプル</h3>
+                  <h3>LINEスタンプ制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>イラストサンプル</h3>
+                  <h3>イラスト制作（アイコン用など）</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>イラストサンプル</h3>
+                  <h3>名刺制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -173,11 +173,64 @@ const Home: React.FC = () => {
 
         <article className="container mx-auto">
           <section>
-            <p>評価</p>
-            <h2>たくさんの方にご依頼頂き、満足していただいております！</h2>
+            <p className="text-center">実績</p>
+            <h2 className="text-center text-3xl">いろいろな方からご依頼いただいております！</h2>
+            <div className="flex w-11/12 mx-auto">
+              <div className="mx-4 w-screen bg-gray-100">
+                画像をタイル状で表示
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article className="container mx-auto">
+          <section>
+            <p className="text-center">評価</p>
+            <h2 className="text-center text-3xl">たくさんの方にご満足していただいております！</h2>
+            <div className="flex w-11/12 mx-auto">
+              <div className="mx-4 w-screen bg-gray-100">
+                ここならのレビューとかを掲載
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article className="container mx-auto">
+          <section>
+            <p className="text-center">料金</p>
+            <h2 className="text-center text-3xl">全てのお客様に満足していただけるよう、高品質なものをお届けします！</h2>
 
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen bg-gray-100"></div>
+              <div className="mx-4 w-screen bg-gray-100">
+                <Image
+                  src="/images/bg.jpg"
+                  width={100}
+                  height={100}
+                />
+                <h3>LINEスタンプ40個制作の場合</h3>
+                <p>料金</p>
+                <p>納品までの時間</p>
+              </div>
+              <div className="mx-4 w-screen bg-gray-100">
+                <Image
+                  src="/images/bg.jpg"
+                  width={100}
+                  height={100}
+                />
+                <h3>LINEスタンプ40個制作の場合</h3>
+                <p>料金</p>
+                <p>納品までの時間</p>
+              </div>
+              <div className="mx-4 w-screen bg-gray-100">
+                <Image
+                  src="/images/bg.jpg"
+                  width={100}
+                  height={100}
+                />
+                <h3>LINEスタンプ40個制作の場合</h3>
+                <p>料金</p>
+                <p>納品までの時間</p>
+              </div>
             </div>
           </section>
         </article>
