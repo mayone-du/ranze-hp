@@ -68,7 +68,7 @@ const Home: React.FC = () => {
                 toLink="/"
                 outline={true}
                 size="medium"
-                className="mx-auto"
+                className="mx-auto my-8"
               />
             </div>
           </section>
@@ -83,62 +83,80 @@ const Home: React.FC = () => {
 
             {/* row */}
             <div className="flex w-11/12 mx-auto">
-              <div className="m-4 w-screen flex bg-gray-100 p-8 justify-between">
-                <Image
-                  className="block w-4/12 rounded-full"
-                  src="/images/bg.jpg"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-center w-2/3">
-                  イラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプル
-                </h3>
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>イラストサンプル</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
               </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-8">
-                <Image
-                  className="block w-4/12 rounded-full"
-                  src="/images/bg.jpg"
-                  width={200}
-                  height={200}
-                />
-                <h3 className="text-center w-2/3">イラストサンプル</h3>
+
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>イラストサンプル</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
               </div>
             </div>
 
             {/* row */}
             <div className="flex w-11/12 mx-auto">
-              <div className="m-4 w-screen flex bg-gray-100 p-4 justify-between">
-                <Image
-                  className="block w-4/12 rounded-full"
-                  src="/images/bg.jpg"
-                  width={150}
-                  height={150}
-                />
-                <h3 className="text-center w-2/3">
-                  イラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプル
-                </h3>
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>イラストサンプル</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
               </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-4 justify-between">
-                <Image
-                  className="block w-4/12 rounded-full"
-                  src="/images/bg.jpg"
-                  width={150}
-                  height={150}
-                />
-                <h3 className="text-center w-2/3">
-                  イラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプル
-                </h3>
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>イラストサンプル</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
               </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-4 justify-between">
-                <Image
-                  className="block w-4/12 rounded-full"
-                  src="/images/bg.jpg"
-                  width={150}
-                  height={150}
-                />
-                <h3 className="text-center w-2/3">
-                  イラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプルイラストサンプル
-                </h3>
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>イラストサンプル</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
               </div>
             </div>
             <div className="flex justify-center">
@@ -147,7 +165,7 @@ const Home: React.FC = () => {
                 toLink="/"
                 outline={true}
                 size="medium"
-                className="mx-auto"
+                className="mx-auto my-4"
               />
             </div>
           </section>
@@ -155,13 +173,35 @@ const Home: React.FC = () => {
 
         <article className="container mx-auto">
           <section>
+            <p>評価</p>
             <h2>たくさんの方にご依頼頂き、満足していただいております！</h2>
+
+            <div className="flex w-11/12 mx-auto">
+              <div className="mx-4 w-screen bg-gray-100"></div>
+            </div>
           </section>
         </article>
 
-        <article className="container mx-auto">
+        <article className="bg-gray-100 text-center py-20">
           <section>
-            <h2>お問い合わせ</h2>
+            <p>お問い合わせ</p>
+            <h2 className="text-3xl">キャッチコピー</h2>
+            <CustomButton
+              toLink="/contact"
+              text="お問い合わせ"
+              size="large"
+              outline={false}
+              className=" mx-auto"
+            />
+            <div className="flex items-center justify-center bg-white w-1/2 p-10 mx-auto">
+              <h3 className="text-xl">詳しい資料をダウンロードできます</h3>
+              <CustomButton
+                text="ダウンロード"
+                size="medium"
+                toLink="/"
+                outline={true}
+              />
+            </div>
           </section>
         </article>
       </Layout>
