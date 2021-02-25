@@ -36,6 +36,7 @@ const Home: React.FC = () => {
               <div className="mx-4 w-screen">
                 <p>
                   ご覧頂きありがとうございます。イラストレーターのRanzeです._.
+                  1イラストごとに魂を込めて制作します。お客様に喜んでいただけることがとてもやりがいですので、ご感想などいただけるととても嬉しいです✨
                 </p>
               </div>
             </div>
@@ -46,20 +47,38 @@ const Home: React.FC = () => {
           <section className="py-20">
             <p className="text-center">特徴</p>
             <h2 className="md:text-3xl text-center">
-              ゆるくて可愛いイラスト制作が得意です！
+              お客様に選んでいただける理由✨
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="bg-gray-100 mx-4 w-screen text-center">
-                <Image src="/images/bg.jpg" width="full" height="full" />
-                <p>サンプルテキスト</p>
+              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+                <p className="text-6xl font-bold py-4">1</p>
+                <Image src="/images/bg.jpg" width={200} height={200} />
+                <h3 className="py-4 text-2xl">
+                  老若男女問わず人気！
+                </h3>
+                <p>
+                  ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
+                </p>
               </div>
-              <div className="bg-gray-100 mx-4 w-screen text-center">
-                <Image src="/images/bg.jpg" width="full" height="full" />
-                <p>サンプルテキスト</p>
+              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+                <p className="text-6xl font-bold py-4">2</p>
+                <Image src="/images/bg.jpg" width={200} height={200} />
+                <h3 className="py-4 text-2xl">
+                  基本的に修正回数は無制限！
+                </h3>
+                <p>
+                  あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
+                </p>
               </div>
-              <div className="bg-gray-100 mx-4 w-screen text-center">
-                <Image src="/images/bg.jpg" width="full" height="full" />
-                <p>サンプルテキスト</p>
+              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+                <p className="text-6xl font-bold py-4">3</p>
+                <Image src="/images/bg.jpg" width={200} height={200} />
+                <h3 className="py-4 text-2xl">
+                  ストレスフリーなやりとり
+                </h3>
+                <p>
+                  丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
+                </p>
               </div>
             </div>
             <div className="flex justify-center">
@@ -174,7 +193,9 @@ const Home: React.FC = () => {
         <article className="container mx-auto">
           <section>
             <p className="text-center">実績</p>
-            <h2 className="text-center text-3xl">いろいろな方からご依頼いただいております！</h2>
+            <h2 className="text-center text-3xl">
+              いろいろな方からご依頼いただいております！
+            </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen bg-gray-100">
                 画像をタイル状で表示
@@ -186,7 +207,9 @@ const Home: React.FC = () => {
         <article className="container mx-auto">
           <section>
             <p className="text-center">評価</p>
-            <h2 className="text-center text-3xl">たくさんの方にご満足していただいております！</h2>
+            <h2 className="text-center text-3xl">
+              たくさんの方にご満足していただいております！
+            </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen bg-gray-100">
                 ここならのレビューとかを掲載
@@ -198,35 +221,25 @@ const Home: React.FC = () => {
         <article className="container mx-auto">
           <section>
             <p className="text-center">料金</p>
-            <h2 className="text-center text-3xl">全てのお客様に満足していただけるよう、高品質なものをお届けします！</h2>
+            <h2 className="text-center text-3xl">
+              全てのお客様に満足していただけるよう、高品質なものをお届けします！
+            </h2>
 
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen bg-gray-100">
-                <Image
-                  src="/images/bg.jpg"
-                  width={100}
-                  height={100}
-                />
+                <Image src="/images/bg.jpg" width={100} height={100} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <p>料金</p>
                 <p>納品までの時間</p>
               </div>
               <div className="mx-4 w-screen bg-gray-100">
-                <Image
-                  src="/images/bg.jpg"
-                  width={100}
-                  height={100}
-                />
+                <Image src="/images/bg.jpg" width={100} height={100} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <p>料金</p>
                 <p>納品までの時間</p>
               </div>
               <div className="mx-4 w-screen bg-gray-100">
-                <Image
-                  src="/images/bg.jpg"
-                  width={100}
-                  height={100}
-                />
+                <Image src="/images/bg.jpg" width={100} height={100} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <p>料金</p>
                 <p>納品までの時間</p>
