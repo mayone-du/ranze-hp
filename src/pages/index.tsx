@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButtons";
+import { Star } from "@material-ui/icons";
 
 const Home: React.FC = () => {
   return (
@@ -36,7 +37,7 @@ const Home: React.FC = () => {
               <div className="mx-4 w-screen">
                 <p>
                   ご覧頂きありがとうございます。イラストレーターのRanzeです._.
-                  1イラストごとに魂を込めて制作します。お客様に喜んでいただけることがとてもやりがいですので、ご感想などいただけるととても嬉しいです✨
+                  1イラストごとに思いを込めて丁寧に制作しております。お客様に喜んでいただけることがやりがいですので、ご感想などいただけるととても嬉しいです✨
                 </p>
               </div>
             </div>
@@ -46,36 +47,30 @@ const Home: React.FC = () => {
         <article className="container mx-auto">
           <section className="py-20">
             <p className="text-center">特徴</p>
-            <h2 className="md:text-3xl text-center">
+            <h2 className="md:text-3xl text-2xl text-center">
               お客様に選んでいただける理由✨
             </h2>
-            <div className="flex w-11/12 mx-auto">
-              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+            <div className="lg:flex w-11/12 mx-auto">
+              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">1</p>
                 <Image src="/images/bg.jpg" width={200} height={200} />
-                <h3 className="py-4 text-2xl">
-                  老若男女問わず人気！
-                </h3>
+                <h3 className="py-4 text-2xl">老若男女問わず人気！</h3>
                 <p>
                   ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
                 </p>
               </div>
-              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">2</p>
                 <Image src="/images/bg.jpg" width={200} height={200} />
-                <h3 className="py-4 text-2xl">
-                  基本的に修正回数は無制限！
-                </h3>
+                <h3 className="py-4 text-2xl">基本的に修正回数は無制限！</h3>
                 <p>
                   あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
                 </p>
               </div>
-              <div className="bg-gray-100 mx-4 w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">3</p>
                 <Image src="/images/bg.jpg" width={200} height={200} />
-                <h3 className="py-4 text-2xl">
-                  ストレスフリーなやりとり
-                </h3>
+                <h3 className="py-4 text-2xl">ストレスフリーなやりとり</h3>
                 <p>
                   丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
                 </p>
@@ -96,13 +91,13 @@ const Home: React.FC = () => {
         <article className="container mx-auto">
           <section>
             <p className="text-center">サービス</p>
-            <h2 className="text-center text-3xl">
-              LINEスタンプやアイコンに使えるイラスト制作などをしています！
+            <h2 className="text-center md:text-3xl text-xl font-bold">
+              ゆるくて可愛いイラストの制作などをしています！
             </h2>
 
             {/* row */}
             <div className="flex w-11/12 mx-auto">
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
+              <div className="md:m-4 w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -117,7 +112,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
 
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
+              <div className="md:m-4 w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -219,10 +214,24 @@ const Home: React.FC = () => {
             <h2 className="text-center text-3xl">
               たくさんの方にご満足していただいております！
             </h2>
-            <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen bg-gray-100">
-                ここならのレビューとかを掲載
+            <div className="w-11/12 mx-auto">
+              <div className="md:flex md:m-4 bg-gray-100 py-4 md:p-8 text-center md:text-left">
+                <Image
+                  src="/images/bg.jpg"
+                  width={200}
+                  height={200}
+                  className="m-auto rounded-full w-1/12"
+                />
+                <div className="pl-8 w-11/12">
+                  <h3 className="text-lg">LINEスタンプ40個</h3>
+                  <p className="flex items-center text-lg py-2">評価：<Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" />5/5</p>
+                  <p>
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  </p>
+                </div>
               </div>
+              
             </div>
             <div className="flex justify-center">
               <CustomButton
