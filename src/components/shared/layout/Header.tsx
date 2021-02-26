@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <>
       <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
         <nav className="flex items-center">
-          <h1 className="text-xl text-center">
+          <h2 className=".my_logo text-xl text-center">
             <Link href="/">
               <a className="block">
                 Ranze
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
                 Illustrator
               </a>
             </Link>
-          </h1>
+          </h2>
           <ul className="flex">
             <li>
               <Link href="/about">

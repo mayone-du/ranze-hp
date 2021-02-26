@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen flex items-center justify-center flex-col">
-            <h2 className="md:text-6xl text-2xl">イラスト・LINEスタンプ制作</h2>
+            <h1 className="md:text-6xl text-2xl">イラスト・LINEスタンプ制作</h1>
             <p>イラストやLINEスタンプの制作等を承ります！</p>
             <CustomButton
               outline={false}
@@ -201,6 +201,15 @@ const Home: React.FC = () => {
                 画像をタイル状で表示
               </div>
             </div>
+            <div className="flex justify-center">
+              <CustomButton
+                text="もっと見る"
+                toLink="/"
+                outline={true}
+                size="medium"
+                className="mx-auto my-4"
+              />
+            </div>
           </section>
         </article>
 
@@ -215,6 +224,15 @@ const Home: React.FC = () => {
                 ここならのレビューとかを掲載
               </div>
             </div>
+            <div className="flex justify-center">
+              <CustomButton
+                text="もっと見る"
+                toLink="/"
+                outline={true}
+                size="medium"
+                className="mx-auto my-4"
+              />
+            </div>
           </section>
         </article>
 
@@ -226,24 +244,42 @@ const Home: React.FC = () => {
             </h2>
 
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen bg-gray-100">
-                <Image src="/images/bg.jpg" width={100} height={100} />
+              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+                <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
-                <p>料金</p>
-                <p>納品までの時間</p>
+                <ul>
+                  <li>料金</li>
+                  <li>納期</li>
+                  <li>オプション</li>
+                </ul>
               </div>
-              <div className="mx-4 w-screen bg-gray-100">
-                <Image src="/images/bg.jpg" width={100} height={100} />
+              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+                <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
-                <p>料金</p>
-                <p>納品までの時間</p>
+                <ul>
+                  <li>料金</li>
+                  <li>納期</li>
+                  <li>オプション</li>
+                </ul>
               </div>
-              <div className="mx-4 w-screen bg-gray-100">
-                <Image src="/images/bg.jpg" width={100} height={100} />
+              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+                <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
-                <p>料金</p>
-                <p>納品までの時間</p>
+                <ul>
+                  <li>料金</li>
+                  <li>納期</li>
+                  <li>オプション</li>
+                </ul>
               </div>
+            </div>
+            <div className="flex justify-center">
+              <CustomButton
+                text="もっと見る"
+                toLink="/"
+                outline={true}
+                size="medium"
+                className="mx-auto my-4"
+              />
             </div>
           </section>
         </article>
