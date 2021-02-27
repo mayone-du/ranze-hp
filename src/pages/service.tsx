@@ -6,7 +6,7 @@ const Service: React.FC = () => {
     <>
       <Layout metaTitle="Ranze official site | Service" metaDescription="meta description">
         <article>
-          <section>
+          <section className="h-screen flex items-center justify-center">
             <PageTitle title="Service" />
           </section>
         </article>

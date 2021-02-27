@@ -6,7 +6,7 @@ const Works: React.FC = () => {
     <>
       <Layout metaTitle="Ranze official site | Works" metaDescription="meta">
         <article>
-          <section>
+          <section className="h-screen flex items-center justify-center">
             <PageTitle title="Works" />
           </section>
         </article>

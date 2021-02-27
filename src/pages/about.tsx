@@ -5,8 +5,8 @@ const About: React.FC = () => {
   return (
     <>
       <Layout metaTitle="Ranze official site | About" metaDescription="meta description">
-        <article className="h-screen">
-          <section>
+        <article>
+          <section className="h-screen flex items-center justify-center">
             <PageTitle title="About" />
           </section>
         </article>
