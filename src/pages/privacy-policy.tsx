@@ -5,6 +5,7 @@ const PrivacyPolicy: React.FC = () => {
     <>
       <Layout metaTitle="privacy policy" metaDescription="desc">
         <h1>PrivacyPolicy</h1>
+        <p>プライバシーポリシーを記載</p>
       </Layout>
     </>
   );

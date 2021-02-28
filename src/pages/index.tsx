@@ -193,7 +193,10 @@ const Home: React.FC = () => {
             </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen bg-gray-100">
-                画像をタイル状で表示
+                画像をタイルで表示
+              </div>
+              <div className="mx-4 w-screen bg-gray-100">
+                カードモジュールでココナラの対応中みたいにするのもあり？
               </div>
             </div>
             <div className="flex justify-center">

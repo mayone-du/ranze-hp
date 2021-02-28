@@ -1,5 +1,6 @@
 import { Layout } from "../components/shared/layout/Layout";
 import { PageTitle } from "../components/shared/PageTitle";
+import { Estimate } from "../components/separate/Estimate";
 
 const About: React.FC = () => {
   return (
@@ -8,6 +9,11 @@ const About: React.FC = () => {
         <article>
           <section className="h-screen flex items-center justify-center">
             <PageTitle title="About" />
+          </section>
+        </article>
+        <article>
+          <section>
+            <Estimate />
           </section>
         </article>
       </Layout>
