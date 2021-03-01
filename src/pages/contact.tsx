@@ -9,11 +9,7 @@ const Contact: React.VFC = () => {
         metaTitle="Ranze official site | contact"
         metaDescription="meta description"
       >
-        <article>
-          <section className="h-screen flex items-center justify-center">
-            <SubPageMainVisual title="Contact" />
-          </section>
-        </article>
+        <SubPageMainVisual title="Contact" />
         <article>
           <section>
             <h3 className="py-40">

@@ -4,15 +4,13 @@ import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 const About: React.VFC = () => {
   return (
     <>
-      <Layout metaTitle="Ranze official site | About" metaDescription="meta description">
+      <Layout
+        metaTitle="Ranze official site | About"
+        metaDescription="meta description"
+      >
+        <SubPageMainVisual title="About" />
         <article>
-          <section className="h-screen flex items-center justify-center">
-            <SubPageMainVisual title="About" />
-          </section>
-        </article>
-        <article>
-          <section>
-          </section>
+          <section></section>
         </article>
       </Layout>
     </>

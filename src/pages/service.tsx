@@ -9,11 +9,7 @@ const Service: React.VFC = () => {
         metaTitle="Ranze official site | Service"
         metaDescription="meta description"
       >
-        <article>
-          <section className="h-screen flex items-center justify-center">
-            <SubPageMainVisual title="Service" />
-          </section>
-        </article>
+        <SubPageMainVisual title="Service" />
         <article>
           <section>
             <Estimate />
