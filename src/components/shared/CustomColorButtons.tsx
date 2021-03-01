@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const CustomButton: React.FC<{
+const CustomButton: React.VFC<{
   toLink: string;
   text: string;
   size: "small" | "medium" | "large";

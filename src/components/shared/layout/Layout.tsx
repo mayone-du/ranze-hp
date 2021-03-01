@@ -3,7 +3,7 @@ import { Wrapper } from "./Wrapper";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 
-const Layout: React.FC<{
+const Layout: React.VFC<{
   children: any;
   metaTitle: string;
   metaDescription: string;

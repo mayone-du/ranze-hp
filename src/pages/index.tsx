@@ -3,7 +3,7 @@ import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButtons";
 import { Star } from "@material-ui/icons";
 
-const Home: React.FC = () => {
+const Home: React.VFC = () => {
   return (
     <>
       <Layout

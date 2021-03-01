@@ -12,7 +12,7 @@ import { RadioButtonUnchecked, Clear, Send } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 
-const Form: React.FC = () => {
+const Form: React.VFC = () => {
   // inputのvalueのstate
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");

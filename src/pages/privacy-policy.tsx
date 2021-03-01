@@ -1,6 +1,6 @@
 import { Layout } from "../components/shared/layout/Layout";
 
-const PrivacyPolicy: React.FC = () => {
+const PrivacyPolicy: React.VFC = () => {
   return (
     <>
       <Layout metaTitle="privacy policy" metaDescription="desc">

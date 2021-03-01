@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Footer: React.FC = () => {
+const Footer: React.VFC = () => {
   return (
     <>
       <footer className="bg-gray-800">

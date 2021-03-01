@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CustomButton } from "../../shared/CustomColorButtons";
 
-const Header: React.FC = () => {
+const Header: React.VFC = () => {
   return (
     <>
       <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">

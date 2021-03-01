@@ -1,6 +1,6 @@
 import { Layout } from "../components/shared/layout/Layout";
 
-const SiteMap: React.FC = () => {
+const SiteMap: React.VFC = () => {
   return (
     <>
       <Layout metaTitle="Ranze official site | SiteMap" metaDescription="meta description">

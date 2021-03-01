@@ -1,6 +1,6 @@
 import { Button } from "@material-ui/core";
 
-const Estimate: React.FC = () => {
+const Estimate: React.VFC = () => {
   return (
     <>
       <div className="bg-gray-100">

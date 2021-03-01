@@ -1,8 +1,8 @@
 import { Layout } from "../components/shared/layout/Layout";
-import { PageTitle } from "../components/shared/PageTitle";
+import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { Form } from "../components/separate/Form";
 
-const Contact: React.FC = () => {
+const Contact: React.VFC = () => {
   return (
     <>
       <Layout
@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
       >
         <article>
           <section className="h-screen flex items-center justify-center">
-            <PageTitle title="Contact" />
+            <SubPageMainVisual title="Contact" />
           </section>
         </article>
         <article>
