@@ -6,7 +6,6 @@ const CustomButton: React.VFC<{
   size: "small" | "medium" | "large";
   outline: boolean;
   className?: string;
-  // type?: "zip";
 }> = ({ toLink, text, size, outline, className }) => {
   return (
     <>

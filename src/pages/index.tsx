@@ -122,7 +122,7 @@ const Home: React.VFC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3 className="text-xl">イラスト制作（アイコンなど）</h3>
+                  <h3 className="text-xl">イラスト制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -140,21 +140,7 @@ const Home: React.VFC = () => {
                   />
                 </div>
                 <div className="w-2/3 p-2">
-                  <h3>LINEスタンプ制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3>イラスト制作（アイコン用など）</h3>
+                  <h3>アイコン制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -169,6 +155,20 @@ const Home: React.VFC = () => {
                 </div>
                 <div className="w-2/3 p-2">
                   <h3>名刺制作</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
+              </div>
+              <div className="m-4 w-screen flex bg-gray-100 p-6">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3>LINEの絵文字制作</h3>
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
@@ -227,14 +227,21 @@ const Home: React.VFC = () => {
                 />
                 <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                   <h3 className="text-lg">LINEスタンプ40個</h3>
-                  <p className="flex items-center text-lg py-2">評価：<Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" />5/5</p>
+                  <p className="flex items-center text-lg py-2">
+                    評価：
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    5/5
+                  </p>
                   <p>
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                   </p>
                 </div>
               </div>
-              
             </div>
             <div className="flex justify-center">
               <CustomButton
@@ -250,21 +257,32 @@ const Home: React.VFC = () => {
 
         <article className="container mx-auto">
           <section>
-            <p className="text-center">料金</p>
+            <p className="text-center">対応中のサービス</p>
             <h2 className="text-center text-3xl">
               全てのお客様に満足していただけるよう、高品質なものをお届けします！
             </h2>
 
             <div className="md:flex w-11/12 mx-auto">
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
-                <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ制作の場合</h3>
-                <ul>
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+                <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                  満枠対応中！
+                </span>
+                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+                <ul className="list-disc pt-2 pb-4 px-6">
                   <li>40個</li>
                   <li>納期：指定なし</li>
                   <li>オプション：キャラクター追加</li>
                   <li>料金：10,000円</li>
                 </ul>
+                <div className="flex justify-center py-4">
+                  <CustomButton
+                    toLink=""
+                    text="もっと見る"
+                    size="medium"
+                    outline={true}
+                  />
+                </div>
               </div>
               <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
@@ -311,9 +329,9 @@ const Home: React.VFC = () => {
               className=" mx-auto"
             />
             <div className="flex items-center justify-center bg-white w-1/2 p-10 mx-auto">
-              <h3 className="text-xl">詳しい資料をダウンロードできます</h3>
+              <h3 className="text-xl">無料で見積もりしてみる</h3>
               <CustomButton
-                text="ダウンロード"
+                text="無料見積もり"
                 size="medium"
                 toLink="/"
                 outline={true}
