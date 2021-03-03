@@ -38,6 +38,8 @@ const Header: React.VFC = () => {
             </li>
           </ul>
         </nav>
+        {/* ↓ハンバーガーメニューのトリガー */}
+        {/* <button>btn</button> */}
         <ul className="flex items-center">
           <li>
             <CustomButton

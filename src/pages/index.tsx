@@ -218,14 +218,14 @@ const Home: React.VFC = () => {
               たくさんの方にご満足していただいております！
             </h2>
             <div className="w-11/12 mx-auto">
-              <div className="md:flex md:m-4 bg-gray-100 py-4 md:p-8 text-center md:text-left">
+              <div className="xl:flex xl:m-4 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
                 <Image
                   src="/images/bg.jpg"
                   width={200}
                   height={200}
                   className="m-auto rounded-full w-1/12"
                 />
-                <div className="pl-8 w-11/12">
+                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                   <h3 className="text-lg">LINEスタンプ40個</h3>
                   <p className="flex items-center text-lg py-2">評価：<Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" /><Star className="text-yellow-400" />5/5</p>
                   <p>
@@ -255,8 +255,8 @@ const Home: React.VFC = () => {
               全てのお客様に満足していただけるよう、高品質なものをお届けします！
             </h2>
 
-            <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+            <div className="md:flex w-11/12 mx-auto">
+              <div className="md:mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <ul>
@@ -265,7 +265,7 @@ const Home: React.VFC = () => {
                   <li>オプション</li>
                 </ul>
               </div>
-              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+              <div className="md:mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <ul>
@@ -274,7 +274,7 @@ const Home: React.VFC = () => {
                   <li>オプション</li>
                 </ul>
               </div>
-              <div className="mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
+              <div className="md:mx-4 w-screen bg-gray-100 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
                 <h3>LINEスタンプ40個制作の場合</h3>
                 <ul>
