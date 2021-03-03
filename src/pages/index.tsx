@@ -7,8 +7,8 @@ const Home: React.VFC = () => {
   return (
     <>
       <Layout
-        metaTitle="Ranze official site"
-        metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作を承ります！"
+        metaTitle="Ranze official site | イラストレーターRanzeの公式サイト"
+        metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作や名刺制作などをしています！まずはお気軽にご相談ください！"
       >
         {/* メインビジュアル */}
         <article
@@ -195,9 +195,6 @@ const Home: React.VFC = () => {
               <div className="mx-4 w-screen bg-gray-100">
                 画像をタイルで表示
               </div>
-              <div className="mx-4 w-screen bg-gray-100">
-                カードモジュールでココナラの対応中みたいにするのもあり？
-              </div>
             </div>
             <div className="flex justify-center">
               <CustomButton
@@ -263,6 +260,7 @@ const Home: React.VFC = () => {
             </h2>
 
             <div className="md:flex w-11/12 mx-auto">
+
               <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
                 <Image src="/images/bg.jpg" width={450} height={250} />
                 <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
@@ -284,26 +282,51 @@ const Home: React.VFC = () => {
                   />
                 </div>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
-                <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ制作の場合</h3>
-                <ul>
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+                <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                  満枠対応中！
+                </span>
+                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+                <ul className="list-disc pt-2 pb-4 px-6">
                   <li>40個</li>
                   <li>納期：指定なし</li>
                   <li>オプション：キャラクター追加</li>
                   <li>料金：10,000円</li>
                 </ul>
+                <div className="flex justify-center py-4">
+                  <CustomButton
+                    toLink=""
+                    text="もっと見る"
+                    size="medium"
+                    outline={true}
+                  />
+                </div>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
-                <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ制作の場合</h3>
-                <ul>
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+                <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                  満枠対応中！
+                </span>
+                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+                <ul className="list-disc pt-2 pb-4 px-6">
                   <li>40個</li>
                   <li>納期：指定なし</li>
                   <li>オプション：キャラクター追加</li>
                   <li>料金：10,000円</li>
                 </ul>
+                <div className="flex justify-center py-4">
+                  <CustomButton
+                    toLink=""
+                    text="もっと見る"
+                    size="medium"
+                    outline={true}
+                  />
+                </div>
               </div>
+
+    
+
             </div>
             <div className="flex justify-center">
               <CustomButton
