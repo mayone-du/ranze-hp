@@ -93,7 +93,7 @@ const Form: React.VFC = () => {
     }
   };
 
-  // state(inputのvalue)が更新された際にエラーチェックを走らせる
+  // state(inputタグのvalue)が更新された際にエラーチェックを走らせる
   useEffect(validateName, [formName]);
   useEffect(validateEmail, [formEmail]);
   useEffect(validateRadio, [formRadio]);

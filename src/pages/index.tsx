@@ -256,31 +256,34 @@ const Home: React.VFC = () => {
             </h2>
 
             <div className="md:flex w-11/12 mx-auto">
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 bg-gray-100 border-2 rounded-sm overflow-hidden">
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ40個制作の場合</h3>
+                <h3>LINEスタンプ制作の場合</h3>
                 <ul>
-                  <li>料金</li>
-                  <li>納期</li>
-                  <li>オプション</li>
+                  <li>40個</li>
+                  <li>納期：指定なし</li>
+                  <li>オプション：キャラクター追加</li>
+                  <li>料金：10,000円</li>
                 </ul>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 bg-gray-100 border-2 rounded-sm overflow-hidden">
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ40個制作の場合</h3>
+                <h3>LINEスタンプ制作の場合</h3>
                 <ul>
-                  <li>料金</li>
-                  <li>納期</li>
-                  <li>オプション</li>
+                  <li>40個</li>
+                  <li>納期：指定なし</li>
+                  <li>オプション：キャラクター追加</li>
+                  <li>料金：10,000円</li>
                 </ul>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 bg-gray-100 border-2 rounded-sm overflow-hidden">
+              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden">
                 <Image src="/images/bg.jpg" width={450} height={200} />
-                <h3>LINEスタンプ40個制作の場合</h3>
+                <h3>LINEスタンプ制作の場合</h3>
                 <ul>
-                  <li>料金</li>
-                  <li>納期</li>
-                  <li>オプション</li>
+                  <li>40個</li>
+                  <li>納期：指定なし</li>
+                  <li>オプション：キャラクター追加</li>
+                  <li>料金：10,000円</li>
                 </ul>
               </div>
             </div>
