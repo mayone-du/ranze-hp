@@ -6,7 +6,7 @@ const Header: React.VFC = () => {
     <>
       <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
         <nav className="flex items-center">
-          <h2 className="my_logo text-xl text-center">
+          <h2 className="my_logo text-xl text-center mr-4">
             <Link href="/">
               <a className="block">
                 Ranze
@@ -16,6 +16,11 @@ const Header: React.VFC = () => {
             </Link>
           </h2>
           <ul className="flex">
+            <li>
+              <Link href="/">
+                <a className="py-3 px-4 mx-2">Home</a>
+              </Link>
+            </li>
             <li>
               <Link href="/about">
                 <a className="py-3 px-4 mx-2">About</a>
