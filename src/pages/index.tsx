@@ -9,6 +9,7 @@ const Home: React.VFC = () => {
       <Layout
         metaTitle="Ranze official site | イラストレーターRanzeの公式サイト"
         metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作や名刺制作などをしています！まずはお気軽にご相談ください！"
+        isActivePage="home"
       >
         {/* メインビジュアル */}
         <article

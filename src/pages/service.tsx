@@ -8,6 +8,7 @@ const Service: React.VFC = () => {
       <Layout
         metaTitle="Ranze official site | Service"
         metaDescription="meta description"
+        isActivePage="service"
       >
         <SubPageMainVisual title="Service" />
         <article>

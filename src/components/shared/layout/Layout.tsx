@@ -7,7 +7,8 @@ const Layout: React.VFC<{
   children: any;
   metaTitle: string;
   metaDescription: string;
-}> = ({ children, metaTitle, metaDescription }) => {
+  isActivePage: string;
+}> = ({ children, metaTitle, metaDescription, isActivePage }) => {
   return (
     <>
       <Head>
@@ -15,7 +16,7 @@ const Layout: React.VFC<{
         <meta name="description" content={metaDescription} />
       </Head>
       <Wrapper>
-        <Header />
+        <Header isActivePage={isActivePage} />
         {children}
         <Footer />
       </Wrapper>

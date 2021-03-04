@@ -7,6 +7,7 @@ const About: React.VFC = () => {
       <Layout
         metaTitle="Ranze official site | About"
         metaDescription="meta description"
+        isActivePage="about"
       >
         <SubPageMainVisual title="About" />
         <article>

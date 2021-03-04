@@ -4,7 +4,7 @@ import { My404 } from "../components/shared/My404";
 const Custom404: React.FC = () => {
   return (
     <>
-      <Layout metaTitle="404" metaDescription="">
+      <Layout metaTitle="404" metaDescription="not found" isActivePage="404">
         <h1>404 Not Found</h1>
         <p>Sorry :）</p>
         <My404 />

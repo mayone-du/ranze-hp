@@ -4,7 +4,7 @@ import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 const Works: React.VFC = () => {
   return (
     <>
-      <Layout metaTitle="Ranze official site | Works" metaDescription="meta">
+      <Layout metaTitle="Ranze official site | Works" metaDescription="meta" isActivePage="works">
         <SubPageMainVisual title="Works" />
       </Layout>
     </>

@@ -8,6 +8,7 @@ const Contact: React.VFC = () => {
       <Layout
         metaTitle="Ranze official site | contact"
         metaDescription="meta description"
+        isActivePage="contact"
       >
         <SubPageMainVisual title="Contact" />
         <article>

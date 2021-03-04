@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { CustomButton } from "../../shared/CustomColorButtons";
 
-const Header: React.VFC = () => {
+const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
+
   return (
     <>
       <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
@@ -18,27 +19,27 @@ const Header: React.VFC = () => {
           <ul className="flex">
             <li>
               <Link href="/">
-                <a className="py-3 px-4 mx-2">Home</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "home" ? "border-b border-black" : ""}`}>Home</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className="py-3 px-4 mx-2">About</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "about" ? "border-b border-black" : ""}`}>About</a>
               </Link>
             </li>
             <li>
               <Link href="/service">
-                <a className="py-3 px-4 mx-2">Service</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "service" ? "border-b border-black" : ""}`}>Service</a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a className="py-3 px-4 mx-2">Works</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "works" ? "border-b border-black" : ""}`}>Works</a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className="py-3 px-4 mx-2">Contact</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "contact" ? "border-b border-black" : ""}`}>Contact</a>
               </Link>
             </li>
           </ul>
