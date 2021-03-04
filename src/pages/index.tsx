@@ -18,7 +18,7 @@ const Home: React.VFC = () => {
         >
           <section className="h-screen flex items-center justify-center flex-col">
             <h1 className="md:text-6xl text-2xl">イラスト・LINEスタンプ制作</h1>
-            <p>イラストやLINEスタンプの制作等を承ります！</p>
+            <p className="py-8 text-lg">イラストやLINEスタンプ、SNSで使えるアイコンやシンプルな名刺制作などの制作等を承ります！</p>
             <CustomButton
               outline={false}
               text="お問い合わせ"
@@ -29,8 +29,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-20">
-            <p className="text-center">自己紹介</p>
+          <section className="py-16">
+            <p className="text-center py-4">自己紹介</p>
             <h2 className="text-center text-3xl">
               ご覧頂きありがとうございます。イラストレーターのRanzeです._.
             </h2>
@@ -46,8 +46,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-20">
-            <p className="text-center">特徴</p>
+          <section className="py-16">
+            <p className="text-center py-4">特徴</p>
             <h2 className="md:text-3xl text-2xl text-center">
               お客様に選んでいただける理由✨
             </h2>
@@ -90,8 +90,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section>
-            <p className="text-center">サービス</p>
+          <section className="py-16">
+            <p className="text-center py-4">サービス</p>
             <h2 className="text-center md:text-3xl text-xl font-bold">
               ゆるくて可愛いイラストの制作などをしています！
             </h2>
@@ -187,8 +187,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section>
-            <p className="text-center">実績</p>
+          <section className="py-16">
+            <p className="text-center py-4">実績</p>
             <h2 className="text-center text-3xl">
               いろいろな方からご依頼いただいております！
             </h2>
@@ -210,8 +210,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section>
-            <p className="text-center">評価</p>
+          <section className="py-16">
+            <p className="text-center py-4">評価</p>
             <h2 className="text-center text-3xl">
               たくさんの方にご満足していただいております！
             </h2>
@@ -254,8 +254,8 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section>
-            <p className="text-center">対応中のサービス</p>
+          <section className="py-16">
+            <p className="text-center py-4">対応中のサービス</p>
             <h2 className="text-center text-3xl">
               全てのお客様に満足していただけるよう、高品質なものをお届けします！
             </h2>
@@ -342,7 +342,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="bg-gray-100 text-center py-20">
-          <section>
+          <section className="py-16">
             <p>お問い合わせ</p>
             <h2 className="text-3xl">キャッチコピー</h2>
             <CustomButton
