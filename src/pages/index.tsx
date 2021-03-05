@@ -341,6 +341,7 @@ const Home: React.VFC = () => {
           </section>
         </article>
 
+
         <article className="bg-gray-100 text-center py-20">
           <section className="py-16">
             <p>お問い合わせ</p>
@@ -350,15 +351,16 @@ const Home: React.VFC = () => {
               text="お問い合わせ"
               size="large"
               outline={false}
-              className=" mx-auto"
+              className="mx-auto my-6"
             />
             <div className="flex items-center justify-center bg-white w-1/2 p-10 mx-auto">
-              <h3 className="text-xl">無料で見積もりしてみる</h3>
+              <h3 className="text-xl mx-4">無料で見積もりしてみる</h3>
               <CustomButton
                 text="無料見積もり"
                 size="medium"
                 toLink="/"
                 outline={true}
+                className="mx-4"
               />
             </div>
           </section>
