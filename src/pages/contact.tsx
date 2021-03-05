@@ -1,16 +1,20 @@
 import { Layout } from "../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { Form } from "../components/separate/Form";
+import { BreadCrumb } from "../components/shared/BreadCrumb";
+
 
 const Contact: React.VFC = () => {
+  const siteTitle = "Contact";
   return (
     <>
       <Layout
-        metaTitle="Ranze official site | contact"
+        metaTitle={`Ranze official site | ${siteTitle}`}
         metaDescription="meta description"
-        isActivePage="contact"
+        isActivePage={siteTitle}
       >
-        <SubPageMainVisual title="Contact" />
+        <SubPageMainVisual title={siteTitle} />
+        <BreadCrumb currentPage={siteTitle} />
         <article>
           <section>
             <h3 className="py-40">

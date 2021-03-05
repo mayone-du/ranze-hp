@@ -19,27 +19,27 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           <ul className="flex">
             <li>
               <Link href="/">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "home" ? "border-b-2 border-black " : ""}`}>Home</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "Home" ? "border-b-2 border-black " : ""}`}>Home</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "about" ? "border-b-2 border-black " : ""}`}>About</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "About" ? "border-b-2 border-black " : ""}`}>About</a>
               </Link>
             </li>
             <li>
               <Link href="/service">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "service" ? "border-b-2 border-black " : ""}`}>Service</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "Service" ? "border-b-2 border-black " : ""}`}>Service</a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "works" ? "border-b-2 border-black " : ""}`}>Works</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "Works" ? "border-b-2 border-black " : ""}`}>Works</a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "contact" ? "border-b-2 border-black" : ""}`}>Contact</a>
+                <a className={`py-3 px-4 mx-2 ${isActivePage === "Contact" ? "border-b-2 border-black" : ""}`}>Contact</a>
               </Link>
             </li>
           </ul>
