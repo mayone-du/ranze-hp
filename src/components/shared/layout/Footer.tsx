@@ -13,19 +13,19 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
+                <Link href="/about">
                   <a className="text-white p-2">自己紹介</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
+                <Link href="/service">
                   <a className="text-white p-2">サービス</a>
                 </Link>
               </li>
             </ul>
             <ul className="md:mx-4 md:w-screen">
               <li className="my-4">
-                <Link href="/">
+                <Link href="/sitemap">
                   <a className="text-white p-2">サイトマップ</a>
                 </Link>
               </li>

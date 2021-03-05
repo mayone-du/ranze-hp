@@ -12,11 +12,15 @@ const Service: React.VFC = () => {
         metaDescription="meta description"
         isActivePage={siteTitle}
       >
-        <SubPageMainVisual title={siteTitle} />
+        <SubPageMainVisual title={siteTitle} subText="service sub text" />
         <BreadCrumb currentPage={siteTitle} />
-        <article>
+        <article className="container mx-auto">
           <section>
-            <Estimate />
+            <div className="flex w-11/12 mx-auto">
+              <div className="mx-4 w-screen">
+                <Estimate />
+              </div>
+            </div>
           </section>
         </article>
       </Layout>

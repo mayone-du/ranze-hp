@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Layout } from "../components/shared/layout/Layout";
-import { CustomButton } from "../components/shared/CustomColorButtons";
+import { CustomButton } from "../components/shared/CustomColorButton";
 import { Star } from "@material-ui/icons";
+import { ItemRow } from "../components/shared/item/ItemRow";
+import { ItemCol } from "../components/shared/item/ItemCol";
 
 const Home: React.VFC = () => {
   return (
@@ -9,7 +11,7 @@ const Home: React.VFC = () => {
       <Layout
         metaTitle="Ranze official site | イラストレーターRanzeの公式サイト"
         metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作や名刺制作などをしています！まずはお気軽にご相談ください！"
-        isActivePage="home"
+        isActivePage="Home"
       >
         {/* メインビジュアル */}
         <article
@@ -27,6 +29,7 @@ const Home: React.VFC = () => {
             />
           </section>
         </article>
+        
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center py-4">自己紹介</p>

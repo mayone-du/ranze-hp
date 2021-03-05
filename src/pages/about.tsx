@@ -9,9 +9,9 @@ const About: React.VFC = () => {
       <Layout
         metaTitle={`Ranze official site | ${siteTitle}`}
         metaDescription="meta description"
-        isActivePage="about"
+        isActivePage={siteTitle}
       >
-        <SubPageMainVisual title={siteTitle} />
+        <SubPageMainVisual title={siteTitle} subText="about sub text" />
         <BreadCrumb currentPage={siteTitle} />
         <article>
           <section></section>

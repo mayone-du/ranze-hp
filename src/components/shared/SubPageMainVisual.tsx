@@ -1,9 +1,10 @@
-const SubPageMainVisual: React.VFC<{ title: string }> = ({ title }) => {
+const SubPageMainVisual: React.VFC<{ title: string, subText: string }> = ({ title, subText }) => {
   return (
     <>
       <article>
-        <section className="h-screen flex items-center justify-center">
+        <section className="py-64 flex flex-col items-center justify-center">
           <h1 className="text-6xl border-b-4 border-black">{title}</h1>
+          <p className="py-4">{subText}</p>
         </section>
       </article>
     </>

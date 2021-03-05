@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CustomButton } from "../../shared/CustomColorButtons";
+import { CustomButton } from "../CustomColorButton";
 
 const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 

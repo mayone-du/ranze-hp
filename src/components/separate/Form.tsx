@@ -143,9 +143,7 @@ const Form: React.VFC = () => {
 
   return (
     <>
-      <form className="container mx-auto py-28 flex flex-col">
-        <h3>お問合せフォーム</h3>
-
+      <form className="flex flex-col">
         {/* 名前 */}
         <div className="flex my-4">
           {inputNameError ? (
