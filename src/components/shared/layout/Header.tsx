@@ -1,7 +1,14 @@
 import Link from "next/link";
+import { useState } from "react";
 import { CustomButton } from "../CustomColorButton";
 
 const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
+
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+  const handleToggleClick = () => {
+    setIsMenuActive(!isMenuActive);
+  }
 
   return (
     <>
@@ -16,37 +23,85 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
               </a>
             </Link>
           </h2>
-          <ul className="flex">
+          <ul className="md:flex hidden">
             <li>
               <Link href="/">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "Home" ? "border-b-2 border-black " : ""}`}>Home</a>
+                <a
+                  className={`py-3 px-4 mx-2 ${
+                    isActivePage === "Home" ? "border-b-2 border-black " : ""
+                  }`}
+                >
+                  Home
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "About" ? "border-b-2 border-black " : ""}`}>About</a>
+                <a
+                  className={`py-3 px-4 mx-2 ${
+                    isActivePage === "About" ? "border-b-2 border-black " : ""
+                  }`}
+                >
+                  About
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/service">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "Service" ? "border-b-2 border-black " : ""}`}>Service</a>
+                <a
+                  className={`py-3 px-4 mx-2 ${
+                    isActivePage === "Service" ? "border-b-2 border-black " : ""
+                  }`}
+                >
+                  Service
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/works">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "Works" ? "border-b-2 border-black " : ""}`}>Works</a>
+                <a
+                  className={`py-3 px-4 mx-2 ${
+                    isActivePage === "Works" ? "border-b-2 border-black " : ""
+                  }`}
+                >
+                  Works
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className={`py-3 px-4 mx-2 ${isActivePage === "Contact" ? "border-b-2 border-black" : ""}`}>Contact</a>
+                <a
+                  className={`py-3 px-4 mx-2 ${
+                    isActivePage === "Contact" ? "border-b-2 border-black" : ""
+                  }`}
+                >
+                  Contact
+                </a>
               </Link>
             </li>
           </ul>
         </nav>
         {/* ↓ハンバーガーメニューのトリガー */}
-        {/* <button>btn</button> */}
-        <ul className="flex items-center">
+        <button className="block md:hidden border border-red-600" onClick={handleToggleClick}>btn</button>
+        <ul className={`${isMenuActive ? "block" : "hidden"} fixed top-5 left-0`}>
+          <li>
+            <Link href="/">
+              <a>home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/service">
+              <a>Service</a>
+            </Link>
+          </li>
+        </ul>
+
+        <ul className="md:flex hidden items-center">
           <li>
             <CustomButton
               toLink="/service"

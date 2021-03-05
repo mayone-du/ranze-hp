@@ -55,7 +55,7 @@ const Home: React.VFC = () => {
             <div className="lg:flex w-11/12 mx-auto">
               <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">1</p>
-                <Image src="/images/bg.jpg" width={200} height={200} />
+                <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 text-2xl">老若男女問わず人気！</h3>
                 <p>
                   ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
@@ -63,7 +63,7 @@ const Home: React.VFC = () => {
               </div>
               <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">2</p>
-                <Image src="/images/bg.jpg" width={200} height={200} />
+                <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 text-2xl">基本的に修正回数は無制限！</h3>
                 <p>
                   あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
@@ -71,7 +71,7 @@ const Home: React.VFC = () => {
               </div>
               <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
                 <p className="text-6xl font-bold py-4">3</p>
-                <Image src="/images/bg.jpg" width={200} height={200} />
+                <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 text-2xl">ストレスフリーなやりとり</h3>
                 <p>
                   丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
