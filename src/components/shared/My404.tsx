@@ -1,4 +1,4 @@
-const My404: React.FC = () => {
+const My404: React.VFC = () => {
   return (
     <>
       <main>

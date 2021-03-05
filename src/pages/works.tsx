@@ -1,10 +1,12 @@
-import Head from "next/head";
-import { Header } from "../components/Header";
-import { Wrapper } from "../components/Wrapper";
+import { Layout } from "../components/shared/layout/Layout";
+import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
+import { BreadCrumb } from "../components/shared/BreadCrumb";
 
-const Works: React.FC = () => {
+const Works: React.VFC = () => {
+  const siteTitle = "Works";
   return (
     <>
+<<<<<<< HEAD
       <Head>
         <title>Ranze official site | works</title>
       </Head>
@@ -17,6 +19,16 @@ const Works: React.FC = () => {
           </section>
         </div>
       </Wrapper>
+=======
+      <Layout
+        metaTitle={`Ranze official site | ${siteTitle}`}
+        metaDescription="meta"
+        isActivePage={siteTitle}
+      >
+        <SubPageMainVisual title={siteTitle} subText="works sub text" />
+        <BreadCrumb currentPage={siteTitle} />
+      </Layout>
+>>>>>>> sub
     </>
   );
 };
