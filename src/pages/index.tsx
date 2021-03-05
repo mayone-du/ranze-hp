@@ -27,7 +27,6 @@ const Home: React.VFC = () => {
             />
           </section>
         </article>
-
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center py-4">自己紹介</p>
