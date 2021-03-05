@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CustomButton } from "../CustomColorButton";
+import { Menu, Close } from "@material-ui/icons";
+import { Button } from "@material-ui/core";
 
 const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
-
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   const handleToggleClick = () => {
     setIsMenuActive(!isMenuActive);
-  }
+  };
 
   return (
     <>
@@ -82,8 +83,14 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           </ul>
         </nav>
         {/* ↓ハンバーガーメニューのトリガー */}
-        <button className="block md:hidden border border-red-600" onClick={handleToggleClick}>btn</button>
-        <ul className={`${isMenuActive ? "block" : "hidden"} fixed top-5 left-0`}>
+        <div className="block md:hidden">
+          <Button onClick={handleToggleClick} variant="outlined" size="medium">
+            {isMenuActive ? <Close fontSize="large" /> : <Menu fontSize="large" />}
+          </Button>
+        </div>
+        <ul
+          className={`${isMenuActive ? "block" : "hidden"} fixed top-5 left-0`}
+        >
           <li>
             <Link href="/">
               <a>home</a>
