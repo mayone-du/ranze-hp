@@ -13,7 +13,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <header className="flex items-center justify-between py-2 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
+      <header className="flex items-center justify-between py-3 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
         <nav className="flex items-center">
           <h2 className="my_logo text-xl text-center mr-4">
             <Link href="/">
@@ -24,11 +24,11 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
               </a>
             </Link>
           </h2>
-          <ul className="md:flex hidden">
+          <ul className="lg:flex hidden">
             <li>
               <Link href="/">
                 <a
-                  className={`py-3 px-4 mx-2 ${
+                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
                     isActivePage === "Home" ? "border-b-2 border-black " : ""
                   }`}
                 >
@@ -39,7 +39,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             <li>
               <Link href="/about">
                 <a
-                  className={`py-3 px-4 mx-2 ${
+                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
                     isActivePage === "About" ? "border-b-2 border-black " : ""
                   }`}
                 >
@@ -50,7 +50,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             <li>
               <Link href="/service">
                 <a
-                  className={`py-3 px-4 mx-2 ${
+                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
                     isActivePage === "Service" ? "border-b-2 border-black " : ""
                   }`}
                 >
@@ -61,7 +61,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             <li>
               <Link href="/works">
                 <a
-                  className={`py-3 px-4 mx-2 ${
+                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
                     isActivePage === "Works" ? "border-b-2 border-black " : ""
                   }`}
                 >
@@ -72,7 +72,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             <li>
               <Link href="/contact">
                 <a
-                  className={`py-3 px-4 mx-2 ${
+                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
                     isActivePage === "Contact" ? "border-b-2 border-black" : ""
                   }`}
                 >
@@ -83,13 +83,13 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           </ul>
         </nav>
         {/* ↓ハンバーガーメニューのトリガー */}
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <Button onClick={handleToggleClick} variant="outlined" size="medium">
             {isMenuActive ? <Close fontSize="large" /> : <Menu fontSize="large" />}
           </Button>
         </div>
         <ul
-          className={`${isMenuActive ? "block" : "hidden"} fixed top-5 left-0`}
+          className={`${isMenuActive ? "visible opacity-100 transform translate-y-0" : "invisible opacity-0 transform translate-y-10"} fixed top-20 p-4 left-0 lg:hidden bg-green-400 transition-all`}
         >
           <li>
             <Link href="/">
@@ -108,7 +108,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           </li>
         </ul>
 
-        <ul className="md:flex hidden items-center">
+        <ul className="lg:flex hidden items-center">
           <li>
             <CustomButton
               toLink="/service"

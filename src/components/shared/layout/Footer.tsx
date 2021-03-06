@@ -25,35 +25,35 @@ const Footer: React.VFC = () => {
             </ul>
             <ul className="md:mx-4 md:w-screen">
               <li className="my-4">
-                <Link href="/sitemap">
-                  <a className="text-white p-2">サイトマップ</a>
+                <Link href="/works">
+                  <a className="text-white p-2">実績</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
-                  <a className="text-white p-2">ホーム</a>
+                <Link href="/contact">
+                  <a className="text-white p-2">お問い合わせ</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
-                  <a className="text-white p-2">ホーム</a>
+                <Link href="/privacy-policy">
+                  <a className="text-white p-2">プライバシー・ポリシー</a>
                 </Link>
               </li>
             </ul>
             <ul className="md:mx-4 md:w-screen">
               <li className="my-4">
-                <Link href="/">
+                <Link href="/sitemap">
                   <a className="text-white p-2">サイトマップ</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
-                  <a className="text-white p-2">ホーム</a>
+                <Link href="/404">
+                  <a className="text-white p-2">404</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/">
-                  <a className="text-white p-2">ホーム</a>
+                <Link href="/faq">
+                  <a className="text-white p-2">FAQ</a>
                 </Link>
               </li>
             </ul>

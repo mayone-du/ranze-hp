@@ -17,8 +17,8 @@ const Home: React.VFC = () => {
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen flex items-center justify-center flex-col">
-            <h1 className="md:text-6xl text-2xl">イラスト・LINEスタンプ制作</h1>
-            <p className="py-8 text-lg">
+            <h1 className="lg:text-6xl text-2xl font-bold">イラスト・LINEスタンプ制作</h1>
+            <p className="py-8 text-lg mx-4">
               イラストやLINEスタンプ、SNSで使えるアイコンやシンプルな名刺制作などの制作等を承ります！
             </p>
             <CustomButton
@@ -32,12 +32,12 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">自己紹介</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               ABOUT
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen">
-                <p>
+              <div className="lg:mx-4 w-screen">
+                <p className="my-4">
                   ご覧頂きありがとうございます。イラストレーターのRanzeです._.
                   1イラストごとに思いを込めて丁寧に制作しております。お客様に喜んでいただけることがやりがいですので、ご感想などいただけるととても嬉しいです✨
                 </p>
@@ -49,30 +49,36 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">特徴</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               FEATURES
             </h2>
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
-                <p className="text-6xl font-bold py-4">1</p>
+              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">1</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 text-2xl">老若男女問わず人気！</h3>
+                <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                  老若男女問わず人気！
+                </h3>
                 <p>
                   ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
-                <p className="text-6xl font-bold py-4">2</p>
+              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">2</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 text-2xl">基本的に修正回数は無制限！</h3>
+                <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                  基本的に修正回数は無制限！
+                </h3>
                 <p>
                   あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 my-4 md:my-0 lg:w-screen text-center p-4">
-                <p className="text-6xl font-bold py-4">3</p>
+              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">3</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 text-2xl">ストレスフリーなやりとり</h3>
+                <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                  ストレスフリーなやりとり
+                </h3>
                 <p>
                   丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
                 </p>
@@ -93,13 +99,13 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">サービス</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               SERVICE
             </h2>
 
             {/* row */}
             <div className="flex w-11/12 mx-auto">
-              <div className="md:m-4 w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -114,7 +120,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
 
-              <div className="md:m-4 w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -190,7 +196,7 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">実績</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               WORKS
             </h2>
             <div className="flex w-11/12 mx-auto">
@@ -213,7 +219,7 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">評価</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               REVIEW
             </h2>
             <div className="w-11/12 mx-auto">
@@ -257,13 +263,15 @@ const Home: React.VFC = () => {
         <article className="container mx-auto">
           <section className="py-16">
             <p className="text-center">対応中のサービス</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               ACCEPT
             </h2>
 
-            <div className="md:flex w-11/12 mx-auto">
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+            <div className="lg:flex w-11/12 mx-auto">
+              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+                <div className="text-center">
+                  <Image src="/images/bg.jpg" width={450} height={250} />
+                </div>
                 <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
                   満枠対応中！
                 </span>
@@ -283,8 +291,10 @@ const Home: React.VFC = () => {
                   />
                 </div>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+                <div className="text-center">
+                  <Image src="/images/bg.jpg" width={450} height={250} />
+                </div>
                 <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
                   満枠対応中！
                 </span>
@@ -304,8 +314,10 @@ const Home: React.VFC = () => {
                   />
                 </div>
               </div>
-              <div className="md:mx-4 md:w-screen my-4 md:my-0 border-2 rounded-sm overflow-hidden relative">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+                <div className="text-center">
+                  <Image src="/images/bg.jpg" width={450} height={250} />
+                </div>
                 <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
                   満枠対応中！
                 </span>
@@ -341,7 +353,7 @@ const Home: React.VFC = () => {
         <article className="bg-gray-100 text-center py-20">
           <section className="py-16">
             <p>お問い合わせ</p>
-            <h2 className="md:text-4xl tracking-widest font-bold text-center py-4">
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               CONTACT
             </h2>
             <CustomButton
@@ -351,14 +363,14 @@ const Home: React.VFC = () => {
               outline={false}
               className="mx-auto my-6"
             />
-            <div className="flex items-center justify-center bg-white w-1/2 p-10 mx-auto">
-              <h3 className="text-xl mx-4">無料で見積もりしてみる</h3>
+            <div className="lg:flex items-center justify-center bg-white lg:w-1/2 w-11/12 lg:p-8 p-4 mx-auto">
+              <h3 className="lg:text-xl m-4">無料で見積もりしてみる</h3>
               <CustomButton
                 text="無料見積もり"
                 size="medium"
                 toLink="/"
                 outline={true}
-                className="mx-4"
+                className="m-4"
               />
             </div>
           </section>
