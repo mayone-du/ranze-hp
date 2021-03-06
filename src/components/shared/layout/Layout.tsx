@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Wrapper } from "./Wrapper";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 
@@ -15,11 +14,11 @@ const Layout: React.VFC<{
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
       </Head>
-      <Wrapper>
+      <main className="overflow-x-hidden">
         <Header isActivePage={isActivePage} />
         {children}
         <Footer />
-      </Wrapper>
+      </main>
     </>
   );
 };

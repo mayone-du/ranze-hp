@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 import { Estimate } from "../../components/separate/Estimate";
@@ -19,17 +20,37 @@ const Service: React.VFC = () => {
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen">
                 <ul>
-                  <li>LINEスタンプ</li>
-                  <li>LINE絵文字</li>
-                  <li>イラスト制作</li>
-                  <li>アイコン制作</li>
-                  <li>名刺制作</li>
+                  <li>
+                    <Link href="/">
+                      <a className="text-blue-500">LINEスタンプ</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <a className="text-blue-500">LINE絵文字</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <a className="text-blue-500">イラスト制作</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <a className="text-blue-500">アイコン制作</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <a className="text-blue-500">名刺制作</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </section>
         </article>
-        
+
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">
