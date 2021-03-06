@@ -128,7 +128,7 @@ const Home: React.VFC = () => {
 
             {/* row */}
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:m-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -143,7 +143,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
 
-              <div className="lg:m-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -160,8 +160,8 @@ const Home: React.VFC = () => {
             </div>
 
             {/* row */}
-            <div className="flex w-11/12 mx-auto">
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
+            <div className="lg:flex w-11/12 mx-auto">
+              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -175,7 +175,7 @@ const Home: React.VFC = () => {
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -189,7 +189,7 @@ const Home: React.VFC = () => {
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
-              <div className="m-4 w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -246,23 +246,23 @@ const Home: React.VFC = () => {
               REVIEW
             </h2>
             <div className="w-11/12 mx-auto">
-              <div className="xl:flex xl:m-4 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
+              <div className="xl:flex xl:m-4 my-4 lg:my-0 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
                 <Image
                   src="/images/bg.jpg"
                   width={200}
                   height={200}
-                  className="m-auto rounded-full w-1/12"
+                  className="m-auto rounded-full w-1/12 object-cover"
                 />
                 <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                   <h3 className="text-lg">LINEスタンプ40個</h3>
-                  <p className="flex items-center text-lg py-2">
+                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
                     評価：
                     <Star className="text-yellow-400" />
                     <Star className="text-yellow-400" />
                     <Star className="text-yellow-400" />
                     <Star className="text-yellow-400" />
                     <Star className="text-yellow-400" />
-                    5/5
+                    <span className="mx-4">5/5</span>
                   </p>
                   <p>
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。

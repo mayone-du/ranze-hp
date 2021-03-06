@@ -19,7 +19,8 @@ const Service: React.VFC = () => {
           <section>
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-screen">
-                <ul>
+                <h3>LINE</h3>
+                <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
                     <Link href="/">
                       <a className="text-blue-500">LINEスタンプ</a>
