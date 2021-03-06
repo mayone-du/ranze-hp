@@ -17,7 +17,9 @@ const Home: React.VFC = () => {
           style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
           <section className="h-screen flex items-center justify-center flex-col">
-            <h1 className="lg:text-6xl text-2xl font-bold">イラスト・LINEスタンプ制作</h1>
+            <h1 className="lg:text-6xl text-2xl font-bold">
+              イラスト・LINEスタンプ制作
+            </h1>
             <p className="py-8 text-lg mx-4">
               イラストやLINEスタンプ、SNSで使えるアイコンやシンプルな名刺制作などの制作等を承ります！
             </p>
@@ -39,12 +41,33 @@ const Home: React.VFC = () => {
               <div className="lg:mx-4 w-screen">
                 <p className="my-4">
                   ご覧頂きありがとうございます。イラストレーターのRanzeです._.
-                  1イラストごとに思いを込めて丁寧に制作しております。お客様に喜んでいただけることがやりがいですので、ご感想などいただけるととても嬉しいです✨
+                  お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Cupiditate aperiam minus
+                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                  magnam tempora repellat atque asperiores vitae distinctio
+                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Cupiditate aperiam minus
+                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                  magnam tempora repellat atque asperiores vitae distinctio
+                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Cupiditate aperiam minus
+                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                  magnam tempora repellat atque asperiores vitae distinctio
+                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Cupiditate aperiam minus
+                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                  magnam tempora repellat atque asperiores vitae distinctio
+                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Cupiditate aperiam minus
+                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                  magnam tempora repellat atque asperiores vitae distinctio
+                  ipsum autem, praesentium natus.
                 </p>
               </div>
             </div>
           </section>
         </article>
+        <span className="block bg-red-400 transform skew-x-12 opacity-50 rounded-full -translate-y-72 -translate-x-1/2 left-1/2 w-5/6 absolute h-60"></span>
 
         <article className="container mx-auto">
           <section className="py-16">
@@ -104,8 +127,8 @@ const Home: React.VFC = () => {
             </h2>
 
             {/* row */}
-            <div className="flex w-11/12 mx-auto">
-              <div className="lg:m-4 w-screen flex bg-gray-100 p-6">
+            <div className="lg:flex w-11/12 mx-auto">
+              <div className="lg:m-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -120,7 +143,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
 
-              <div className="lg:m-4 w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 lg:w-screen flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -139,7 +162,7 @@ const Home: React.VFC = () => {
             {/* row */}
             <div className="flex w-11/12 mx-auto">
               <div className="m-4 w-screen flex bg-gray-100 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
+                <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
                     src="/images/bg.jpg"
@@ -153,7 +176,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
               <div className="m-4 w-screen flex bg-gray-100 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
+                <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
                     src="/images/bg.jpg"
@@ -167,7 +190,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
               <div className="m-4 w-screen flex bg-gray-100 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
+                <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
                     src="/images/bg.jpg"
