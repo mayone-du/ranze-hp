@@ -2,9 +2,10 @@
 
 
 export default (req: any, res: any) => {
-  if (req.method === "POST") {
-    res.status("200").json(req.body);
+  if (req.method === "GET") {
+    const obj = { key: "value" };
+    res.status("200").json(obj);
   } else {
-    console.log("no POST");
+    console.log("error: Not GET request");
   }
 };

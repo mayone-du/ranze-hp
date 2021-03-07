@@ -246,12 +246,60 @@ const Home: React.VFC = () => {
               REVIEW
             </h2>
             <div className="w-11/12 mx-auto">
-              <div className="xl:flex xl:m-4 my-4 lg:my-0 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
+              <div className="xl:flex xl:m-4 my-4 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
                 <Image
                   src="/images/bg.jpg"
                   width={200}
                   height={200}
-                  className="m-auto rounded-full w-1/12 object-cover"
+                  className="rounded-full object-cover"
+                />
+                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
+                  <h3 className="text-lg">LINEスタンプ40個</h3>
+                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
+                    評価：
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <span className="mx-4">5/5</span>
+                  </p>
+                  <p>
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  </p>
+                </div>
+              </div>
+              <div className="xl:flex xl:m-4 my-4 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
+                <Image
+                  src="/images/bg.jpg"
+                  width={200}
+                  height={200}
+                  className="rounded-full object-cover"
+                />
+                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
+                  <h3 className="text-lg">LINEスタンプ40個</h3>
+                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
+                    評価：
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <Star className="text-yellow-400" />
+                    <span className="mx-4">5/5</span>
+                  </p>
+                  <p>
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  </p>
+                </div>
+              </div>
+              <div className="xl:flex xl:m-4 my-4 bg-gray-100 py-4 xl:p-8 text-center xl:text-left">
+                <Image
+                  src="/images/bg.jpg"
+                  width={200}
+                  height={200}
+                  className="rounded-full object-cover"
                 />
                 <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                   <h3 className="text-lg">LINEスタンプ40個</h3>
@@ -384,7 +432,7 @@ const Home: React.VFC = () => {
               text="お問い合わせ"
               size="large"
               outline={false}
-              className="mx-auto my-6"
+              className="mx-auto my-6 lg:w-auto w-2/3"
             />
             <div className="lg:flex items-center justify-center bg-white lg:w-1/2 w-11/12 lg:p-8 p-4 mx-auto">
               <h3 className="lg:text-xl m-4">無料で見積もりしてみる</h3>
