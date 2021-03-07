@@ -85,25 +85,43 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
         {/* ↓ハンバーガーメニューのトリガー */}
         <div className="block lg:hidden">
           <Button onClick={handleToggleClick} variant="outlined" size="medium">
-            {isMenuActive ? <Close fontSize="large" /> : <Menu fontSize="large" />}
+            {isMenuActive ? (
+              <Close fontSize="large" />
+            ) : (
+              <Menu fontSize="large" />
+            )}
           </Button>
         </div>
         <ul
-          className={`${isMenuActive ? "visible opacity-100 transform translate-x-0" : "invisible opacity-0 transform translate-x-10"} fixed top-20 p-4 left-0 lg:hidden w-screen bg-green-400 transition-all`}
+          className={`${
+            isMenuActive
+              ? "visible opacity-100 transform translate-x-0"
+              : "invisible opacity-0 transform translate-x-10"
+          } fixed top-20 p-4 left-0 bg-gray-50 lg:hidden w-screen transition-all shadow-md`}
         >
           <li>
             <Link href="/">
-              <a className="block p-2 my-2">home</a>
+              <a className="block p-2 my-2 border-b border-black">home</a>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a className="block p-2 my-2">About</a>
+              <a className="block p-2 my-2 border-b border-black">About</a>
             </Link>
           </li>
           <li>
             <Link href="/service">
-              <a className="block p-2 my-2">Service</a>
+              <a className="block p-2 my-2 border-b border-black">Service</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/works">
+              <a className="block p-2 my-2 border-b border-black">Works</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a className="block p-2 my-2 border-b border-black">Contact</a>
             </Link>
           </li>
         </ul>
