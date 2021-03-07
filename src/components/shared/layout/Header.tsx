@@ -89,21 +89,21 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           </Button>
         </div>
         <ul
-          className={`${isMenuActive ? "visible opacity-100 transform translate-y-0" : "invisible opacity-0 transform translate-y-10"} fixed top-20 p-4 left-0 lg:hidden bg-green-400 transition-all`}
+          className={`${isMenuActive ? "visible opacity-100 transform translate-x-0" : "invisible opacity-0 transform translate-x-10"} fixed top-20 p-4 left-0 lg:hidden w-screen bg-green-400 transition-all`}
         >
           <li>
             <Link href="/">
-              <a>home</a>
+              <a className="block p-2 my-2">home</a>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a>About</a>
+              <a className="block p-2 my-2">About</a>
             </Link>
           </li>
           <li>
             <Link href="/service">
-              <a>Service</a>
+              <a className="block p-2 my-2">Service</a>
             </Link>
           </li>
         </ul>

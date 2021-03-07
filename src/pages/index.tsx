@@ -32,7 +32,7 @@ const Home: React.VFC = () => {
           </section>
         </article>
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">自己紹介</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               ABOUT
@@ -70,7 +70,7 @@ const Home: React.VFC = () => {
         <span className="block bg-red-400 transform skew-x-12 opacity-50 rounded-full -translate-y-72 -translate-x-1/2 left-1/2 w-5/6 absolute h-60"></span>
 
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">特徴</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               FEATURES
@@ -120,7 +120,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">サービス</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               SERVICE
@@ -217,7 +217,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">実績</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               WORKS
@@ -240,7 +240,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">評価</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               REVIEW
@@ -332,7 +332,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="container mx-auto">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p className="text-center">対応中のサービス</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               ACCEPT
@@ -422,7 +422,7 @@ const Home: React.VFC = () => {
         </article>
 
         <article className="bg-gray-100 text-center py-20">
-          <section className="py-16">
+          <section className="md:py-16 py-10">
             <p>お問い合わせ</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               CONTACT
