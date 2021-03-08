@@ -22,12 +22,12 @@ const Service: React.VFC = () => {
                 <h3>LINE</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
-                    <Link href="/">
+                    <Link href="/service/line-stamp">
                       <a className="text-blue-500">LINEスタンプ</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service/">
                       <a className="text-blue-500">LINE絵文字</a>
                     </Link>
                   </li>

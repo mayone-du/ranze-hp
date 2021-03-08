@@ -38,32 +38,30 @@ const Home: React.VFC = () => {
               ABOUT
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="lg:mx-4 w-screen">
-                <p className="my-4">
-                  ご覧頂きありがとうございます。イラストレーターのRanzeです._.
-                  お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate aperiam minus
-                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                  magnam tempora repellat atque asperiores vitae distinctio
-                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate aperiam minus
-                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                  magnam tempora repellat atque asperiores vitae distinctio
-                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate aperiam minus
-                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                  magnam tempora repellat atque asperiores vitae distinctio
-                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate aperiam minus
-                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                  magnam tempora repellat atque asperiores vitae distinctio
-                  ipsum autem, praesentium natus. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate aperiam minus
-                  laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                  magnam tempora repellat atque asperiores vitae distinctio
-                  ipsum autem, praesentium natus.
-                </p>
-              </div>
+              <p className="lg:mx-4 my-4 lg:w-screen lg:text-base text-sm">
+                ご覧頂きありがとうございます。イラストレーターのRanzeです._.
+                お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Cupiditate aperiam minus
+                laudantium culpa accusamus soluta unde aliquid eum obcaecati
+                magnam tempora repellat atque asperiores vitae distinctio ipsum
+                autem, praesentium natus. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cupiditate aperiam minus laudantium culpa
+                accusamus soluta unde aliquid eum obcaecati magnam tempora
+                repellat atque asperiores vitae distinctio ipsum autem,
+                praesentium natus. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cupiditate aperiam minus laudantium culpa
+                accusamus soluta unde aliquid eum obcaecati magnam tempora
+                repellat atque asperiores vitae distinctio ipsum autem,
+                praesentium natus. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cupiditate aperiam minus laudantium culpa
+                accusamus soluta unde aliquid eum obcaecati magnam tempora
+                repellat atque asperiores vitae distinctio ipsum autem,
+                praesentium natus. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Cupiditate aperiam minus laudantium culpa
+                accusamus soluta unde aliquid eum obcaecati magnam tempora
+                repellat atque asperiores vitae distinctio ipsum autem,
+                praesentium natus.
+              </p>
             </div>
           </section>
         </article>
@@ -76,7 +74,7 @@ const Home: React.VFC = () => {
               FEATURES
             </h2>
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">1</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -86,7 +84,7 @@ const Home: React.VFC = () => {
                   ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">2</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -96,7 +94,7 @@ const Home: React.VFC = () => {
                   あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 lg:my-0 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">3</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -223,7 +221,7 @@ const Home: React.VFC = () => {
               WORKS
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen bg-gray-100">
+              <div className="lg:mx-4 mx-0 my-4 w-screen bg-gray-100">
                 画像をタイルで表示
               </div>
             </div>
@@ -264,7 +262,7 @@ const Home: React.VFC = () => {
                     <Star className="text-yellow-400" />
                     <span className="mx-4">5/5</span>
                   </p>
-                  <p>
+                  <p className="lg:text-base text-sm">
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                   </p>
@@ -288,7 +286,7 @@ const Home: React.VFC = () => {
                     <Star className="text-yellow-400" />
                     <span className="mx-4">5/5</span>
                   </p>
-                  <p>
+                  <p className="lg:text-base text-sm">
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                   </p>
@@ -312,7 +310,7 @@ const Home: React.VFC = () => {
                     <Star className="text-yellow-400" />
                     <span className="mx-4">5/5</span>
                   </p>
-                  <p>
+                  <p className="lg:text-base text-sm">
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                     とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
                   </p>

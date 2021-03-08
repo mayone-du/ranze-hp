@@ -82,7 +82,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             </li>
           </ul>
         </nav>
-        {/* ↓ハンバーガーメニューのトリガー */}
+
         <div className="block lg:hidden">
           <Button onClick={handleToggleClick} variant="outlined" size="medium">
             {isMenuActive ? (
@@ -92,6 +92,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             )}
           </Button>
         </div>
+
         <ul
           className={`${
             isMenuActive

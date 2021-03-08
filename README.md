@@ -13,7 +13,7 @@
     <p className="text-center>サブテキスト</p>
     <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2>タイトル</h2>
     <div className="flex w-11/12 mx-auto">
-      <div className="mx-4 w-screen"></div>
+      <div className="lg:mx-4 my-4 lg:w-screen"></div>
     </div>
   </section>
 </article>

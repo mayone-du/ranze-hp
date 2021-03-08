@@ -4,10 +4,12 @@ const Estimate: React.VFC = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <h3>見積もりシート</h3>
+        <h3 className="text-2xl">見積もりシミュレーター</h3>
         <div>
-          <Button variant="outlined">イラスト</Button>
           <Button variant="outlined">LINEスタンプ</Button>
+          <Button variant="outlined">LINE絵文字</Button>
+          <Button variant="outlined">イラスト</Button>
+          <Button variant="outlined">SNSアイコン</Button>
           <Button variant="outlined">名刺</Button>
         </div>
         <table>
