@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Home } from "@material-ui/icons";
+import { Home, ArrowForwardIos } from "@material-ui/icons";
 
 const BreadCrumb: React.VFC<{ currentPage: string }> = ({ currentPage }) => {
   return (
@@ -13,7 +13,9 @@ const BreadCrumb: React.VFC<{ currentPage: string }> = ({ currentPage }) => {
             </a>
           </Link>
         </li>
-        <li>＞</li>
+        <li className="flex items-center">
+          <ArrowForwardIos fontSize="small" />
+        </li>
         <li className="mx-4">{currentPage}</li>
       </ol>
     </>
