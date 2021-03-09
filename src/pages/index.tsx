@@ -221,7 +221,7 @@ const Home: React.VFC = () => {
               WORKS
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="lg:mx-4 mx-0 my-4 w-screen bg-gray-100">
+              <div className="lg:mx-4 mx-0 my-4 lg:w-screen bg-gray-100">
                 画像をタイルで表示
               </div>
             </div>
@@ -419,8 +419,8 @@ const Home: React.VFC = () => {
           </section>
         </article>
 
-        <article className="bg-gray-100 text-center py-20">
-          <section className="md:py-16 py-10">
+        <article className="bg-gray-100 text-center">
+          <section className="md:py-20 py-14">
             <p>お問い合わせ</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               CONTACT

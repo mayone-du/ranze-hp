@@ -16,7 +16,7 @@ const SiteMap: React.VFC = () => {
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen border-l-2 border-r-2 border-collapse border-gray-400">
+              <div className="mx-4 lg:w-screen border-l-2 border-r-2 border-collapse border-gray-400">
                 <h3>LINE</h3>
                 <ul>
                   <li>
@@ -46,7 +46,7 @@ const SiteMap: React.VFC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mx-4 w-screen">
+              <div className="mx-4 lg:w-screen">
                 <h3>機能</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>

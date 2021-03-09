@@ -13,7 +13,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <header className="flex items-center justify-between py-3 px-12 fixed w-full inset-x-0 z-50 bg-white shadow-md">
+      <header className="flex items-center justify-between py-3 md:px-12 px-4 fixed w-full inset-x-0 z-50 bg-white shadow-md">
         <nav className="flex items-center">
           <h2 className="my_logo text-xl text-center mr-4">
             <Link href="/">

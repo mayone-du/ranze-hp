@@ -12,9 +12,8 @@ const LineStamp: React.VFC = () => {
         isActivePage={siteTitle}
       >
         <SubPageMainVisual title={siteTitle} subText="service/line-stamp sub text" />
-        <BreadCrumb parentPage={"Service"} parentPath="/service" currentPage={siteTitle} />
-
-        <h1>LineStamp</h1>
+        <BreadCrumb parentPage={"Service"} parentPath={"/service"} currentPage={siteTitle} />
+      
       </Layout>
     </>
   );

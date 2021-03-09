@@ -17,7 +17,7 @@ const Contact: React.VFC = () => {
         <article>
           <section>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen">
+              <div className="mx-4 lg:w-screen">
                 <h3 className="text-xl">
                   まずはお気軽にご相談ください！ご連絡を頂いた後、チャットサービスを利用して詳細についてお話致します！
                 </h3>

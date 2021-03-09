@@ -18,7 +18,7 @@ const Service: React.VFC = () => {
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen">
+              <div className="mx-4 lg:w-screen">
                 <h3>LINE</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
@@ -27,7 +27,7 @@ const Service: React.VFC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service/">
+                    <Link href="/service">
                       <a className="text-blue-500">LINE絵文字</a>
                     </Link>
                   </li>
@@ -55,7 +55,7 @@ const Service: React.VFC = () => {
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">
-              <div className="mx-4 w-screen">
+              <div className="mx-4 lg:w-screen">
                 <Estimate />
               </div>
             </div>
