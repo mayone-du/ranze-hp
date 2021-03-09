@@ -5,24 +5,24 @@ const Footer: React.VFC = () => {
     <>
       <footer className="bg-gray-800 py-16">
         <div className="container mx-auto">
-          <nav className="sm:flex items-center mx-4 md:mx-auto md:w-11/12 underline">
+          <nav className="sm:flex items-center mx-4 md:mx-auto md:w-11/12">
             <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-lg border-l-4 border-gray-300 px-2">
                   見出し
                 </h3>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/">
                   <a>ホーム</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/about">
                   <a>自己紹介</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/service">
                   <a>サービス</a>
                 </Link>
@@ -34,17 +34,17 @@ const Footer: React.VFC = () => {
                   見出し
                 </h3>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/works">
                   <a>実績</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/contact">
                   <a>お問い合わせ</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/privacy-policy">
                   <a>プライバシー・ポリシー</a>
                 </Link>
@@ -56,17 +56,17 @@ const Footer: React.VFC = () => {
                   見出し
                 </h3>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/sitemap">
                   <a>サイトマップ</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/404">
                   <a>404</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/faq">
                   <a>FAQ</a>
                 </Link>
@@ -78,17 +78,17 @@ const Footer: React.VFC = () => {
                   見出し
                 </h3>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/">
                   <a>ホーム</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/">
                   <a>ホーム</a>
                 </Link>
               </li>
-              <li className="my-4">
+              <li className="my-4 underline">
                 <Link href="/">
                   <a>ホーム</a>
                 </Link>

@@ -2,9 +2,9 @@ import { Layout } from "../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { Form } from "../components/separate/Form";
 import { BreadCrumb } from "../components/shared/BreadCrumb";
-import { Block } from "../components/shared/mainBlocks/Block";
-import { Row } from "../components/shared/mainBlocks/Row";
-import { Col } from "../components/shared/mainBlocks/Col";
+import { Block } from "../components/shared/generalBlock/Wrapper";
+import { Row } from "../components/shared/generalBlock/Row";
+import { Column } from "../components/shared/generalBlock/Column";
 
 const Contact: React.VFC = () => {
   const siteTitle = "Contact";
@@ -20,10 +20,10 @@ const Contact: React.VFC = () => {
         <Block>
           
           <Row>
-            <Col>
+            <Column>
               <Form />
 
-            </Col>
+            </Column>
           </Row>
         </Block>
         <article>

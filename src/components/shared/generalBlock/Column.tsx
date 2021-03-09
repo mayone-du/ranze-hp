@@ -1,4 +1,4 @@
-const Col: React.FC<{ children: any; className?: string }> = ({
+const Column: React.FC<{ children: any; className?: string }> = ({
   children,
   className,
 }) => {
@@ -15,4 +15,4 @@ const Col: React.FC<{ children: any; className?: string }> = ({
   );
 };
 
-export { Col };
+export { Column };

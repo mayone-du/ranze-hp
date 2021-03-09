@@ -2,9 +2,9 @@ import { Layout } from "../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { BreadCrumb } from "../components/shared/BreadCrumb";
 
-import { Block } from "../components/shared/mainBlocks/Block";
-import { Row } from "../components/shared/mainBlocks/Row";
-import { Col } from "../components/shared/mainBlocks/Col";
+import { Block } from "../components/shared/generalBlock/Wrapper";
+import { Row } from "../components/shared/generalBlock/Row";
+import { Column } from "../components/shared/generalBlock/Column";
 
 const Works: React.VFC = () => {
   const siteTitle = "Works";
@@ -24,14 +24,14 @@ const Works: React.VFC = () => {
             実績などを載せる
           </h2>
           <Row>
-            <Col className="my-0">
+            <Column className="my-0">
               <p className="bg-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti nam qui magnam numquam est debitis facere sit delectus
                 laudantium animi ab libero at reiciendis, ducimus expedita hic
                 sunt cum vel.
               </p>
-            </Col>
+            </Column>
           </Row>
         </Block>
 
