@@ -24,19 +24,19 @@ const Service: React.VFC = () => {
             </h2>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-screen">
                 hoge
               </div>
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-screen">
                 画像を乗せる
               </div>
             </div>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-screen">
                 画像
               </div>
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-screen">
                 テキスト
               </div>
             </div>
@@ -50,7 +50,7 @@ const Service: React.VFC = () => {
               さーびすいちらん
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="md:mx-4 my-4 lg:w-screen bg-gray-200">
+              <div className="md:mx-4 my-4 w-screen bg-gray-200">
                 <h3>LINE</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
@@ -87,7 +87,7 @@ const Service: React.VFC = () => {
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">
-              <div className="md:mx-4 lg:w-screen">
+              <div className="md:mx-4 w-screen">
                 <Estimate />
               </div>
             </div>

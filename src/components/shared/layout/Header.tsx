@@ -86,9 +86,9 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
         <div className="block lg:hidden">
           <Button onClick={handleToggleClick} variant="outlined" size="medium">
             {isMenuActive ? (
-              <Close fontSize="large" />
+              <Close color="action" fontSize="large" />
             ) : (
-              <Menu fontSize="large" />
+              <Menu color="action" fontSize="large" />
             )}
           </Button>
         </div>
