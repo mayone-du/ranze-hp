@@ -23,7 +23,7 @@ const About: React.VFC = () => {
               サンプルテキスト（コンセプトとかもあり）
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <p className="lg:mx-4 mx-0 my-4 bg-gray-200 lg:w-screen">
+              <p className="lg:mx-4 mx-0 my-4 bg-gray-200 w-full">
                 経緯などを記載？
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Eligendi, molestias harum maiores ullam, fugiat at nesciunt
@@ -41,14 +41,14 @@ const About: React.VFC = () => {
               サンプルテキスト
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <ul className="list-disc px-8 py-4 mx-4 bg-gray-200 text-lg lg:w-screen">
+              <ul className="list-disc px-8 py-4 mx-4 bg-gray-200 text-lg w-full">
                 <li>〇〇のプレゼントで使いたい</li>
                 <li>彼氏/彼女と使いたい</li>
                 <li>サンプルテキスト</li>
                 <li>サンプルテキスト</li>
               </ul>
 
-              <ul className="list-disc px-8 py-4 mx-4 bg-gray-200 text-lg lg:w-screen">
+              <ul className="list-disc px-8 py-4 mx-4 bg-gray-200 text-lg w-full">
                 <li>〇〇のプレゼントで使いたい</li>
                 <li>彼氏/彼女と使いたい</li>
                 <li>サンプルテキスト</li>
@@ -75,7 +75,7 @@ const About: React.VFC = () => {
               サンプルテキスト
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
                   <span className="text-xl px-2">ポイント1</span>
@@ -89,7 +89,7 @@ const About: React.VFC = () => {
                   <span className="text-xl px-2">ポイント1</span>
                 </li>
               </ul>
-              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
                   <span className="text-xl px-2">ポイント1</span>
@@ -115,19 +115,19 @@ const About: React.VFC = () => {
             </h2>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 hoge
               </div>
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 画像を乗せる
               </div>
             </div>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 画像
               </div>
-              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 lg:w-screen">
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-200 w-full">
                 テキスト
               </div>
             </div>

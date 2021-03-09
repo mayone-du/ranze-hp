@@ -20,7 +20,7 @@
     <div className="flex w-11/12 mx-auto">
 
     <!-- colコンポーネント -->
-      <div className="lg:mx-4 my-4 lg:w-screen"></div>
+      <div className="lg:mx-4 my-4 w-full"></div>
     </div>
   </section>
 </article>

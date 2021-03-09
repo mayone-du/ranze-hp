@@ -38,7 +38,7 @@ const Home: React.VFC = () => {
               ABOUT
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <p className="lg:mx-4 my-4 lg:w-screen lg:text-base text-sm">
+              <p className="lg:mx-4 my-4 w-full lg:text-base text-sm">
                 ご覧頂きありがとうございます。イラストレーターのRanzeです._.
                 お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Cupiditate aperiam minus
@@ -74,7 +74,7 @@ const Home: React.VFC = () => {
               FEATURES
             </h2>
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 w-full text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">1</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -84,7 +84,7 @@ const Home: React.VFC = () => {
                   ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 w-full text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">2</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -94,7 +94,7 @@ const Home: React.VFC = () => {
                   あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
                 </p>
               </div>
-              <div className="bg-gray-100 lg:mx-4 my-4 lg:w-screen text-center p-4">
+              <div className="bg-gray-100 lg:mx-4 my-4 w-full text-center p-4">
                 <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">3</p>
                 <Image src="/images/bg.jpg" width={150} height={150} />
                 <h3 className="py-4 lg:text-2xl text-xl font-bold">
@@ -126,7 +126,7 @@ const Home: React.VFC = () => {
 
             {/* row */}
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -141,7 +141,7 @@ const Home: React.VFC = () => {
                 </div>
               </div>
 
-              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -159,7 +159,7 @@ const Home: React.VFC = () => {
 
             {/* row */}
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -173,7 +173,7 @@ const Home: React.VFC = () => {
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
-              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -187,7 +187,7 @@ const Home: React.VFC = () => {
                   <p>サンプルテキスト。サンプルテキスト。</p>
                 </div>
               </div>
-              <div className="lg:m-4 my-4 lg:w-screen flex bg-gray-100 p-6">
+              <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
                   <Image
                     className="block w-1/3 rounded-full"
@@ -221,7 +221,7 @@ const Home: React.VFC = () => {
               WORKS
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="lg:mx-4 mx-0 my-4 lg:w-screen bg-gray-100">
+              <div className="lg:mx-4 mx-0 my-4 w-full bg-gray-100">
                 画像をタイルで表示
               </div>
             </div>
@@ -337,7 +337,7 @@ const Home: React.VFC = () => {
             </h2>
 
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
                 <div className="text-center">
                   <Image src="/images/bg.jpg" width={450} height={250} />
                 </div>
@@ -360,7 +360,7 @@ const Home: React.VFC = () => {
                   />
                 </div>
               </div>
-              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
                 <div className="text-center">
                   <Image src="/images/bg.jpg" width={450} height={250} />
                 </div>
@@ -383,7 +383,7 @@ const Home: React.VFC = () => {
                   />
                 </div>
               </div>
-              <div className="lg:mx-4 lg:w-screen my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
+              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
                 <div className="text-center">
                   <Image src="/images/bg.jpg" width={450} height={250} />
                 </div>

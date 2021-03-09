@@ -42,7 +42,7 @@ const Works: React.VFC = () => {
               ABOUT
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <p className="lg:mx-4 my-4 lg:w-screen lg:text-base text-sm">
+              <p className="lg:mx-4 my-4 w-full lg:text-base text-sm">
                 ご覧頂きありがとうございます。イラストレーターのRanzeです._.
                 お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Cupiditate aperiam minus

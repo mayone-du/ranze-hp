@@ -6,7 +6,7 @@ const Footer: React.VFC = () => {
       <footer className="bg-gray-800 py-16">
         <div className="container mx-auto">
           <nav className="sm:flex items-center mx-4 md:mx-auto md:w-11/12 underline">
-            <ul className="md:mx-4 md:w-screen text-white">
+            <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-lg border-l-4 border-gray-300 px-2">
                   見出し
@@ -28,7 +28,7 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
             </ul>
-            <ul className="md:mx-4 md:w-screen text-white">
+            <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-lg border-l-4 border-gray-300 text-white px-2">
                   見出し
@@ -50,7 +50,7 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
             </ul>
-            <ul className="md:mx-4 md:w-screen text-white">
+            <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-lg border-l-4 border-gray-300 text-white px-2">
                   見出し
@@ -72,7 +72,7 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
             </ul>
-            <ul className="md:mx-4 md:w-screen text-white">
+            <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-lg border-l-4 border-gray-300 text-white px-2">
                   見出し

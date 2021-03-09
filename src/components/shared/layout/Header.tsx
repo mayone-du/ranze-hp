@@ -98,7 +98,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             isMenuActive
               ? "visible opacity-100 transform translate-x-0"
               : "invisible opacity-0 transform translate-x-10"
-          } fixed top-20 p-4 left-0 bg-gray-50 lg:hidden w-screen transition-all shadow-md`}
+          } fixed top-20 p-4 left-0 bg-gray-50 lg:hidden w-full transition-all shadow-md`}
         >
           <li>
             <Link href="/">
