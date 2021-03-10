@@ -17,6 +17,19 @@ const SiteMap: React.VFC = () => {
           <section>
             <div className="flex w-11/12 mx-auto">
               <div className="mx-4 w-full border-l-2 border-r-2 border-collapse border-gray-400">
+                <div className="flex items-center mx-auto">
+
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+
+        <article className="container mx-auto">
+          <section>
+            <div className="flex w-11/12 mx-auto">
+              <div className="mx-4 w-full border-l-2 border-r-2 border-collapse border-gray-400">
                 <h3>LINE</h3>
                 <ul>
                   <li>
