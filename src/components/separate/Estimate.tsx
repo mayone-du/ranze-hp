@@ -1,9 +1,7 @@
 import { Button } from "@material-ui/core";
-import { useState } from "react";
 
 const Estimate: React.VFC = () => {
 
-  const [selectCategory, setSelectCategory] = useState(false);
 
   const lineStampOnClick = () => {
     console.log("lineStamp Click!!")
