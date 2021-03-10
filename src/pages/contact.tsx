@@ -19,7 +19,7 @@ const Contact: React.VFC = () => {
         <BreadCrumb currentPage={siteTitle} />
         <Block>
           <Row>
-            <Column className="bg-gray-400">
+            <Column className="bg-gray-100">
               <Form />
             </Column>
           </Row>

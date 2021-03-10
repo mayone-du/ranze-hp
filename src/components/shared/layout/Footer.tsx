@@ -7,9 +7,9 @@ const Footer: React.VFC = () => {
         <div className="container mx-auto">
           <nav className="sm:flex mx-4 md:mx-auto md:w-11/12">
 
-            <ul className="md:mx-4 w-full text-white">
+            <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
-                <h3 className="text-xl border-l-4 border-gray-300 px-2 mb-8">
+                <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
                   トップページ一覧
                 </h3>
               </li>
@@ -40,9 +40,9 @@ const Footer: React.VFC = () => {
               </li>
             </ul>
 
-            <ul className="md:mx-4 w-full text-white">
+            <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
-                <h3 className="text-xl border-l-4 border-gray-300 px-2 mb-8">
+                <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
                   サービス内容
                 </h3>
               </li>
@@ -63,9 +63,9 @@ const Footer: React.VFC = () => {
               </li>
             </ul>
 
-            <ul className="md:mx-4 w-full text-white">
+            <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
-                <h3 className="text-xl border-l-4 border-gray-300 px-2 mb-8">
+                <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
                   便利機能
                 </h3>
               </li>
@@ -86,9 +86,9 @@ const Footer: React.VFC = () => {
               </li>
             </ul>
 
-            <ul className="md:mx-4 w-full text-white">
+            <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
-                <h3 className="text-xl border-l-4 border-gray-300 px-2 mb-8">
+                <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
                   その他
                 </h3>
               </li>

@@ -8,10 +8,10 @@ const BreadCrumb: React.VFC<{
 }> = ({ currentPage, parentPage, parentPath }) => {
   return (
     <>
-      <ol className="absolute top-24 left-0 w-full flex items-center md:text-base text-sm">
+      <ol className="absolute top-24 left-0 w-full flex items-center md:text-base text-xs">
         <li className="flex items-center">
           <Link href={"/"}>
-            <a className="flex items-center text-blue-500 md:ml-12 ml-4 md:mr-4 mr-2 ">
+            <a className="flex items-center text-blue-500 md:ml-12 ml-4 md:mr-4 mr-1">
               <Home />
               HOME
             </a>
@@ -26,7 +26,7 @@ const BreadCrumb: React.VFC<{
           <>
             <li className="flex items-center">
               <Link href={parentPath}>
-                <a className="flex items-center text-blue-500 md:mx-4 mx-2 ">
+                <a className="flex items-center text-blue-500 md:mx-4 mx-1">
                   {parentPage}
                 </a>
               </Link>
@@ -36,7 +36,7 @@ const BreadCrumb: React.VFC<{
           </>
         )}
 
-        <li className="flex items-center md:mx-4 mx-2">{currentPage}</li>
+        <li className="flex items-center md:mx-4 mx-1">{currentPage}</li>
       </ol>
     </>
   );

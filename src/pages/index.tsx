@@ -186,10 +186,7 @@ const Home: React.VFC = () => {
         </article>
  */}
 
-        <Block
-          sectionSubText="サービス"
-          sectionTitle="SERVICE"
-        >
+        <Block sectionSubText="サービス" sectionTitle="SERVICE">
           <Row>
             <Column className="bg-gray-100 p-6 flex">
               <div className="w-4/12 p-2 flex items-center justify-center">
@@ -206,21 +203,21 @@ const Home: React.VFC = () => {
               </div>
             </Column>
             <Column className="bg-gray-100 p-6 flex">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3 className="text-xl">イラスト制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
+              <div className="w-4/12 p-2 flex items-center justify-center">
+                <Image
+                  className="block w-1/3 rounded-full"
+                  src="/images/bg.jpg"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="w-2/3 p-2">
+                <h3 className="text-xl">イラスト制作</h3>
+                <p>サンプルテキスト。サンプルテキスト。</p>
+              </div>
             </Column>
           </Row>
-          
+
           <Row>
             <Column className="bg-gray-100 p-6 flex">
               <div className="w-4/12 p-2 flex items-center justify-center">
@@ -237,32 +234,32 @@ const Home: React.VFC = () => {
               </div>
             </Column>
             <Column className="bg-gray-100 p-6 flex">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3 className="text-xl">イラスト制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
+              <div className="w-4/12 p-2 flex items-center justify-center">
+                <Image
+                  className="block w-1/3 rounded-full"
+                  src="/images/bg.jpg"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="w-2/3 p-2">
+                <h3 className="text-xl">イラスト制作</h3>
+                <p>サンプルテキスト。サンプルテキスト。</p>
+              </div>
             </Column>
             <Column className="bg-gray-100 p-6 flex">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3 className="text-xl">イラスト制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
+              <div className="w-4/12 p-2 flex items-center justify-center">
+                <Image
+                  className="block w-1/3 rounded-full"
+                  src="/images/bg.jpg"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="w-2/3 p-2">
+                <h3 className="text-xl">イラスト制作</h3>
+                <p>サンプルテキスト。サンプルテキスト。</p>
+              </div>
             </Column>
           </Row>
         </Block>
@@ -362,30 +359,94 @@ const Home: React.VFC = () => {
           </section>
         </article> */}
 
-        <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">実績</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              WORKS
-            </h2>
-            <div className="flex w-11/12 mx-auto">
-              <div className="lg:mx-4 mx-0 my-4 w-full bg-gray-100">
-                画像をタイルで表示
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <CustomButton
-                text="もっと見る"
-                toLink="/"
-                outline={true}
-                size="medium"
-                className="mx-auto my-4"
-              />
-            </div>
-          </section>
-        </article>
+        <Block sectionSubText="実績" sectionTitle="WORKS">
+          <Row>
+            <Column className="bg-gray-100">画像をタイルで表示</Column>
+          </Row>
+        </Block>
 
-        <article className="container mx-auto">
+        <Block sectionSubText="評価" sectionTitle="REVIEW">
+          <Row>
+            <Column className="bg-gray-100 xl:flex py-4 xl:p-8 text-center xl:text-left">
+              <Image
+                src="/images/bg.jpg"
+                width={200}
+                height={200}
+                className="rounded-full object-cover"
+              />
+              <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
+                <h3 className="text-lg">LINEスタンプ40個</h3>
+                <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
+                  評価：
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <span className="mx-4">5/5</span>
+                </p>
+                <p className="lg:text-base text-sm">
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                </p>
+              </div>
+            </Column>
+          </Row>
+          <Row>
+            <Column className="bg-gray-100 xl:flex py-4 xl:p-8 text-center xl:text-left">
+              <Image
+                src="/images/bg.jpg"
+                width={200}
+                height={200}
+                className="rounded-full object-cover"
+              />
+              <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
+                <h3 className="text-lg">LINEスタンプ40個</h3>
+                <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
+                  評価：
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <span className="mx-4">5/5</span>
+                </p>
+                <p className="lg:text-base text-sm">
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                </p>
+              </div>
+            </Column>
+          </Row>
+          <Row>
+            <Column className="bg-gray-100 xl:flex py-4 xl:p-8 text-center xl:text-left">
+              <Image
+                src="/images/bg.jpg"
+                width={200}
+                height={200}
+                className="rounded-full object-cover"
+              />
+              <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
+                <h3 className="text-lg">LINEスタンプ40個</h3>
+                <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
+                  評価：
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <Star className="text-yellow-400" />
+                  <span className="mx-4">5/5</span>
+                </p>
+                <p className="lg:text-base text-sm">
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                </p>
+              </div>
+            </Column>
+          </Row>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">評価</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -475,7 +536,7 @@ const Home: React.VFC = () => {
               />
             </div>
           </section>
-        </article>
+        </article> */}
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
