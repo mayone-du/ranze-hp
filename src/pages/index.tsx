@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Star } from "@material-ui/icons";
 import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButton";
-import { Block } from "../components/shared/generalBlock/Wrapper";
+import { Block } from "../components/shared/generalBlock/Block";
 import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
 

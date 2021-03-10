@@ -3,7 +3,7 @@ import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 import { Estimate } from "../../components/separate/Estimate";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
-import { Block } from "../../components/shared/generalBlock/Wrapper";
+import { Block } from "../../components/shared/generalBlock/Block";
 import { Row } from "../../components/shared/generalBlock/Row";
 import { Column } from "../../components/shared/generalBlock/Column";
 
@@ -24,14 +24,14 @@ const Service: React.VFC = () => {
           sectionTitle="カードみたいにしてリンクを貼る"
         >
           <Row className="-my-4 lg:-my-0">
-            <Column className="bg-gray-300 p-2">画像を乗せる</Column>
-            <Column className="bg-gray-300 p-2">hoge</Column>
+            <Column className="bg-gray-100 p-2">画像を乗せる</Column>
+            <Column className="bg-gray-100 p-2">hoge</Column>
           </Row>
           <Row>
-            <Column className="bg-gray-300 p-2">
+            <Column className="bg-gray-100 p-2">
               hoge
             </Column>
-            <Column className="bg-gray-300 p-2">
+            <Column className="bg-gray-100 p-2">
               画像
             </Column>
           </Row>
@@ -45,19 +45,19 @@ const Service: React.VFC = () => {
             </h2>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 hoge
               </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 画像を乗せる
               </div>
             </div>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 画像
               </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 テキスト
               </div>
             </div>
@@ -71,7 +71,7 @@ const Service: React.VFC = () => {
               SERVICE LIST
             </h2>
             <div className="flex w-11/12 mx-auto">
-              <div className="md:mx-4 my-4 w-full bg-gray-200">
+              <div className="md:mx-4 my-4 w-full bg-gray-100">
                 <h3 className="text-3xl">LINE</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
@@ -102,7 +102,7 @@ const Service: React.VFC = () => {
                 </ul>
               </div>
 
-              <div className="md:mx-4 my-4 w-full bg-gray-200">
+              <div className="md:mx-4 my-4 w-full bg-gray-100">
                 <h3 className="text-3xl">LINE</h3>
                 <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
                   <li>
@@ -144,19 +144,19 @@ const Service: React.VFC = () => {
             </h2>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 hoge
               </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 画像を乗せる
               </div>
             </div>
 
             <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 画像
               </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-200 w-full">
+              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
                 テキスト
               </div>
             </div>
