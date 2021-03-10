@@ -13,9 +13,9 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <header className="flex items-center justify-between py-3 md:px-12 px-4 fixed w-full inset-x-0 z-50 bg-white shadow-md">
+      <header className="flex items-center justify-between lg:py-3 py-1 md:px-12 px-4 fixed w-full inset-x-0 z-50 bg-white shadow-md">
         <nav className="flex items-center">
-          <h2 className="my_logo text-xl text-center mr-4">
+          <h2 className="my_logo lg:text-xl text-lg text-center mr-4">
             <Link href="/">
               <a className="block">
                 Ranze
@@ -98,7 +98,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             isMenuActive
               ? "visible opacity-100 transform translate-x-0"
               : "invisible opacity-0 transform translate-x-10"
-          } fixed top-20 p-4 left-0 bg-gray-50 lg:hidden w-full transition-all shadow-md`}
+          } fixed top-16 p-4 left-0 bg-gray-50 lg:hidden w-full transition-all shadow-md`}
         >
           <li>
             <Link href="/">
