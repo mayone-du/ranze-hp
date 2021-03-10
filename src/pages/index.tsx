@@ -133,6 +133,15 @@ const Home: React.VFC = () => {
               </p>
             </Column>
           </Row>
+          <div className="flex justify-center">
+            <CustomButton
+              text="もっと見る"
+              toLink="/"
+              outline={true}
+              size="medium"
+              className="mx-auto mt-4"
+            />
+          </div>
         </Block>
 
         {/* <article className="container mx-auto">
@@ -262,6 +271,15 @@ const Home: React.VFC = () => {
               </div>
             </Column>
           </Row>
+          <div className="flex justify-center">
+            <CustomButton
+              text="もっと見る"
+              toLink="/"
+              outline={true}
+              size="medium"
+              className="mx-auto mt-4"
+            />
+          </div>
         </Block>
 
         {/* <article className="container mx-auto">
@@ -363,6 +381,15 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="bg-gray-100">画像をタイルで表示</Column>
           </Row>
+          <div className="flex justify-center">
+            <CustomButton
+              text="もっと見る"
+              toLink="/"
+              outline={true}
+              size="medium"
+              className="mx-auto mt-4"
+            />
+          </div>
         </Block>
 
         <Block sectionSubText="評価" sectionTitle="REVIEW">
@@ -444,6 +471,15 @@ const Home: React.VFC = () => {
               </div>
             </Column>
           </Row>
+          <div className="flex justify-center">
+            <CustomButton
+              text="もっと見る"
+              toLink="/"
+              outline={true}
+              size="medium"
+              className="mx-auto mt-4"
+            />
+          </div>
         </Block>
 
         {/* <article className="container mx-auto">

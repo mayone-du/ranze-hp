@@ -37,34 +37,13 @@ const Works: React.VFC = () => {
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
-            <p className="text-center">自己紹介</p>
+            <p className="text-center">評価</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              ABOUT
+              実際の口コミを記載
             </h2>
             <div className="flex w-11/12 mx-auto">
               <p className="lg:mx-4 my-4 w-full lg:text-base text-sm">
-                ご覧頂きありがとうございます。イラストレーターのRanzeです._.
-                お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Cupiditate aperiam minus
-                laudantium culpa accusamus soluta unde aliquid eum obcaecati
-                magnam tempora repellat atque asperiores vitae distinctio ipsum
-                autem, praesentium natus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cupiditate aperiam minus laudantium culpa
-                accusamus soluta unde aliquid eum obcaecati magnam tempora
-                repellat atque asperiores vitae distinctio ipsum autem,
-                praesentium natus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cupiditate aperiam minus laudantium culpa
-                accusamus soluta unde aliquid eum obcaecati magnam tempora
-                repellat atque asperiores vitae distinctio ipsum autem,
-                praesentium natus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cupiditate aperiam minus laudantium culpa
-                accusamus soluta unde aliquid eum obcaecati magnam tempora
-                repellat atque asperiores vitae distinctio ipsum autem,
-                praesentium natus. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cupiditate aperiam minus laudantium culpa
-                accusamus soluta unde aliquid eum obcaecati magnam tempora
-                repellat atque asperiores vitae distinctio ipsum autem,
-                praesentium natus.
+                レビューを記載
               </p>
             </div>
           </section>

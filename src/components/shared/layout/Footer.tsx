@@ -13,29 +13,29 @@ const Footer: React.VFC = () => {
                   トップページ一覧
                 </h3>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/">
-                  <a>ホーム</a>
+                  <a className="border-b border-white">ホーム</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/about">
-                  <a>自己紹介</a>
+                  <a className="border-b border-white">自己紹介</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/service">
-                  <a>サービス</a>
+                  <a className="border-b border-white">サービス</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/works">
-                  <a>実績</a>
+                  <a className="border-b border-white">実績</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/contact">
-                  <a>お問い合わせ</a>
+                  <a className="border-b border-white">お問い合わせ</a>
                 </Link>
               </li>
             </ul>
@@ -43,22 +43,32 @@ const Footer: React.VFC = () => {
             <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
                 <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
-                  サービス内容
+                  サービス内容一覧
                 </h3>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/service/line-stamp">
-                  <a>LINEスタンプ</a>
+                  <a className="border-b border-white">LINEスタンプ</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/service">
-                  <a>サービス内容</a>
+                  <a className="border-b border-white">LINE絵文字</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
-                <Link href="/privacy-policy">
-                  <a>プライバシー・ポリシー</a>
+              <li className="my-4">
+                <Link href="/service">
+                  <a className="border-b border-white">汎用イラスト</a>
+                </Link>
+              </li>
+              <li className="my-4">
+                <Link href="/service">
+                  <a className="border-b border-white">SNSアイコン</a>
+                </Link>
+              </li>
+              <li className="my-4">
+                <Link href="/service">
+                  <a className="border-b border-white">名刺</a>
                 </Link>
               </li>
             </ul>
@@ -69,19 +79,19 @@ const Footer: React.VFC = () => {
                   便利機能
                 </h3>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/faq">
-                  <a>FAQ</a>
+                  <a className="border-b border-white">FAQ</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/404">
-                  <a>404</a>
+                  <a className="border-b border-white">404</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/service">
-                  <a>サービス（見積もり）</a>
+                  <a className="border-b border-white">サービス（見積もり）</a>
                 </Link>
               </li>
             </ul>
@@ -92,19 +102,19 @@ const Footer: React.VFC = () => {
                   その他
                 </h3>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/">
-                  <a>サイトマップ</a>
+                  <a className="border-b border-white">サイトマップ</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/privacy-policy">
-                  <a>プライバシー・ポリシー</a>
+                  <a className="border-b border-white">プライバシー・ポリシー</a>
                 </Link>
               </li>
-              <li className="my-4 underline">
+              <li className="my-4">
                 <Link href="/">
-                  <a>ホーム</a>
+                  <a className="border-b border-white">ホーム</a>
                 </Link>
               </li>
             </ul>
