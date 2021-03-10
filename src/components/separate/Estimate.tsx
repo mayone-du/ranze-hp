@@ -3,17 +3,19 @@ import { useState } from "react";
 
 const Estimate: React.VFC = () => {
 
-  const [selectCategory, setSelectCategory] = useState({
-    lineStamp: false,
-    illust: false,
-    snsIcon: false,
-  })
+  const [selectCategory, setSelectCategory] = useState(false);
+
+  const lineStampOnClick = () => {
+    console.log("lineStamp Click!!")
+  };
+
+
 
   return (
     <>
       <div className="bg-gray-100">
         <div>
-          <Button variant="outlined">LINEスタンプ</Button>
+          <Button onClick={lineStampOnClick} variant="outlined">LINEスタンプ</Button>
           <Button variant="outlined">LINE絵文字</Button>
           <Button variant="outlined">イラスト</Button>
           <Button variant="outlined">SNSアイコン</Button>

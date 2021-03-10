@@ -5,7 +5,7 @@ const Row: React.FC<{ children: any; className?: string }> = ({
   return (
     <>
       <div
-        className={`flex w-11/12 mx-auto ${
+        className={`lg:flex w-11/12 mx-auto ${
           className !== undefined ? className : ""
         }`}
       >

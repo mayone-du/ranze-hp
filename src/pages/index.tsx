@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { Star } from "@material-ui/icons";
 import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButton";
-import { Star } from "@material-ui/icons";
+import { Block } from "../components/shared/generalBlock/Wrapper";
+import { Row } from "../components/shared/generalBlock/Row";
+import { Column } from "../components/shared/generalBlock/Column";
 
 const Home: React.VFC = () => {
   return (
@@ -31,7 +34,37 @@ const Home: React.VFC = () => {
             />
           </section>
         </article>
-        <article className="container mx-auto">
+
+        <Block sectionSubText="自己紹介" sectionTitle="ABOUT">
+          <Row>
+            <Column>
+              ご覧頂きありがとうございます。イラストレーターのRanzeです._.
+              お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Cupiditate aperiam minus laudantium
+              culpa accusamus soluta unde aliquid eum obcaecati magnam tempora
+              repellat atque asperiores vitae distinctio ipsum autem,
+              praesentium natus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cupiditate aperiam minus laudantium culpa
+              accusamus soluta unde aliquid eum obcaecati magnam tempora
+              repellat atque asperiores vitae distinctio ipsum autem,
+              praesentium natus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cupiditate aperiam minus laudantium culpa
+              accusamus soluta unde aliquid eum obcaecati magnam tempora
+              repellat atque asperiores vitae distinctio ipsum autem,
+              praesentium natus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cupiditate aperiam minus laudantium culpa
+              accusamus soluta unde aliquid eum obcaecati magnam tempora
+              repellat atque asperiores vitae distinctio ipsum autem,
+              praesentium natus. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cupiditate aperiam minus laudantium culpa
+              accusamus soluta unde aliquid eum obcaecati magnam tempora
+              repellat atque asperiores vitae distinctio ipsum autem,
+              praesentium natus.
+            </Column>
+          </Row>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">自己紹介</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -64,10 +97,45 @@ const Home: React.VFC = () => {
               </p>
             </div>
           </section>
-        </article>
-        <span className="block bg-red-400 transform skew-x-12 opacity-50 rounded-full -translate-y-72 -translate-x-1/2 left-1/2 w-5/6 absolute h-60"></span>
+        </article> */}
+        {/* <span className="block bg-red-400 transform skew-x-12 opacity-50 rounded-full -translate-y-72 -translate-x-1/2 left-1/2 w-5/6 absolute h-60"></span> */}
 
-        <article className="container mx-auto">
+        <Block sectionSubText="特徴" sectionTitle="FEATURES">
+          <Row className="text-center">
+            <Column className="bg-gray-100 p-4">
+              <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">1</p>
+              <Image src="/images/bg.jpg" width={150} height={150} />
+              <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                老若男女問わず人気！
+              </h3>
+              <p>
+                ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
+              </p>
+            </Column>
+            <Column className="bg-gray-100 p-4">
+              <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">2</p>
+              <Image src="/images/bg.jpg" width={150} height={150} />
+              <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                基本的に修正回数は無制限！
+              </h3>
+              <p>
+                あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
+              </p>
+            </Column>
+            <Column className="bg-gray-100 p-4">
+              <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">3</p>
+              <Image src="/images/bg.jpg" width={150} height={150} />
+              <h3 className="py-4 lg:text-2xl text-xl font-bold">
+                ストレスフリーなやりとり
+              </h3>
+              <p>
+                丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
+              </p>
+            </Column>
+          </Row>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">特徴</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -116,15 +184,96 @@ const Home: React.VFC = () => {
             </div>
           </section>
         </article>
+ */}
 
-        <article className="container mx-auto">
+        <Block
+          sectionSubText="サービス"
+          sectionTitle="SERVICE"
+        >
+          <Row>
+            <Column className="bg-gray-100 p-6 flex">
+              <div className="w-4/12 p-2 flex items-center justify-center">
+                <Image
+                  className="block w-1/3 rounded-full"
+                  src="/images/bg.jpg"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="w-2/3 p-2">
+                <h3 className="text-xl">LINEスタンプ制作</h3>
+                <p>サンプルテキスト。サンプルテキスト。</p>
+              </div>
+            </Column>
+            <Column className="bg-gray-100 p-6 flex">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3 className="text-xl">イラスト制作</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
+            </Column>
+          </Row>
+          
+          <Row>
+            <Column className="bg-gray-100 p-6 flex">
+              <div className="w-4/12 p-2 flex items-center justify-center">
+                <Image
+                  className="block w-1/3 rounded-full"
+                  src="/images/bg.jpg"
+                  width={150}
+                  height={150}
+                />
+              </div>
+              <div className="w-2/3 p-2">
+                <h3 className="text-xl">LINEスタンプ制作</h3>
+                <p>サンプルテキスト。サンプルテキスト。</p>
+              </div>
+            </Column>
+            <Column className="bg-gray-100 p-6 flex">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3 className="text-xl">イラスト制作</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
+            </Column>
+            <Column className="bg-gray-100 p-6 flex">
+                <div className="w-4/12 p-2 flex items-center justify-center">
+                  <Image
+                    className="block w-1/3 rounded-full"
+                    src="/images/bg.jpg"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className="w-2/3 p-2">
+                  <h3 className="text-xl">イラスト制作</h3>
+                  <p>サンプルテキスト。サンプルテキスト。</p>
+                </div>
+            </Column>
+          </Row>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">サービス</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               SERVICE
             </h2>
 
-            {/* row */}
             <div className="lg:flex w-11/12 mx-auto">
               <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex items-center justify-center">
@@ -157,7 +306,6 @@ const Home: React.VFC = () => {
               </div>
             </div>
 
-            {/* row */}
             <div className="lg:flex w-11/12 mx-auto">
               <div className="lg:m-4 my-4 w-full flex bg-gray-100 p-6">
                 <div className="w-4/12 p-2 flex text-center items-center justify-center">
@@ -212,7 +360,7 @@ const Home: React.VFC = () => {
               />
             </div>
           </section>
-        </article>
+        </article> */}
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">

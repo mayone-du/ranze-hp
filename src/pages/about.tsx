@@ -36,7 +36,21 @@ const About: React.VFC = () => {
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
-            <p className="text-center">よくある悩み</p>
+            <p className="text-center">ソーシャルメディア</p>
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
+              SNS
+            </h2>
+            <div className="flex w-11/12 mx-auto">
+              <div className="lg:mx-4 mx-0 my-4 bg-gray-200 w-full">
+                ココナラのプロフィールやSNSを紹介
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <article className="container mx-auto">
+          <section className="md:py-16 py-10">
+            <p className="text-center">よくあるご要望</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
               サンプルテキスト
             </h2>
