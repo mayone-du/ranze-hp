@@ -1,6 +1,14 @@
 import { Button } from "@material-ui/core";
+import { useState } from "react";
 
 const Estimate: React.VFC = () => {
+
+  const [selectCategory, setSelectCategory] = useState({
+    lineStamp: false,
+    illust: false,
+    snsIcon: false,
+  })
+
   return (
     <>
       <div className="bg-gray-100">

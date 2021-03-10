@@ -20,22 +20,22 @@ const Footer: React.VFC = () => {
               </li>
               <li className="my-4 underline">
                 <Link href="/about">
-                  <a>about</a>
+                  <a>自己紹介</a>
                 </Link>
               </li>
               <li className="my-4 underline">
                 <Link href="/service">
-                  <a>service</a>
+                  <a>サービス</a>
                 </Link>
               </li>
               <li className="my-4 underline">
                 <Link href="/works">
-                  <a>works</a>
+                  <a>実績</a>
                 </Link>
               </li>
               <li className="my-4 underline">
                 <Link href="/contact">
-                  <a>contact</a>
+                  <a>お問い合わせ</a>
                 </Link>
               </li>
             </ul>
@@ -52,8 +52,8 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
               <li className="my-4 underline">
-                <Link href="/contact">
-                  <a>お問い合わせ</a>
+                <Link href="/service">
+                  <a>サービス内容</a>
                 </Link>
               </li>
               <li className="my-4 underline">
@@ -89,7 +89,7 @@ const Footer: React.VFC = () => {
             <ul className="md:mx-4 w-full text-white">
               <li>
                 <h3 className="text-xl border-l-4 border-gray-300 px-2 mb-8">
-                  サイト一覧
+                  その他
                 </h3>
               </li>
               <li className="my-4 underline">
@@ -98,8 +98,8 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
               <li className="my-4 underline">
-                <Link href="/">
-                  <a>ホーム</a>
+                <Link href="/privacy-policy">
+                  <a>プライバシー・ポリシー</a>
                 </Link>
               </li>
               <li className="my-4 underline">
