@@ -574,7 +574,89 @@ const Home: React.VFC = () => {
           </section>
         </article> */}
 
-        <article className="container mx-auto">
+        <Block sectionSubText="対応中のサービス" sectionTitle="ACCEPT">
+          <Row>
+            <Column className="border-2 rounded-sm relative">
+              <div className="text-center">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+              </div>
+              <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                満枠対応中！
+              </span>
+              <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <ul className="list-disc pt-2 pb-4 px-6">
+                <li>40個</li>
+                <li>納期：指定なし</li>
+                <li>オプション：キャラクター追加</li>
+                <li>料金：10,000円</li>
+              </ul>
+              <div className="flex justify-center py-4">
+                <CustomButton
+                  toLink=""
+                  text="もっと見る"
+                  size="medium"
+                  outline={true}
+                />
+              </div>
+            </Column>
+            <Column className="border-2 rounded-sm relative">
+              <div className="text-center">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+              </div>
+              <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                満枠対応中！
+              </span>
+              <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <ul className="list-disc pt-2 pb-4 px-6">
+                <li>40個</li>
+                <li>納期：指定なし</li>
+                <li>オプション：キャラクター追加</li>
+                <li>料金：10,000円</li>
+              </ul>
+              <div className="flex justify-center py-4">
+                <CustomButton
+                  toLink=""
+                  text="もっと見る"
+                  size="medium"
+                  outline={true}
+                />
+              </div>
+            </Column>
+            <Column className="border-2 rounded-sm relative">
+              <div className="text-center">
+                <Image src="/images/bg.jpg" width={450} height={250} />
+              </div>
+              <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
+                満枠対応中！
+              </span>
+              <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <ul className="list-disc pt-2 pb-4 px-6">
+                <li>40個</li>
+                <li>納期：指定なし</li>
+                <li>オプション：キャラクター追加</li>
+                <li>料金：10,000円</li>
+              </ul>
+              <div className="flex justify-center py-4">
+                <CustomButton
+                  toLink=""
+                  text="もっと見る"
+                  size="medium"
+                  outline={true}
+                />
+              </div>
+            </Column>
+          </Row>
+          <div className="flex justify-center">
+            <CustomButton
+              text="もっと見る"
+              toLink="/"
+              size="medium"
+              outline={true}
+            />
+          </div>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">対応中のサービス</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -582,29 +664,7 @@ const Home: React.VFC = () => {
             </h2>
 
             <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
-                <div className="text-center">
-                  <Image src="/images/bg.jpg" width={450} height={250} />
-                </div>
-                <span className="absolute block bg-red-100 py-2 px-6 transform -translate-y-6">
-                  満枠対応中！
-                </span>
-                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
-                <ul className="list-disc pt-2 pb-4 px-6">
-                  <li>40個</li>
-                  <li>納期：指定なし</li>
-                  <li>オプション：キャラクター追加</li>
-                  <li>料金：10,000円</li>
-                </ul>
-                <div className="flex justify-center py-4">
-                  <CustomButton
-                    toLink=""
-                    text="もっと見る"
-                    size="medium"
-                    outline={true}
-                  />
-                </div>
-              </div>
+              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative"></div>
               <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative">
                 <div className="text-center">
                   <Image src="/images/bg.jpg" width={450} height={250} />
@@ -662,7 +722,7 @@ const Home: React.VFC = () => {
               />
             </div>
           </section>
-        </article>
+        </article> */}
 
         <article className="bg-gray-100 text-center">
           <section className="md:py-20 py-14">

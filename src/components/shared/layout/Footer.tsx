@@ -121,11 +121,11 @@ const Footer: React.VFC = () => {
           </nav>
 
           <div className="flex items-center justify-between w-11/12 mx-auto pt-8">
-            <div className="mx-4 bg-gray-400">
+            <div className="lg:mx-4 bg-gray-400">
               <h4>ロゴ</h4>
               <h4>Ranze</h4>
             </div>
-            <p className="text-white text-center py-6 mx-4 text-sm">
+            <p className="text-white text-center py-6 lg:mx-4 text-sm">
               copyright&copy;&nbsp;Ranze
             </p>
           </div>
