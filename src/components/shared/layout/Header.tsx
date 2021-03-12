@@ -102,7 +102,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
         >
           <li>
             <Link href="/">
-              <a className="block p-2 my-2 border-b border-black">home</a>
+              <a className="block p-2 my-2 border-b border-black">HOME</a>
             </Link>
           </li>
           <li>
