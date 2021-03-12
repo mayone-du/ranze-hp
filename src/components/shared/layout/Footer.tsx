@@ -85,11 +85,6 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/404">
-                  <a className="border-b border-white">404</a>
-                </Link>
-              </li>
-              <li className="my-4">
                 <Link href="/service">
                   <a className="border-b border-white">サービス（見積もり）</a>
                 </Link>
@@ -112,17 +107,11 @@ const Footer: React.VFC = () => {
                   <a className="border-b border-white">プライバシー・ポリシー</a>
                 </Link>
               </li>
-              <li className="my-4">
-                <Link href="/">
-                  <a className="border-b border-white">ホーム</a>
-                </Link>
-              </li>
             </ul>
           </nav>
 
           <div className="flex items-center justify-between w-11/12 mx-auto pt-8">
             <div className="lg:mx-4 bg-gray-400">
-              <h4>ロゴ</h4>
               <h4>Ranze</h4>
             </div>
             <p className="text-white text-center py-6 lg:mx-4 text-sm">
