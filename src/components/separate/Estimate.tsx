@@ -1,19 +1,18 @@
 import { Button } from "@material-ui/core";
 
 const Estimate: React.VFC = () => {
-
-
+  
   const lineStampOnClick = () => {
-    console.log("lineStamp Click!!")
+    console.log("lineStamp Click!!");
   };
-
-
 
   return (
     <>
       <div className="bg-gray-100">
         <div>
-          <Button onClick={lineStampOnClick} variant="outlined">LINEスタンプ</Button>
+          <Button onClick={lineStampOnClick} variant="outlined">
+            LINEスタンプ
+          </Button>
           <Button variant="outlined">LINE絵文字</Button>
           <Button variant="outlined">イラスト</Button>
           <Button variant="outlined">SNSアイコン</Button>

@@ -52,22 +52,22 @@ const Footer: React.VFC = () => {
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/service">
+                <Link href="/service/line-pictograph">
                   <a className="border-b border-white">LINE絵文字</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/service">
+                <Link href="/service/illust">
                   <a className="border-b border-white">汎用イラスト</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/service">
+                <Link href="/service/sns-icon">
                   <a className="border-b border-white">SNSアイコン</a>
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="/service">
+                <Link href="/service/business-card">
                   <a className="border-b border-white">名刺</a>
                 </Link>
               </li>
