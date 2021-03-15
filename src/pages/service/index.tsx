@@ -80,58 +80,28 @@ const Service: React.VFC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service">
+                    <Link href="/service/line-pictograph">
                       <a className="text-blue-500">LINE絵文字</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service/illust">
                       <a className="text-blue-500">イラスト制作</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service/sns-icon">
                       <a className="text-blue-500">アイコン制作</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/service/business-card">
                       <a className="text-blue-500">名刺制作</a>
                     </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="md:mx-4 my-4 w-full bg-gray-100">
-                <h3 className="text-3xl">LINE</h3>
-                <ul className="border-l-2 border-r-2 border-collapse border-gray-400">
-                  <li>
-                    <Link href="/service/line-stamp">
-                      <a className="text-blue-500">LINEスタンプ</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/service">
-                      <a className="text-blue-500">LINE絵文字</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <a className="text-blue-500">イラスト制作</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <a className="text-blue-500">アイコン制作</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <a className="text-blue-500">名刺制作</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
           </section>
         </article>
