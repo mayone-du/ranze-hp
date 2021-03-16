@@ -265,7 +265,7 @@ const Home: React.VFC = () => {
                   SNSなどのアイコン制作
                 </h3>
                 <p className="md:text-sm text-xs">
-                  サンプルテキスト。サンプルテキスト。
+                  TwitterやYouTubeなど、SNSなどのプロフィールに使える可愛いイラストを作成します！
                 </p>
               </div>
             </Column>
@@ -281,7 +281,7 @@ const Home: React.VFC = () => {
               <div className="w-2/3 p-2">
                 <h3 className="md:text-xl text-lg mb-2">名刺制作</h3>
                 <p className="md:text-sm text-xs">
-                  サンプルテキスト。サンプルテキスト。
+                  ビジネスシーンや婚活で使用できるようなものなど、シンプルな名刺を作成します！
                 </p>
               </div>
             </Column>
