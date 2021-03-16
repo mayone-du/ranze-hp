@@ -107,6 +107,11 @@ const Footer: React.VFC = () => {
                   <a className="border-b border-white">プライバシー・ポリシー</a>
                 </Link>
               </li>
+              <li className="my-4">
+                <Link href="/lp">
+                  <a className="border-b border-white">ランディングページ</a>
+                </Link>
+              </li>
             </ul>
           </nav>
 
