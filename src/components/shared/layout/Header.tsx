@@ -17,10 +17,12 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
         <nav className="flex items-center">
           <h2 className="my_logo lg:text-xl text-lg text-center mr-4">
             <Link href="/">
-              <a className="block">
-                Ranze
-                <br />
-                Illustrator
+              <a className="block w-36 h-auto">
+                <img
+                  src="/images/logo.png"
+                  className="object-cover block"
+                  alt="Ranze official logo"
+                />
               </a>
             </Link>
           </h2>
