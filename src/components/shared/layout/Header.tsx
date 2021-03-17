@@ -24,59 +24,59 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
               </a>
             </Link>
           </h2>
-          <ul className="lg:flex hidden">
+          <ul className="lg:flex hidden font-custom-fontFamily font-bold text-xl">
             <li>
               <Link href="/">
                 <a
-                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
-                    isActivePage === "Home" ? "border-b-2 border-black " : ""
+                  className={`py-1 px-3 mx-2 text-custom-darkgray hover:bg-gray-100 transition ${
+                    isActivePage === "Home" ? "border-b-2 border-custom-darkgray text-custom-darkgray" : ""
                   }`}
                 >
-                  Home
+                  HOME
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/about">
                 <a
-                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
-                    isActivePage === "About" ? "border-b-2 border-black " : ""
+                  className={`py-1 px-3 mx-2 text-custom-darkgray hover:bg-gray-100 transition ${
+                    isActivePage === "About" ? "border-b-2 border-custom-darkgray text-custom-darkgray" : ""
                   }`}
                 >
-                  About
+                  ABOUT
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/service">
                 <a
-                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
-                    isActivePage === "Service" ? "border-b-2 border-black " : ""
+                  className={`py-1 px-3 mx-2 text-custom-darkgray hover:bg-gray-100 transition ${
+                    isActivePage === "Service" ? "border-b-2 border-custom-darkgray text-custom-darkgray" : ""
                   }`}
                 >
-                  Service
+                  SERVICE
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/works">
                 <a
-                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
-                    isActivePage === "Works" ? "border-b-2 border-black " : ""
+                  className={`py-1 px-3 mx-2 text-custom-darkgray hover:bg-gray-100 transition ${
+                    isActivePage === "Works" ? "border-b-2 border-custom-darkgray text-custom-darkgray" : ""
                   }`}
                 >
-                  Works
+                  WORKS
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
                 <a
-                  className={`py-3 px-4 mx-2 hover:bg-gray-100 transition ${
-                    isActivePage === "Contact" ? "border-b-2 border-black" : ""
+                  className={`py-1 px-3 mx-2 text-custom-darkgray hover:bg-gray-100 transition ${
+                    isActivePage === "Contact" ? "border-b-2 border-custom-darkgray text-custom-darkgray" : ""
                   }`}
                 >
-                  Contact
+                  CONTACT
                 </a>
               </Link>
             </li>
@@ -98,31 +98,31 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             isMenuActive
               ? "visible opacity-100 transform translate-x-0"
               : "invisible opacity-0 transform translate-x-10"
-          } fixed top-16 p-4 left-0 bg-gray-50 lg:hidden w-full transition-all shadow-md`}
+          } fixed top-16 p-4 left-0 bg-gray-50 lg:hidden w-full transition-all shadow-md font-custom-fontFamily font-bold text-xl`}
         >
           <li>
             <Link href="/">
-              <a className="block p-2 my-2 border-b border-black">HOME</a>
+              <a className="block p-2 my-2 border-b border-custom-gray text-yello">HOME</a>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a className="block p-2 my-2 border-b border-black">About</a>
+              <a className="block p-2 my-2 border-b border-custom-gray text-yello">About</a>
             </Link>
           </li>
           <li>
             <Link href="/service">
-              <a className="block p-2 my-2 border-b border-black">Service</a>
+              <a className="block p-2 my-2 border-b border-custom-gray text-yello">Service</a>
             </Link>
           </li>
           <li>
             <Link href="/works">
-              <a className="block p-2 my-2 border-b border-black">Works</a>
+              <a className="block p-2 my-2 border-b border-custom-gray text-yello">Works</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a className="block p-2 my-2 border-b border-black">Contact</a>
+              <a className="block p-2 my-2 border-b border-custom-gray text-yello">Contact</a>
             </Link>
           </li>
         </ul>

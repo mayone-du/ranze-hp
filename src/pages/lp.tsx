@@ -7,13 +7,13 @@ import { Block } from "../components/shared/generalBlock/Block";
 import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
 
-const Lp: React.VFC = () => {
+const Home: React.VFC = () => {
   return (
     <>
       <Layout
         metaTitle="Ranze official site | イラストレーターRanzeの公式サイト"
-        metaDescription="イラストレーターRanzeの公式サイトです。LINEスタンプ、イラスト制作や名刺制作などをしています！まずはお気軽にご相談ください！"
-        isActivePage="Lp"
+        metaDescription="イラストレーターRanzeの公式ホームページです。LINEスタンプ、イラスト制作や名刺制作などをしています！まずはお気軽にご相談ください！"
+        isActivePage="Home"
       >
         {/* メインビジュアル */}
         <article
@@ -779,4 +779,4 @@ const Lp: React.VFC = () => {
   );
 };
 
-export default Lp;
+export default Home;

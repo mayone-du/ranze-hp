@@ -18,21 +18,9 @@ const Home: React.VFC = () => {
         {/* メインビジュアル */}
         <article
           className="mx-auto"
-          style={{ backgroundImage: "url(./images/bg.jpg)" }}
         >
-          <section className="h-screen flex items-center justify-center flex-col">
-            <h1 className="lg:text-6xl text-2xl font-bold">
-              イラスト・LINEスタンプ制作
-            </h1>
-            <p className="py-8 text-lg mx-4">
-              イラストやLINEスタンプ、SNSで使えるアイコンやシンプルな名刺制作などの制作等を承ります！
-            </p>
-            <CustomButton
-              outline={false}
-              text="お問い合わせ"
-              toLink="/contact"
-              size="large"
-            />
+          <section className="h-screen flex items-center justify-center flex-col bg-gray-50">
+
           </section>
         </article>
 
