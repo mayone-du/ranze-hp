@@ -15,7 +15,7 @@ const CustomButton: React.VFC<{
           ${
             outline === true
               ? "border border-custom-lightgray text-custom-lightgray hover:bg-gray-100"
-              : "bg-custom-lightgray text-white hover:bg-custom-lightgray"
+              : "bg-custom-lightgray text-white hover:bg-custom-darkgray"
           }
           px-4 py-2 mx-2 font-light rounded transition block max-w-2xl shadow hover:shadow-md
           ${size === "large" ? "lg:px-24 px-10 py-4 text-xl"
