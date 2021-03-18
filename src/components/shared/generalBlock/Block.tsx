@@ -24,12 +24,12 @@ const Block: React.FC<{
           }`}
         >
           {sectionSubText !== undefined ? (
-            <p className="text-center">{sectionSubText}</p>
+            <p className="text-center text-custom-darkgray">{sectionSubText}</p>
           ) : (
             <></>
           )}
           {sectionTitle !== undefined ? (
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
+            <h2 className="lg:text-4xl text-2xl tracking-wide font-bold text-center lg:py-2 py-1 text-custom-darkgray font-custom-fontFamily ">
               {sectionTitle}
             </h2>
           ) : (
