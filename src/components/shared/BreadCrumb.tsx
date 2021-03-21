@@ -8,7 +8,7 @@ const BreadCrumb: React.VFC<{
 }> = ({ currentPage, parentPage, parentPath }) => {
   return (
     <>
-      <ol className="absolute md:top-56 top-40 left-0 w-full flex items-center md:text-base text-xs">
+      <ol className="absolute md:top-64 text-custom-darkgray top-40 left-0 w-full flex items-center md:text-base text-xs">
         <li className="flex items-center">
           <Link href={"/"}>
             <a className="flex items-center text-blue-500 md:ml-12 ml-4 md:mr-4 mr-1">
@@ -20,6 +20,7 @@ const BreadCrumb: React.VFC<{
           <ArrowForwardIos className="block" fontSize="small" />
         </li>
 
+        {/* 親ページがある場合 */}
         {parentPage === undefined ? (
           ""
         ) : (
@@ -36,7 +37,7 @@ const BreadCrumb: React.VFC<{
           </>
         )}
 
-        <li className="flex items-center md:mx-4 mx-1">{currentPage}</li>
+        <li className="flex font-bold items-center md:mx-4 mx-1">{currentPage}</li>
       </ol>
     </>
   );
