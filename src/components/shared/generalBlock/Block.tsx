@@ -24,7 +24,7 @@ const Block: React.FC<{
           }`}
         >
           {sectionSubText !== undefined ? (
-            <p className="text-center text-custom-darkgray">{sectionSubText}</p>
+            <p className="text-center text-sm text-custom-darkgray">{sectionSubText}</p>
           ) : (
             <></>
           )}

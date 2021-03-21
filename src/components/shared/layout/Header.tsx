@@ -13,10 +13,10 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <h2 className="mt-6">
+      <h2 className="mt-6 mb-8">
         <img className="block mx-auto object-cover w-56" src="/images/logo.png" alt="" />
       </h2>
-      <header className="mx-10">
+      <header className="mx-10 mb-10">
         <nav>
           <ul className="flex items-center justify-center">
             <li>
