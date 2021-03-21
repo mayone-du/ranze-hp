@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { CheckCircle } from "@material-ui/icons";
 import { Layout } from "../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
@@ -186,6 +186,7 @@ const About: React.VFC = () => {
                 </li>
               </ul>
             </Column>
+            
           </Row>
         </Block>
 {/* 
@@ -215,7 +216,7 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-        <article className="container mx-auto">
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">共通の納品までの流れ</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -242,7 +243,36 @@ const About: React.VFC = () => {
 
 
           </section>
-        </article>
+        </article> */}
+
+
+        <Block
+          sectionSubText="共通の納品までの流れ"
+          sectionTitle="タイトル"
+        >
+          <Row>
+            <Column>
+            <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+                hoge
+              </div>
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+                画像を乗せる
+              </div>
+            </Column>
+            <Column>
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+                画像を乗せる
+              </div>
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+                hoge
+              </div>
+            </Column>
+          </Row>
+        </Block>
+
+
+
+
       </Layout>
     </>
   );

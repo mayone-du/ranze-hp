@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer: React.VFC = () => {
   return (
     <>
-      <footer className="bg-gray-800 py-16">
+      <footer className="bg-custom-darkgray py-16">
         <div className="container mx-auto">
           <nav className="sm:flex mx-4 md:mx-auto md:w-11/12">
 
@@ -116,8 +117,14 @@ const Footer: React.VFC = () => {
           </nav>
 
           <div className="flex items-center justify-between w-11/12 mx-auto pt-8">
-            <div className="lg:mx-4 bg-gray-400">
-              <h4>Ranze</h4>
+            <div className="lg:mx-4 bg-white">
+              <h4>Ranze | イラストレーター</h4>
+              <Image
+                src="/images/logo.png"
+                width={150}
+                height={50}
+              />
+
             </div>
             <p className="text-white text-center py-6 lg:mx-4 text-sm">
               copyright&copy;&nbsp;Ranze
