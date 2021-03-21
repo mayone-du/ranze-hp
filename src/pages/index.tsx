@@ -19,7 +19,7 @@ const Home: React.VFC = () => {
         <article
           className="mx-auto"
         >
-          <section className="h-screen flex items-center justify-center flex-col bg-gray-50">
+          <section className="h-96 py-80 flex items-center justify-center flex-col bg-gray-50">
 
           </section>
         </article>
