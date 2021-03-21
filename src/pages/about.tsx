@@ -87,7 +87,33 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-        <article className="container mx-auto">
+
+
+        <Block
+          sectionSubText="よくある悩み"
+          sectionTitle="サンプルテキスト"
+        >
+          <Row>
+            <Column className="flex">
+              <ul className="list-disc px-8 py-4 bg-gray-50 text-lg w-full">
+                <li>〇〇のプレゼントで使いたい</li>
+                <li>彼氏/彼女と使いたい</li>
+                <li>サンプルテキスト</li>
+                <li>サンプルテキスト</li>
+              </ul>
+            </Column>
+            <Column>
+              <ul className="list-disc px-8 py-4 bg-gray-50 text-lg w-full">
+                <li>〇〇のプレゼントで使いたい</li>
+                <li>彼氏/彼女と使いたい</li>
+                <li>サンプルテキスト</li>
+                <li>サンプルテキスト</li>
+              </ul>
+            </Column>
+          </Row>
+        </Block>
+
+        {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">よくあるご要望</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -119,16 +145,17 @@ const About: React.VFC = () => {
               </div>
             </div>
           </section>
-        </article>
+        </article> */}
 
-        <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">意識しているポイント</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              サンプルテキスト
-            </h2>
-            <div className="flex w-11/12 mx-auto">
-              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+
+
+        <Block
+          sectionSubText="意識しているポイント"
+          sectionTitle="サンプルテキスト"
+        >
+          <Row>
+            <Column>
+            <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
                   <span className="text-xl px-2">ポイント1</span>
@@ -142,6 +169,34 @@ const About: React.VFC = () => {
                   <span className="text-xl px-2">ポイント1</span>
                 </li>
               </ul>
+            </Column>
+            <Column>
+            <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+                <li className="flex items-center my-2">
+                  <CheckCircle fontSize="large" />
+                  <span className="text-xl px-2">ポイント1</span>
+                </li>
+                <li className="flex items-center my-2">
+                  <CheckCircle fontSize="large" />
+                  <span className="text-xl px-2">ポイント1</span>
+                </li>
+                <li className="flex items-center my-2">
+                  <CheckCircle fontSize="large" />
+                  <span className="text-xl px-2">ポイント1</span>
+                </li>
+              </ul>
+            </Column>
+          </Row>
+        </Block>
+{/* 
+        <article className="container mx-auto">
+          <section className="md:py-16 py-10">
+            <p className="text-center">意識しているポイント</p>
+            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
+              サンプルテキスト
+            </h2>
+            <div className="flex w-11/12 mx-auto">
+              
               <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
@@ -158,7 +213,7 @@ const About: React.VFC = () => {
               </ul>
             </div>
           </section>
-        </article>
+        </article> */}
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
