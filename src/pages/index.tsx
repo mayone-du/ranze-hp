@@ -715,7 +715,54 @@ const Home: React.VFC = () => {
           </section>
         </article> */}
 
-        <article className="bg-gray-50 text-center">
+
+        <Block
+          addArticleClassName="bg-gray-50 text-center"
+          sectionSubText="お問い合わせ"
+          sectionTitle="CONTACT"
+        >
+          <Row>
+            <Column>
+              <CustomButton
+                toLink="/contact"
+                text="お問い合わせ"
+                size="large"
+                outline={false}
+                className="mx-auto my-6 lg:w-auto w-2/3"
+              />
+
+            </Column>
+          </Row>
+          <Row>
+            <Column>
+              <div className="mb-4">
+                <Link href="/contact">
+                  <a className="mx-4 text-blue-500">LINEでのお問い合わせ</a>
+                </Link>
+                <Link href="/faq">
+                  <a className="mx-4 text-blue-500">よくあるご質問はこちら</a>
+                </Link>
+              </div>
+            </Column>
+          </Row>
+          <Row>
+            <Column>
+              <div className="lg:flex items-center justify-center bg-white lg:w-1/2 w-11/12 lg:p-8 p-4 mx-auto shadow-sm">
+                <h3 className="lg:text-xl m-4 text-custom-darkgray">無料で見積もりしてみる</h3>
+                <CustomButton
+                  text="無料見積もり"
+                  size="medium"
+                  toLink="/"
+                  outline={true}
+                  className="m-4"
+                />
+              </div>
+            </Column>
+          </Row>
+        </Block>
+
+
+        {/* <article className="bg-gray-50 text-center">
           <section className="md:py-20 py-14">
             <p>お問い合わせ</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
@@ -749,7 +796,9 @@ const Home: React.VFC = () => {
               />
             </div>
           </section>
-        </article>
+        </article> */}
+
+
       </Layout>
     </>
   );
