@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 // import { useState } from "react";
 // import { CustomButton } from "../CustomColorButton";
 // import { Menu, Close } from "@material-ui/icons";
@@ -14,7 +15,14 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
   return (
     <>
       <h2 className="mt-8 mb-6">
-        <img className="block mx-auto object-cover w-56" src="/images/logo.png" alt="" />
+        <div className="text-center">
+          <Image
+            src="/images/logo.png"
+            width={110}
+            height={110}
+            className={"mx-auto"}
+          />
+        </div>
       </h2>
       <header className="mx-10 mb-8">
         <nav>

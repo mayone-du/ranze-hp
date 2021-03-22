@@ -117,12 +117,12 @@ const Footer: React.VFC = () => {
           </nav>
 
           <div className="flex items-center justify-between w-11/12 mx-auto pt-8">
-            <div className="lg:mx-4 bg-white">
-              <h4>Ranze | イラストレーター</h4>
+            <div className="lg:mx-4">
+              {/* <h4>Ranze | イラストレーター</h4> */}
               <Image
-                src="/images/logo.png"
-                width={150}
-                height={50}
+                src="/images/logo1.png"
+                width={110}
+                height={110}
               />
 
             </div>

@@ -20,10 +20,9 @@ const Home: React.VFC = () => {
           className="mx-auto"
         >
           <section className="h-96 md:py-80 py-40 flex items-center justify-center flex-col bg-gray-50 bg-center" style={{ "backgroundImage": "url(/images/main-bg.png)" }}>
-            <h1 className="pl-80 font-custom-fontFamily text-4xl font-bold text-custom-darkgray">
+            <h1 title="イラストレーター Ranze" className="pl-96 pb-60 font-serif text-2xl font-bold text-custom-darkgray">
+              Illustrator
               Ranze
-              official
-              site
               </h1>
           </section>
         </article>
