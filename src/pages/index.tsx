@@ -16,14 +16,21 @@ const Home: React.VFC = () => {
         isActivePage="Home"
       >
         {/* メインビジュアル */}
-        <article
-          className="mx-auto"
-        >
-          <section className="h-96 md:py-80 py-40 flex items-center justify-center flex-col bg-gray-50 bg-center" style={{ "backgroundImage": "url(/images/main-bg.png)" }}>
-            <h1 title="イラストレーター Ranze" className="pl-96 pb-60 font-serif text-2xl font-bold text-custom-darkgray">
-              Illustrator
-              Ranze
-              </h1>
+        <article className="mx-auto">
+          <section
+            className="h-96 md:py-80 py-40 flex items-center justify-center flex-col bg-gray-50 bg-center relative"
+            style={{
+              backgroundImage: "url(/images/main-bg.png)",
+              textShadow: "-3px 2px #e9e0da",
+              color: "#b69580",
+            }}
+          >
+            <h1
+              title="イラストレーター Ranze"
+              className="p-10 absolute top-44 left-1/2 font-serif text-2xl font-bold"
+            >
+              Illustrator Ranze
+            </h1>
           </section>
         </article>
 
@@ -160,7 +167,9 @@ const Home: React.VFC = () => {
                 />
               </div>
               <div className="w-2/3 p-2">
-                <h3 className="md:text-xl text-lg font-bold mb-2">LINEスタンプ制作</h3>
+                <h3 className="md:text-xl text-lg font-bold mb-2">
+                  LINEスタンプ制作
+                </h3>
                 <p className="md:text-base text-xs">
                   ご希望のイラスト通りにLINEスタンプを作成いたします！
                 </p>
@@ -176,7 +185,9 @@ const Home: React.VFC = () => {
                 />
               </div>
               <div className="w-2/3 p-2">
-                <h3 className="md:text-xl text-lg font-bold mb-2">イラスト制作</h3>
+                <h3 className="md:text-xl text-lg font-bold mb-2">
+                  イラスト制作
+                </h3>
                 <p className="md:text-base text-xs">
                   自社の商品から〇〇まで、汎用的に使えるイラストを制作いたします！
                 </p>
@@ -195,7 +206,9 @@ const Home: React.VFC = () => {
                 />
               </div>
               <div className="w-2/3 p-2">
-                <h3 className="md:text-xl text-lg font-bold mb-2">LINE絵文字制作</h3>
+                <h3 className="md:text-xl text-lg font-bold mb-2">
+                  LINE絵文字制作
+                </h3>
                 <p className="md:text-sm text-xs">
                   LINEで使える可愛い絵文字を作成いたします！
                   ちょっとした一言でも、絵文字をつけて温かいイメージに✨
@@ -369,7 +382,9 @@ const Home: React.VFC = () => {
                 className="object-cover"
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                <h3 className="md:text-lg text-base font-bold">LINEスタンプ40個</h3>
+                <h3 className="md:text-lg text-base font-bold">
+                  LINEスタンプ40個
+                </h3>
                 <p className="flex items-center md:text-lg text-sm py-2 justify-center lg:justify-start">
                   評価：
                   <Star className="text-yellow-400" />
@@ -395,7 +410,9 @@ const Home: React.VFC = () => {
                 className="object-cover"
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                <h3 className="md:text-lg text-base font-bold">LINEスタンプ40個</h3>
+                <h3 className="md:text-lg text-base font-bold">
+                  LINEスタンプ40個
+                </h3>
                 <p className="flex items-center md:text-lg text-sm py-2 justify-center lg:justify-start">
                   評価：
                   <Star className="text-yellow-400" />
@@ -420,7 +437,9 @@ const Home: React.VFC = () => {
                 className="object-cover"
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                <h3 className="md:text-lg text-base font-bold">LINEスタンプ40個</h3>
+                <h3 className="md:text-lg text-base font-bold">
+                  LINEスタンプ40個
+                </h3>
                 <p className="flex items-center md:text-lg text-sm py-2 justify-center lg:justify-start">
                   評価：
                   <Star className="text-yellow-400" />
@@ -549,7 +568,9 @@ const Home: React.VFC = () => {
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
               </span>
-              <h3 className="text-xl font-bold px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <h3 className="text-xl font-bold px-2 pt-6">
+                LINEスタンプ制作の場合
+              </h3>
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
@@ -572,7 +593,9 @@ const Home: React.VFC = () => {
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
               </span>
-              <h3 className="text-xl font-bold px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <h3 className="text-xl font-bold px-2 pt-6">
+                LINEスタンプ制作の場合
+              </h3>
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
@@ -595,7 +618,9 @@ const Home: React.VFC = () => {
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
               </span>
-              <h3 className="text-xl font-bold px-2 pt-6">LINEスタンプ制作の場合</h3>
+              <h3 className="text-xl font-bold px-2 pt-6">
+                LINEスタンプ制作の場合
+              </h3>
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
