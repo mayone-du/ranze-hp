@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { onEventDisable } from "../../../libs/onEventDisable";
 // import { useState } from "react";
 // import { CustomButton } from "../CustomColorButton";
 // import { Menu, Close } from "@material-ui/icons";
@@ -21,6 +22,9 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
             width={110}
             height={110}
             className={"mx-auto"}
+            onContextMenu={onEventDisable}
+            onMouseDown={onEventDisable}
+            onDragStart={onEventDisable}
           />
         </div>
       </h2>
