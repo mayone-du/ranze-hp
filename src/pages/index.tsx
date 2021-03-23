@@ -264,6 +264,9 @@ const Home: React.VFC = () => {
                   src="/images/bg.jpg"
                   width={150}
                   height={150}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
                 />
               </div>
               <div className="w-2/3 p-2">
