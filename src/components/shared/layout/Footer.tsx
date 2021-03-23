@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { onEventDisable } from "../../../libs/onEventDisable";
 
 const Footer: React.VFC = () => {
+
   return (
     <>
       <footer className="bg-custom-darkgray py-16">
@@ -123,6 +125,7 @@ const Footer: React.VFC = () => {
                 src="/images/logo1.png"
                 width={110}
                 height={110}
+                onContextMenu={onEventDisable} onMouseDown={onEventDisable} onDragStart={onEventDisable} 
               />
 
             </div>

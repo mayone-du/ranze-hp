@@ -6,8 +6,10 @@ import { CustomButton } from "../components/shared/CustomColorButton";
 import { Block } from "../components/shared/generalBlock/Block";
 import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
+import { onEventDisable } from "../libs/onEventDisable";
 
 const Home: React.VFC = () => {
+
   return (
     <>
       <Layout
@@ -16,7 +18,12 @@ const Home: React.VFC = () => {
         isActivePage="Home"
       >
         {/* メインビジュアル */}
-        <article className="mx-auto">
+        <article
+          className="mx-auto"
+          onContextMenu={onEventDisable}
+          onMouseDown={onEventDisable}
+          onDragStart={onEventDisable}
+        >
           <section
             className="h-96 md:py-80 py-40 flex items-center justify-center flex-col bg-gray-50 bg-center relative"
             style={{
@@ -66,7 +73,15 @@ const Home: React.VFC = () => {
         <Block sectionSubText="特徴" sectionTitle="FEATURES">
           <Row className="text-center">
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
-              <Image src="/images/bg.jpg" width={150} height={150} />
+              <Image
+                src="/images/features-01.png"
+                width={150}
+                height={150}
+                objectFit="cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
+              />
               <h3 className="py-4 lg:text-2xl text-custom-darkgray text-xl font-bold">
                 老若男女問わず人気！
               </h3>
@@ -75,7 +90,15 @@ const Home: React.VFC = () => {
               </p>
             </Column>
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
-              <Image src="/images/bg.jpg" width={150} height={150} />
+              <Image
+                src="/images/features-01.png"
+                width={150}
+                height={150}
+                objectFit="cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
+              />
               <h3 className="py-4 lg:text-2xl text-custom-darkgray text-xl font-bold">
                 基本的に修正回数は無制限！
               </h3>
@@ -83,8 +106,17 @@ const Home: React.VFC = () => {
                 あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
               </p>
             </Column>
+
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
-              <Image src="/images/bg.jpg" width={150} height={150} />
+              <Image
+                src="/images/features-01.png"
+                width={150}
+                height={150}
+                objectFit="cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
+              />
               <h3 className="py-4 lg:text-2xl text-custom-darkgray text-xl font-bold">
                 ストレスフリーなやりとり
               </h3>
@@ -164,6 +196,9 @@ const Home: React.VFC = () => {
                   src="/images/bg.jpg"
                   width={150}
                   height={150}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
                 />
               </div>
               <div className="w-2/3 p-2">
@@ -182,6 +217,9 @@ const Home: React.VFC = () => {
                   src="/images/bg.jpg"
                   width={150}
                   height={150}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
                 />
               </div>
               <div className="w-2/3 p-2">
@@ -203,6 +241,9 @@ const Home: React.VFC = () => {
                   src="/images/bg.jpg"
                   width={150}
                   height={150}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
                 />
               </div>
               <div className="w-2/3 p-2">
@@ -241,6 +282,9 @@ const Home: React.VFC = () => {
                   src="/images/bg.jpg"
                   width={150}
                   height={150}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
                 />
               </div>
               <div className="w-2/3 p-2">
@@ -380,6 +424,9 @@ const Home: React.VFC = () => {
                 width={200}
                 height={200}
                 className="object-cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                 <h3 className="md:text-lg text-base font-bold">
@@ -408,6 +455,9 @@ const Home: React.VFC = () => {
                 width={200}
                 height={200}
                 className="object-cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                 <h3 className="md:text-lg text-base font-bold">
@@ -435,6 +485,9 @@ const Home: React.VFC = () => {
                 width={200}
                 height={200}
                 className="object-cover"
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
               />
               <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
                 <h3 className="md:text-lg text-base font-bold">
@@ -563,7 +616,14 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="border border-custom-lightgray text-custom-darkgray relative">
               <div className="text-center">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+                <Image
+                  src="/images/bg.jpg"
+                  width={450}
+                  height={250}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
+                />
               </div>
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
@@ -588,7 +648,14 @@ const Home: React.VFC = () => {
             </Column>
             <Column className="border border-custom-lightgray text-custom-darkgray relative">
               <div className="text-center">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+                <Image
+                  src="/images/bg.jpg"
+                  width={450}
+                  height={250}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
+                />
               </div>
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
@@ -613,7 +680,14 @@ const Home: React.VFC = () => {
             </Column>
             <Column className="border border-custom-lightgray text-custom-darkgray relative">
               <div className="text-center">
-                <Image src="/images/bg.jpg" width={450} height={250} />
+                <Image
+                  src="/images/bg.jpg"
+                  width={450}
+                  height={250}
+                  onContextMenu={onEventDisable}
+                  onMouseDown={onEventDisable}
+                  onDragStart={onEventDisable}
+                />
               </div>
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 満枠対応中！
@@ -715,7 +789,6 @@ const Home: React.VFC = () => {
           </section>
         </article> */}
 
-
         <Block
           addArticleClassName="bg-gray-50 text-center"
           sectionSubText="お問い合わせ"
@@ -730,7 +803,6 @@ const Home: React.VFC = () => {
                 outline={false}
                 className="mx-auto my-6 lg:w-auto w-2/3"
               />
-
             </Column>
           </Row>
           <Row>
@@ -748,7 +820,9 @@ const Home: React.VFC = () => {
           <Row>
             <Column>
               <div className="lg:flex items-center justify-center bg-white lg:w-1/2 w-11/12 lg:p-8 p-4 mx-auto shadow-sm">
-                <h3 className="lg:text-xl m-4 text-custom-darkgray">無料で見積もりしてみる</h3>
+                <h3 className="lg:text-xl m-4 text-custom-darkgray">
+                  無料で見積もりしてみる
+                </h3>
                 <CustomButton
                   text="無料見積もり"
                   size="medium"
@@ -760,7 +834,6 @@ const Home: React.VFC = () => {
             </Column>
           </Row>
         </Block>
-
 
         {/* <article className="bg-gray-50 text-center">
           <section className="md:py-20 py-14">
@@ -797,8 +870,6 @@ const Home: React.VFC = () => {
             </div>
           </section>
         </article> */}
-
-
       </Layout>
     </>
   );
