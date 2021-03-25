@@ -9,3 +9,7 @@ body {
 .my_logo {
   font-family: Courier;
 }
+
+img {
+  pointer-events: none;
+}
