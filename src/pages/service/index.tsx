@@ -20,8 +20,8 @@ const Service: React.VFC = () => {
         <BreadCrumb currentPage={siteTitle} />
 
         <Block
-          sectionSubText="サービス紹介"
-          sectionTitle="カードみたいにしてリンクを貼る"
+          sectionSubText="サービス一覧"
+          sectionTitle="SERVICES"
         >
           <Row className="-my-4 lg:-my-0">
             <Column className="bg-gray-100 p-2">画像を乗せる</Column>

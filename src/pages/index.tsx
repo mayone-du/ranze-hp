@@ -103,7 +103,7 @@ const Home: React.VFC = () => {
                 基本的に修正回数は無制限！
               </h3>
               <p className="text-custom-darkgray">
-                あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
+                あまりに多い、または大幅すぎる場合は例外として、軽微な修正や要望は無制限で対応致します！遠慮せずにお気軽にご相談ください！
               </p>
             </Column>
 
@@ -207,6 +207,7 @@ const Home: React.VFC = () => {
                 </h3>
                 <p className="md:text-base text-xs">
                   ご希望のイラスト通りにLINEスタンプを作成いたします！
+
                 </p>
               </div>
             </Column>
@@ -253,7 +254,7 @@ const Home: React.VFC = () => {
                 <p className="md:text-sm text-xs">
                   LINEで使える可愛い絵文字を作成いたします！
                   ちょっとした一言でも、絵文字をつけて温かいイメージに✨
-                  絵文字としてでなく、簡単なスタンプとしての利用も出来ます！
+                  絵文字としてだけでなく、簡単なスタンプとしてもご利用いただけます！
                 </p>
               </div>
             </Column>
@@ -274,7 +275,8 @@ const Home: React.VFC = () => {
                   SNSなどのアイコン制作
                 </h3>
                 <p className="md:text-sm text-xs">
-                  TwitterやYouTubeなど、SNSなどのプロフィールに使える可愛いイラストを作成します！
+                  TwitterやYouTube、Instagramなど、SNSなどのプロフィールに使える可愛いイラストを作成します！
+                  個人用からビジネス用まで、幅広く対応いたします！
                 </p>
               </div>
             </Column>
@@ -293,7 +295,7 @@ const Home: React.VFC = () => {
               <div className="w-2/3 p-2">
                 <h3 className="md:text-xl text-lg font-bold mb-2">名刺制作</h3>
                 <p className="md:text-sm text-xs">
-                  ビジネスシーンや婚活で使用できるようなものなど、シンプルな名刺を作成します！
+                  ビジネスシーンや婚活で使用できるようなものなどの、シンプルな名刺を作成致します！
                 </p>
               </div>
             </Column>

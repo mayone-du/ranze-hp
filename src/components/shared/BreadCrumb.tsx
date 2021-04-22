@@ -8,7 +8,7 @@ const BreadCrumb: React.VFC<{
 }> = ({ currentPage, parentPage, parentPath }) => {
   return (
     <>
-      <ol className="absolute md:top-64 text-custom-darkgray top-40 left-0 w-full flex items-center md:text-base text-xs">
+      <ol className="absolute md:top-72 text-custom-darkgray top-60 left-0 w-full flex items-center md:text-base text-xs">
         <li className="flex items-center">
           <Link href={"/"}>
             <a className="flex items-center text-blue-500 md:ml-12 ml-4 md:mr-4 mr-1">

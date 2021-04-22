@@ -247,7 +247,7 @@ const Home: React.VFC = () => {
                 <p className="md:text-sm text-xs">
                   LINEで使える可愛い絵文字を作成いたします！
                   ちょっとした一言でも、絵文字をつけて温かいイメージに✨
-                  絵文字としてでなく、簡単なスタンプとしての利用も出来ます！
+                  絵文字としてだけでなく、簡単なスタンプとしてもご利用いただけます！
                 </p>
               </div>
             </Column>
@@ -265,7 +265,8 @@ const Home: React.VFC = () => {
                   SNSなどのアイコン制作
                 </h3>
                 <p className="md:text-sm text-xs">
-                  TwitterやYouTubeなど、SNSなどのプロフィールに使える可愛いイラストを作成します！
+                  TwitterやYouTube、Instagramなど、SNSなどのプロフィールに使える可愛いイラストを作成します！
+                  個人用からビジネス用まで、幅広く対応いたします！
                 </p>
               </div>
             </Column>

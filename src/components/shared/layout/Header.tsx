@@ -15,7 +15,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <h2 className="mt-8 mb-6">
+      <h2 className="md:mt-8 mt-6 md:mb-6 mb-4">
         <div className="text-center">
           <Image
             src="/images/logo.png"
@@ -28,7 +28,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
           />
         </div>
       </h2>
-      <header className="mx-10 mb-8">
+      <header className="mx-10 md:mb-8 mb-4">
         <nav>
           <ul className="flex items-center justify-center">
             <li>

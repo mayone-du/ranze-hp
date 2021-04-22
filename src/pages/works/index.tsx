@@ -1,10 +1,10 @@
-import { Layout } from "../components/shared/layout/Layout";
-import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
-import { BreadCrumb } from "../components/shared/BreadCrumb";
-
-import { Block } from "../components/shared/generalBlock/Block";
-import { Row } from "../components/shared/generalBlock/Row";
-import { Column } from "../components/shared/generalBlock/Column";
+import { Layout } from "../../components/shared/layout/Layout";
+import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
+import { BreadCrumb } from "../../components/shared/BreadCrumb";
+import Link from 'next/link'
+import { Block } from "../../components/shared/generalBlock/Block";
+import { Row } from "../../components/shared/generalBlock/Row";
+import { Column } from "../../components/shared/generalBlock/Column";
 
 const Works: React.VFC = () => {
   const siteTitle = "Works";
@@ -44,7 +44,15 @@ const Works: React.VFC = () => {
             <div className="flex w-11/12 mx-auto">
               <p className="lg:mx-4 my-4 w-full lg:text-base text-sm">
                 レビューを記載
+                <span className='text-blue-500'>
+
+              <Link href='/works/reviews'>
+                <a>reviews</a>
+              </Link>
+              </span>
+
               </p>
+
             </div>
           </section>
         </article>
