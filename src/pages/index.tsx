@@ -9,7 +9,6 @@ import { Column } from "../components/shared/generalBlock/Column";
 import { onEventDisable } from "../libs/onEventDisable";
 
 const Home: React.VFC = () => {
-
   return (
     <>
       <Layout
@@ -30,11 +29,12 @@ const Home: React.VFC = () => {
               backgroundImage: "url(/images/main-bg.png)",
               textShadow: "-3px 2px #e9e0da",
               color: "#b69580",
+              backgroundSize: "cover",
             }}
           >
             <h1
               title="イラストレーター Ranze"
-              className="p-10 absolute top-44 left-1/2 font-serif text-2xl font-bold"
+              className="p-10 absolute md:top-44 top-16 md:left-1/2 left-40 font-serif text-2xl font-bold"
             >
               Illustrator Ranze
             </h1>
@@ -136,57 +136,6 @@ const Home: React.VFC = () => {
           </div>
         </Block>
 
-        {/* <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">特徴</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              FEATURES
-            </h2>
-            <div className="lg:flex w-11/12 mx-auto">
-              <div className="bg-gray-50 lg:mx-4 my-4 w-full text-center p-4">
-                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">1</p>
-                <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 lg:text-2xl text-xl font-bold">
-                  老若男女問わず人気！
-                </h3>
-                <p>
-                  ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
-                </p>
-              </div>
-              <div className="bg-gray-50 lg:mx-4 my-4 w-full text-center p-4">
-                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">2</p>
-                <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 lg:text-2xl text-xl font-bold">
-                  基本的に修正回数は無制限！
-                </h3>
-                <p>
-                  あまりに多い、または大幅すぎる場合は例外として、軽微な修正は無制限で対応致します！気を使わずにお気軽にご相談ください！
-                </p>
-              </div>
-              <div className="bg-gray-50 lg:mx-4 my-4 w-full text-center p-4">
-                <p className="lg:text-6xl text-4xl font-bold lg:py-4 pb-4">3</p>
-                <Image src="/images/bg.jpg" width={150} height={150} />
-                <h3 className="py-4 lg:text-2xl text-xl font-bold">
-                  ストレスフリーなやりとり
-                </h3>
-                <p>
-                  丁寧かつ円滑なコミュニケーションはもちろん、公式ライン、Slack、メールなどの中でお好きなツールをご利用いただけます！
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <CustomButton
-                text="もっと見る"
-                toLink="/"
-                outline={true}
-                size="medium"
-                className="mx-auto my-8"
-              />
-            </div>
-          </section>
-        </article>
- */}
-
         <Block sectionSubText="サービス" sectionTitle="SERVICE">
           <Row>
             <Column className="bg-gray-50 md:p-6 text-custom-darkgray p-2 flex shadow-sm">
@@ -207,7 +156,6 @@ const Home: React.VFC = () => {
                 </h3>
                 <p className="md:text-base text-xs">
                   ご希望のイラスト通りにLINEスタンプを作成いたします！
-
                 </p>
               </div>
             </Column>
@@ -311,101 +259,6 @@ const Home: React.VFC = () => {
           </div>
         </Block>
 
-        {/* <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">サービス</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              SERVICE
-            </h2>
-
-            <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:m-4 my-4 w-full flex bg-gray-50 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3 className="text-xl">LINEスタンプ制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-
-              <div className="lg:m-4 my-4 w-full flex bg-gray-50 p-6">
-                <div className="w-4/12 p-2 flex items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3 className="text-xl">イラスト制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:m-4 my-4 w-full flex bg-gray-50 p-6">
-                <div className="w-4/12 p-2 flex text-center items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3>アイコン制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-              <div className="lg:m-4 my-4 w-full flex bg-gray-50 p-6">
-                <div className="w-4/12 p-2 flex text-center items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3>名刺制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-              <div className="lg:m-4 my-4 w-full flex bg-gray-50 p-6">
-                <div className="w-4/12 p-2 flex text-center items-center justify-center">
-                  <Image
-                    className="block w-1/3 rounded-full"
-                    src="/images/bg.jpg"
-                    width={150}
-                    height={150}
-                  />
-                </div>
-                <div className="w-2/3 p-2">
-                  <h3>LINEの絵文字制作</h3>
-                  <p>サンプルテキスト。サンプルテキスト。</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <CustomButton
-                text="もっと見る"
-                toLink="/"
-                outline={true}
-                size="medium"
-                className="mx-auto my-4"
-              />
-            </div>
-          </section>
-        </article> */}
-
         <Block sectionSubText="実績" sectionTitle="WORKS">
           <Row>
             <Column className="bg-gray-50">画像をタイルで表示</Column>
@@ -447,8 +300,12 @@ const Home: React.VFC = () => {
                   <span className="mx-4">5/5</span>
                 </p>
                 <p className="lg:text-base text-xs">
-                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  イラストの素晴らしさは言うまでもありませんが、 作業の迅速性、
+                  円滑なコミニュケーション、
+                  修正を依頼しても細やかに応えてくれる適応性、
+                  なによりアフターケアを含めた 気遣いが素晴らしく。
+                  お取り引きをする上で とても信頼のおける出品者様でした。
+                  ぜひまたご一緒に お仕事がしたいなと思いました。
                 </p>
               </div>
             </Column>
@@ -478,7 +335,13 @@ const Home: React.VFC = () => {
                   <span className="mx-4">5/5</span>
                 </p>
                 <p className="lg:text-base text-xs">
-                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  今回初めてLINEスタンプを作成しようと 購入させて頂きました！
+                  絵タッチがとても好みで
+                  完成商品も想像以上の物を作って頂きました！
+                  大変満足しております！ 納品後も審査の出し方など
+                  嫌な顔1つせず丁寧に教えて頂き ありがとうございます！
+                  審査が通るかどうか分かりませんが 今から待ち遠しいです！
+                  今回の取引ありがとうございました(●´ω`●)
                 </p>
               </div>
             </Column>
@@ -508,8 +371,7 @@ const Home: React.VFC = () => {
                   <span className="mx-4">5/5</span>
                 </p>
                 <p className="lg:text-base text-xs">
-                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                  とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
+                  とても親身にたくさんのご提案をいただきました。センスあるかわいいスタンプたちが出来上がってとっても満足しています！返信や納期も早く本当に助かりました！ぜひまたお願いしたく思います。この度はありがとうございました！
                 </p>
               </div>
             </Column>
@@ -517,105 +379,13 @@ const Home: React.VFC = () => {
           <div className="flex justify-center">
             <CustomButton
               text="もっと見る"
-              toLink="/"
+              toLink="/works/reviews"
               outline={true}
               size="medium"
               className="mx-auto mt-4"
             />
           </div>
         </Block>
-
-        {/* <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">評価</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              REVIEW
-            </h2>
-            <div className="w-11/12 mx-auto">
-              <div className="xl:flex xl:m-4 my-4 bg-gray-50 py-4 xl:p-8 text-center xl:text-left">
-                <Image
-                  src="/images/bg.jpg"
-                  width={200}
-                  height={200}
-                  className="rounded-full object-cover"
-                />
-                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                  <h3 className="text-lg">LINEスタンプ40個</h3>
-                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
-                    評価：
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <span className="mx-4">5/5</span>
-                  </p>
-                  <p className="lg:text-base text-sm">
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                  </p>
-                </div>
-              </div>
-              <div className="xl:flex xl:m-4 my-4 bg-gray-50 py-4 xl:p-8 text-center xl:text-left">
-                <Image
-                  src="/images/bg.jpg"
-                  width={200}
-                  height={200}
-                  className="rounded-full object-cover"
-                />
-                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                  <h3 className="text-lg">LINEスタンプ40個</h3>
-                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
-                    評価：
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <span className="mx-4">5/5</span>
-                  </p>
-                  <p className="lg:text-base text-sm">
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                  </p>
-                </div>
-              </div>
-              <div className="xl:flex xl:m-4 my-4 bg-gray-50 py-4 xl:p-8 text-center xl:text-left">
-                <Image
-                  src="/images/bg.jpg"
-                  width={200}
-                  height={200}
-                  className="rounded-full object-cover"
-                />
-                <div className="xl:pl-8 xl:mx-4 mx-auto w-11/12">
-                  <h3 className="text-lg">LINEスタンプ40個</h3>
-                  <p className="flex items-center text-lg py-2 justify-center lg:justify-start">
-                    評価：
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <Star className="text-yellow-400" />
-                    <span className="mx-4">5/5</span>
-                  </p>
-                  <p className="lg:text-base text-sm">
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                    とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。とても良かったです。
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <CustomButton
-                text="もっと見る"
-                toLink="/"
-                outline={true}
-                size="medium"
-                className="mx-auto my-4"
-              />
-            </div>
-          </section>
-        </article> */}
 
         <Block sectionSubText="対応中のサービス" sectionTitle="ACCEPT">
           <Row>
@@ -726,74 +496,6 @@ const Home: React.VFC = () => {
           </div>
         </Block>
 
-        {/* <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">対応中のサービス</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              ACCEPT
-            </h2>
-
-            <div className="lg:flex w-11/12 mx-auto">
-              <div className="lg:mx-4 w-full my-4 lg:my-0 border-2 rounded-sm overflow-hidden relative"></div>
-              <div className="lg:mx-4 w-full my- border-md overflow-hiddenrounded-s shadow-mdm overflow-hidden relative">
-                <div className="text-center">
-                  <Image src="/images/bg.jpg" width={450} height={250} />
-                </div>
-                <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
-                  満枠対応中！
-                </span>
-                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
-                <ul className="list-disc pt-2 pb-4 px-6">
-                  <li>40個</li>
-                  <li>納期：指定なし</li>
-                  <li>オプション：キャラクター追加</li>
-                  <li>料金：10,000円</li>
-                </ul>
-                <div className="flex justify-center py-4">
-                  <CustomButton
-                    toLink=""
-                    text="もっと見る"
-                    size="medium"
-                    outline={true}
-                  />
-                </div>
-              </div>
-              <div className="lg:mx-4 w-full my- border-md overflow-hiddenrounded-s shadow-mdm overflow-hidden relative">
-                <div className="text-center">
-                  <Image src="/images/bg.jpg" width={450} height={250} />
-                </div>
-                <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
-                  満枠対応中！
-                </span>
-                <h3 className="text-xl px-2 pt-6">LINEスタンプ制作の場合</h3>
-                <ul className="list-disc pt-2 pb-4 px-6">
-                  <li>40個</li>
-                  <li>納期：指定なし</li>
-                  <li>オプション：キャラクター追加</li>
-                  <li>料金：10,000円</li>
-                </ul>
-                <div className="flex justify-center py-4">
-                  <CustomButton
-                    toLink=""
-                    text="もっと見る"
-                    size="medium"
-                    outline={true}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <CustomButton
-                text="もっと見る"
-                toLink="/"
-                outline={true}
-                size="medium"
-                className="mx-auto my-4"
-              />
-            </div>
-          </section>
-        </article> */}
-
         <Block
           addArticleClassName="bg-gray-50 text-center"
           sectionSubText="お問い合わせ"
@@ -839,42 +541,6 @@ const Home: React.VFC = () => {
             </Column>
           </Row>
         </Block>
-
-        {/* <article className="bg-gray-50 text-center">
-          <section className="md:py-20 py-14">
-            <p>お問い合わせ</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              CONTACT
-            </h2>
-            <CustomButton
-              toLink="/contact"
-              text="お問い合わせ"
-              size="large"
-              outline={false}
-              className="mx-auto my-6 lg:w-auto w-2/3"
-            />
-
-            <div className="mb-4">
-              <Link href="/contact">
-                <a className="mx-4 text-blue-500">LINEでのお問い合わせ</a>
-              </Link>
-              <Link href="/faq">
-                <a className="mx-4 text-blue-500">よくあるご質問はこちら</a>
-              </Link>
-            </div>
-
-            <div className="lg:flex items-center justify-center bg-white lg:w-1/2 w-11/12 lg:p-8 p-4 mx-auto shadow-sm">
-              <h3 className="lg:text-xl m-4">無料で見積もりしてみる</h3>
-              <CustomButton
-                text="無料見積もり"
-                size="medium"
-                toLink="/"
-                outline={true}
-                className="m-4"
-              />
-            </div>
-          </section>
-        </article> */}
       </Layout>
     </>
   );

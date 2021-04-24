@@ -92,6 +92,11 @@ const Footer: React.VFC = () => {
                   <a className="border-b border-white">サービス（見積もり）</a>
                 </Link>
               </li>
+              <li className="my-4">
+                <Link href="/works/reviews">
+                  <a className="border-b border-white">評価（レビュー）一覧</a>
+                </Link>
+              </li>
             </ul>
 
             <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
