@@ -1,10 +1,10 @@
 import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
-
 import { Block } from "../../components/shared/generalBlock/Block";
 import { Row } from "../../components/shared/generalBlock/Row";
 import { Column } from "../../components/shared/generalBlock/Column";
+import { AccountCircle } from '@material-ui/icons';
 
 const Reviews: React.VFC = () => {
   const siteTitle = "Reviews";
@@ -25,12 +25,9 @@ const Reviews: React.VFC = () => {
           </h2>
           <Row>
             <Column className="my-0">
-              <p className="bg-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti nam qui magnam numquam est debitis facere sit delectus
-                laudantium animi ab libero at reiciendis, ducimus expedita hic
-                sunt cum vel.
-              </p>
+              <div className='bg-gray-100'>
+                <div><AccountCircle />profile</div>
+              </div>
             </Column>
           </Row>
         </Block>

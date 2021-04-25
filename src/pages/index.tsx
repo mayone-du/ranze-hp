@@ -45,27 +45,8 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="text-sm text-custom-darkgray md:text-base">
               ご覧頂きありがとうございます。イラストレーターのRanzeです._.
-              お客様とのご縁を大切にしています。 Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Cupiditate aperiam minus laudantium
-              culpa accusamus soluta unde aliquid eum obcaecati magnam tempora
-              repellat atque asperiores vitae distinctio ipsum autem,
-              praesentium natus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Cupiditate aperiam minus laudantium culpa
-              accusamus soluta unde aliquid eum obcaecati magnam tempora
-              repellat atque asperiores vitae distinctio ipsum autem,
-              praesentium natus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Cupiditate aperiam minus laudantium culpa
-              accusamus soluta unde aliquid eum obcaecati magnam tempora
-              repellat atque asperiores vitae distinctio ipsum autem,
-              praesentium natus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Cupiditate aperiam minus laudantium culpa
-              accusamus soluta unde aliquid eum obcaecati magnam tempora
-              repellat atque asperiores vitae distinctio ipsum autem,
-              praesentium natus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Cupiditate aperiam minus laudantium culpa
-              accusamus soluta unde aliquid eum obcaecati magnam tempora
-              repellat atque asperiores vitae distinctio ipsum autem,
-              praesentium natus.
+              18歳からフリーランスのイラストレーターとして活動しています。
+              ココナラやTwitter、このHPなどをとおして、たくさんの方にご依頼していただいております。
             </Column>
           </Row>
         </Block>
