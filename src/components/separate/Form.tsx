@@ -9,7 +9,7 @@ import {
   FormControlLabel,
 } from "@material-ui/core";
 import { RadioButtonUnchecked, Clear, Send } from "@material-ui/icons";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, ChangeEventHandler } from "react";
 import Router from "next/router";
 
 const Form: React.VFC = () => {
@@ -29,18 +29,26 @@ const Form: React.VFC = () => {
   const [formErrors, setFormErrors] = useState(true);
 
   // 入力欄に変更があったときの処理
-  const onChangeName = (e) => {
+  const onChangeName: ChangeEventHandler<
+    HTMLTextAreaElement | HTMLInputElement
+  > = useCallback((e) => {
     setFormName(e.target.value);
-  };
-  const onChangeEmail = (e) => {
+  }, []);
+  const onChangeEmail: ChangeEventHandler<
+    HTMLTextAreaElement | HTMLInputElement
+  > = useCallback((e) => {
     setFormEmail(e.target.value);
-  };
-  const onChangeRadio = (e) => {
+  }, []);
+  const onChangeRadio: ChangeEventHandler<
+    HTMLTextAreaElement | HTMLInputElement
+  > = useCallback((e) => {
     setFormRadio(e.target.value);
-  };
-  const onChangeText = (e) => {
+  }, []);
+  const onChangeText: ChangeEventHandler<
+    HTMLTextAreaElement | HTMLInputElement
+  > = useCallback((e) => {
     setFormText(e.target.value);
-  };
+  }, []);
 
   // 名前欄のエラーチェック
   const validateName = () => {
@@ -238,7 +246,6 @@ const Form: React.VFC = () => {
           />
         </div>
 
-
         {/* 送信ボタン */}
         <div>
           <Button
@@ -248,7 +255,13 @@ const Form: React.VFC = () => {
             color={formErrors ? "secondary" : "primary"}
             onClick={submitForm}
           >
-            <span className={formErrors ? "line-through flex items-center" : "flex items-center"}>
+            <span
+              className={
+                formErrors
+                  ? "line-through flex items-center"
+                  : "flex items-center"
+              }
+            >
               送信する
               <Send />
             </span>
