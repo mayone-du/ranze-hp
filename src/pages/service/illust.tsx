@@ -1,6 +1,9 @@
 import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
+import { Block } from "../../components/shared/generalBlock/Block";
+import { Row } from "../../components/shared/generalBlock/Row";
+import { Column } from "../../components/shared/generalBlock/Column";
 
 const LineStamp: React.VFC = () => {
   const siteTitle = "イラスト";
@@ -11,9 +14,20 @@ const LineStamp: React.VFC = () => {
         metaDescription="meta"
         isActivePage={siteTitle}
       >
-        <SubPageMainVisual title={siteTitle} subText="service/illust sub text" />
-        <BreadCrumb parentPage={"Service"} parentPath={"/service"} currentPage={siteTitle} />
-      
+        <SubPageMainVisual
+          title={siteTitle}
+          subText="service/illust sub text"
+        />
+        <BreadCrumb
+          parentPage={"Service"}
+          parentPath={"/service"}
+          currentPage={siteTitle}
+        />
+        <Block sectionTitle="ILLUST" sectionSubText="イラスト">
+          <Row>
+            <Column>イラスト</Column>
+          </Row>
+        </Block>
       </Layout>
     </>
   );
