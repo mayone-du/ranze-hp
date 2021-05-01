@@ -47,6 +47,8 @@ const Home: React.VFC = () => {
               ご覧頂きありがとうございます。イラストレーターのRanzeです._.
               18歳からフリーランスのイラストレーターとして活動しています。
               ココナラやTwitter、このHPなどをとおして、たくさんの方にご依頼していただいております。
+              ご依頼に関しては、基本的に納期を設けずに進めさせていただいております。納期を設定しないほうが精神的に余裕ができ、より質の高いイラストを制作できるので、納期は基本的に設けないで進めさせていただきます。
+              もちろん急ぎの方は柔軟に対応しますが、かなりタイトな場合などは断らせて頂く場合がございますので予めご了承ください。
             </Column>
           </Row>
         </Block>
@@ -67,7 +69,7 @@ const Home: React.VFC = () => {
                 老若男女問わず人気！
               </h3>
               <p className="text-custom-darkgray">
-                ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、お客様に合わせた制作が可能です！
+                ゆるくて可愛いイラストを気に入っていただけ、老若男女問わずにご使用頂いています！個数も8~40個と、ご要望に合わせた制作が可能です！
               </p>
             </Column>
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
@@ -117,7 +119,7 @@ const Home: React.VFC = () => {
           </div>
         </Block>
 
-        <Block sectionSubText="サービス" sectionTitle="SERVICE">
+        <Block sectionSubText="サービス" sectionTitle="SERVICES">
           <Row>
             <Column className="bg-gray-50 md:p-6 text-custom-darkgray p-2 flex shadow-sm">
               <div className="w-4/12 p-2 flex items-center justify-center">
@@ -137,6 +139,8 @@ const Home: React.VFC = () => {
                 </h3>
                 <p className="md:text-base text-xs">
                   ご希望のイラスト通りにLINEスタンプを作成いたします！
+                  希望するイメージ等がなく、おまかせしたいなどでも大丈夫です！
+                  作りながら、お客様のご要望どおりに進めさせていただきます！
                 </p>
               </div>
             </Column>
@@ -255,7 +259,7 @@ const Home: React.VFC = () => {
           </div>
         </Block>
 
-        <Block sectionSubText="評価" sectionTitle="REVIEW">
+        <Block sectionSubText="評価" sectionTitle="REVIEWS">
           <Row>
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
@@ -390,7 +394,7 @@ const Home: React.VFC = () => {
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
-                <li>オプション：キャラクター追加</li>
+                <li>オプション：キャラクター追加、作成物を非公開</li>
                 <li>料金：10,000円</li>
               </ul>
               <div className="flex justify-center py-4">
@@ -417,10 +421,10 @@ const Home: React.VFC = () => {
                 満枠対応中！
               </span>
               <h3 className="text-xl font-bold px-2 pt-6">
-                LINEスタンプ制作の場合
+                汎用イラスト制作の場合（Twitterのバナー）
               </h3>
               <ul className="list-disc pt-2 pb-4 px-6">
-                <li>40個</li>
+                <li>1枚</li>
                 <li>納期：指定なし</li>
                 <li>オプション：キャラクター追加</li>
                 <li>料金：10,000円</li>
@@ -446,16 +450,16 @@ const Home: React.VFC = () => {
                 />
               </div>
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
-                満枠対応中！
+                2 / 5 枠対応中！
               </span>
               <h3 className="text-xl font-bold px-2 pt-6">
-                LINEスタンプ制作の場合
+                LINE絵文字の場合
               </h3>
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
-                <li>オプション：キャラクター追加</li>
-                <li>料金：10,000円</li>
+                <li>オプション：なし</li>
+                <li>料金：3,000円</li>
               </ul>
               <div className="flex justify-center py-4">
                 <CustomButton

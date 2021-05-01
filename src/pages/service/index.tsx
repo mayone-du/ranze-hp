@@ -19,56 +19,22 @@ const Service: React.VFC = () => {
         <SubPageMainVisual title={siteTitle} subText="service sub text" />
         <BreadCrumb currentPage={siteTitle} />
 
-        <Block
-          sectionSubText="サービス一覧"
-          sectionTitle="SERVICES"
-        >
+        <Block sectionSubText="サービス一覧" sectionTitle="SERVICES">
           <Row className="-my-4 lg:-my-0">
             <Column className="bg-gray-100 p-2">画像を乗せる</Column>
             <Column className="bg-gray-100 p-2">hoge</Column>
           </Row>
           <Row>
-            <Column className="bg-gray-100 p-2">
-              hoge
-            </Column>
-            <Column className="bg-gray-100 p-2">
-              画像
-            </Column>
+            <Column className="bg-gray-100 p-2">hoge</Column>
+            <Column className="bg-gray-100 p-2">画像</Column>
           </Row>
         </Block>
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
-            <p className="text-center">サービス紹介</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              カードみたいにしてリンクを貼る
-            </h2>
-
-            <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                hoge
-              </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                画像を乗せる
-              </div>
-            </div>
-
-            <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                画像
-              </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                テキスト
-              </div>
-            </div>
-          </section>
-        </article>
-
-        <article className="container mx-auto">
-          <section className="md:py-16 py-10">
             <p className="text-center">サービス一覧</p>
             <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              SERVICE LIST
+              SERVICES LIST
             </h2>
             <div className="flex w-11/12 mx-auto">
               <div className="md:mx-4 my-4 w-full bg-gray-100">
@@ -101,47 +67,25 @@ const Service: React.VFC = () => {
                   </li>
                 </ul>
               </div>
-
             </div>
           </section>
         </article>
 
-        <article className="container mx-auto">
-          <section className="md:py-16 py-10">
-            <p className="text-center">納品の流れ（共通）</p>
-            <h2 className="lg:text-4xl text-2xl tracking-widest font-bold text-center lg:py-4 py-2">
-              納品の流れ
-            </h2>
+        <Block sectionTitle="FLOW" sectionSubText="納品の流れ">
+          <Row>
+            <Column>
+              hoge
+            </Column>
+          </Row>
+        </Block>
 
-            <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                hoge
-              </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                画像を乗せる
-              </div>
-            </div>
-
-            <div className="flex w-11/12 mx-auto my-4">
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                画像
-              </div>
-              <div className="flex justify-center flex-col md:mx-4 p-2 bg-gray-100 w-full">
-                テキスト
-              </div>
-            </div>
-          </section>
-        </article>
-
-        <article className="container mx-auto">
-          <section>
-            <div className="flex w-11/12 mx-auto">
-              <div className="md:mx-4 w-full">
-                <Estimate />
-              </div>
-            </div>
-          </section>
-        </article>
+        <Block sectionTitle="ESTIMATE" sectionSubText="見積もりシュミレーター">
+          <Row>
+            <Column>
+              <Estimate />
+            </Column>
+          </Row>
+        </Block>
       </Layout>
     </>
   );
