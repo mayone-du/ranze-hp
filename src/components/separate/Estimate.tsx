@@ -1,7 +1,6 @@
 import { Button } from "@material-ui/core";
 
 const Estimate: React.VFC = () => {
-  
   const lineStampOnClick = () => {
     console.log("lineStamp Click!!");
   };

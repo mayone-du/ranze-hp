@@ -30,37 +30,35 @@ const Service: React.VFC = () => {
           </Row>
         </Block>
 
-
-<Block sectionTitle='SERVICES LIST' sectionSubText='サービス一覧'>
-  <Row>
-    <Column className='bg-gray-300'>
-      <Link href='/service/line-stamp'>
-        <a className='block text-blue-500 px-4 py-6'>LINEスタンプ</a>
-      </Link>
-    </Column>
-    <Column className='bg-gray-300'>
-      <Link href='/service/line-stamp'>
-        <a className='block text-blue-500 px-4 py-6'>LINEスタンプ</a>
-      </Link>
-    </Column>
-    <Column className='bg-gray-300'>
-      <Link href='/service/line-stamp'>
-        <a className='block text-blue-500 px-4 py-6'>LINEスタンプ</a>
-      </Link>
-    </Column>
-    <Column className='bg-gray-300'>
-      <Link href='/service/line-stamp'>
-        <a className='block text-blue-500 px-4 py-6'>LINEスタンプ</a>
-      </Link>
-    </Column>
-    <Column className='bg-gray-300'>
-      <Link href='/service/line-stamp'>
-        <a className='block text-blue-500 px-4 py-6'>LINEスタンプ</a>
-      </Link>
-    </Column>
-  </Row>
-</Block>
-
+        <Block sectionTitle="SERVICES LIST" sectionSubText="サービス一覧">
+          <Row>
+            <Column className="bg-gray-300">
+              <Link href="/service/line-stamp">
+                <a className="block text-blue-500 px-4 py-6">LINEスタンプ</a>
+              </Link>
+            </Column>
+            <Column className="bg-gray-300">
+              <Link href="/service/line-stamp">
+                <a className="block text-blue-500 px-4 py-6">LINEスタンプ</a>
+              </Link>
+            </Column>
+            <Column className="bg-gray-300">
+              <Link href="/service/line-stamp">
+                <a className="block text-blue-500 px-4 py-6">LINEスタンプ</a>
+              </Link>
+            </Column>
+            <Column className="bg-gray-300">
+              <Link href="/service/line-stamp">
+                <a className="block text-blue-500 px-4 py-6">LINEスタンプ</a>
+              </Link>
+            </Column>
+            <Column className="bg-gray-300">
+              <Link href="/service/line-stamp">
+                <a className="block text-blue-500 px-4 py-6">LINEスタンプ</a>
+              </Link>
+            </Column>
+          </Row>
+        </Block>
 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
@@ -72,27 +70,27 @@ const Service: React.VFC = () => {
               <div className="md:mx-4 my-4 w-full bg-gray-100">
                 <h3 className="text-3xl">LINE</h3>
                 <ul className="border-collapse border-gray-400">
-                  <li className='my-4 border border-gray-500'>
+                  <li className="my-4 border border-gray-500">
                     <Link href="/service/line-stamp">
                       <a className="text-blue-500 text-lg p-4">LINEスタンプ</a>
                     </Link>
                   </li>
-                  <li className='my-4 border border-gray-500'>
+                  <li className="my-4 border border-gray-500">
                     <Link href="/service/line-pictograph">
                       <a className="text-blue-500 text-lg p-4">LINE絵文字</a>
                     </Link>
                   </li>
-                  <li className='my-4 border border-gray-500'>
+                  <li className="my-4 border border-gray-500">
                     <Link href="/service/illust">
                       <a className="text-blue-500 text-lg p-4">イラスト制作</a>
                     </Link>
                   </li>
-                  <li className='my-4 border border-gray-500'>
+                  <li className="my-4 border border-gray-500">
                     <Link href="/service/sns-icon">
                       <a className="text-blue-500 text-lg p-4">アイコン制作</a>
                     </Link>
                   </li>
-                  <li className='my-4 border border-gray-500'>
+                  <li className="my-4 border border-gray-500">
                     <Link href="/service/business-card">
                       <a className="text-blue-500 text-lg p-4">名刺制作</a>
                     </Link>
@@ -105,9 +103,7 @@ const Service: React.VFC = () => {
 
         <Block sectionTitle="FLOW" sectionSubText="納品の流れ">
           <Row>
-            <Column>
-              hoge
-            </Column>
+            <Column>hoge</Column>
           </Row>
         </Block>
 

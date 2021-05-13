@@ -5,7 +5,7 @@ import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
 
 const FAQ: React.VFC = () => {
-  const siteTitle = "FAQ"
+  const siteTitle = "FAQ";
   return (
     <>
       <Layout

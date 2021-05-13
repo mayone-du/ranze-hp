@@ -16,10 +16,7 @@ const SiteMap: React.VFC = () => {
       >
         <SubPageMainVisual title={siteTitle} subText="subtext" />
 
-        <Block
-          sectionSubText="subtext"
-          sectionTitle="title"
-        >
+        <Block sectionSubText="subtext" sectionTitle="title">
           <Row>
             <Column className="border-r-2 border-l-2">
               <h3>LINE</h3>
@@ -93,7 +90,7 @@ const SiteMap: React.VFC = () => {
             </div>
           </section>
         </article> */}
-{/* 
+        {/* 
         <article className="container mx-auto">
           <section>
             <div className="flex w-11/12 mx-auto">

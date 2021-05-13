@@ -3,13 +3,11 @@ import Image from "next/image";
 import { onEventDisable } from "../../../libs/onEventDisable";
 
 const Footer: React.VFC = () => {
-
   return (
     <>
       <footer className="bg-custom-darkgray py-16">
         <div className="container mx-auto">
           <nav className="sm:flex mx-4 md:mx-auto md:w-11/12">
-
             <ul className="md:mx-4 w-full text-white mb-14 md:mb-0">
               <li>
                 <h3 className="text-xl border-l-4 border-gray-300 px-2 md:mb-8 mb-4">
@@ -112,7 +110,9 @@ const Footer: React.VFC = () => {
               </li>
               <li className="my-4">
                 <Link href="/privacy-policy">
-                  <a className="border-b border-white">プライバシー・ポリシー</a>
+                  <a className="border-b border-white">
+                    プライバシー・ポリシー
+                  </a>
                 </Link>
               </li>
               <li className="my-4">
@@ -130,15 +130,15 @@ const Footer: React.VFC = () => {
                 src="/images/logo1.png"
                 width={110}
                 height={110}
-                onContextMenu={onEventDisable} onMouseDown={onEventDisable} onDragStart={onEventDisable} 
+                onContextMenu={onEventDisable}
+                onMouseDown={onEventDisable}
+                onDragStart={onEventDisable}
               />
-
             </div>
             <p className="text-white text-center py-6 lg:mx-4 text-sm">
               copyright&copy;&nbsp;Ranze
             </p>
           </div>
-
         </div>
       </footer>
     </>

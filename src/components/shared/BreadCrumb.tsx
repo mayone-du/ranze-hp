@@ -37,7 +37,9 @@ const BreadCrumb: React.VFC<{
           </>
         )}
 
-        <li className="flex font-bold items-center md:mx-4 mx-1">{currentPage}</li>
+        <li className="flex font-bold items-center md:mx-4 mx-1">
+          {currentPage}
+        </li>
       </ol>
     </>
   );

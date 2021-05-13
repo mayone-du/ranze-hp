@@ -61,7 +61,8 @@ const Form: React.VFC = () => {
 
   // email欄のエラーチェック
   const validateEmail = () => {
-    const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const regex =
+      /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (regex.test(formEmail)) {
       setInputEmailError(false);
     } else {

@@ -5,8 +5,15 @@ const PrivacyPolicy: React.VFC = () => {
   const siteMetaTitle = "privacy policy";
   return (
     <>
-      <Layout metaTitle={siteMetaTitle} metaDescription="desc" isActivePage={siteMetaTitle}>
-        <SubPageMainVisual title="Privacy, Policy" subText="プライバシー・ポリシー" />
+      <Layout
+        metaTitle={siteMetaTitle}
+        metaDescription="desc"
+        isActivePage={siteMetaTitle}
+      >
+        <SubPageMainVisual
+          title="Privacy, Policy"
+          subText="プライバシー・ポリシー"
+        />
         <p>プライバシーポリシーを記載</p>
       </Layout>
     </>

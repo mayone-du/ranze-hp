@@ -18,18 +18,13 @@ const Contact: React.VFC = () => {
         <SubPageMainVisual title={siteTitle} subText="contact sub text" />
         <BreadCrumb currentPage={siteTitle} />
 
-        <Block
-          sectionSubText="お問合せフォーム"
-          sectionTitle="CONTACT"
-        >
+        <Block sectionSubText="お問合せフォーム" sectionTitle="CONTACT">
           <Row>
             <Column className="bg-gray-100">
               <Form />
             </Column>
           </Row>
         </Block>
-
-
       </Layout>
     </>
   );

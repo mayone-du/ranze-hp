@@ -7,7 +7,6 @@ import { Block } from "../components/shared/generalBlock/Block";
 import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
 
-
 const About: React.VFC = () => {
   const siteTitle = "About";
   return (
@@ -20,24 +19,18 @@ const About: React.VFC = () => {
         <SubPageMainVisual title={siteTitle} subText="about sub text" />
         <BreadCrumb currentPage={siteTitle} />
 
-
-        <Block
-          sectionSubText="subText"
-          sectionTitle="Title"
-        >
+        <Block sectionSubText="subText" sectionTitle="Title">
           <Row>
             <Column>
               <p className="lg:mx-4 mx-0 bg-gray-50 w-full">
-                経緯などを記載？
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi, molestias harum maiores ullam, fugiat at nesciunt
-                totam dolor amet, incidunt atque neque sed magni deserunt
-                blanditiis minus. Fugiat, earum voluptatem.
+                経緯などを記載？ Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eligendi, molestias harum maiores ullam,
+                fugiat at nesciunt totam dolor amet, incidunt atque neque sed
+                magni deserunt blanditiis minus. Fugiat, earum voluptatem.
               </p>
             </Column>
           </Row>
         </Block>
-
 
         {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
@@ -57,12 +50,7 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-
-
-        <Block
-          sectionSubText="ソーシャルメディア"
-          sectionTitle="SNS"
-        >
+        <Block sectionSubText="ソーシャルメディア" sectionTitle="SNS">
           <Row>
             <Column>
               <div className="lg:mx-4 mx-0 bg-gray-50 w-full">
@@ -71,7 +59,6 @@ const About: React.VFC = () => {
             </Column>
           </Row>
         </Block>
-
 
         {/* <article className="container mx-auto">
           <section className="md:py-16 py-10">
@@ -87,12 +74,7 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-
-
-        <Block
-          sectionSubText="よくある悩み"
-          sectionTitle="サンプルテキスト"
-        >
+        <Block sectionSubText="よくある悩み" sectionTitle="サンプルテキスト">
           <Row>
             <Column className="flex">
               <ul className="list-disc px-8 py-4 bg-gray-50 text-lg w-full">
@@ -147,15 +129,13 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-
-
         <Block
           sectionSubText="意識しているポイント"
           sectionTitle="サンプルテキスト"
         >
           <Row>
             <Column>
-            <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
                   <span className="text-xl px-2">ポイント1</span>
@@ -171,7 +151,7 @@ const About: React.VFC = () => {
               </ul>
             </Column>
             <Column>
-            <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+              <ul className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
                 <li className="flex items-center my-2">
                   <CheckCircle fontSize="large" />
                   <span className="text-xl px-2">ポイント1</span>
@@ -186,10 +166,9 @@ const About: React.VFC = () => {
                 </li>
               </ul>
             </Column>
-            
           </Row>
         </Block>
-{/* 
+        {/* 
         <article className="container mx-auto">
           <section className="md:py-16 py-10">
             <p className="text-center">意識しているポイント</p>
@@ -245,14 +224,10 @@ const About: React.VFC = () => {
           </section>
         </article> */}
 
-
-        <Block
-          sectionSubText="共通の納品までの流れ"
-          sectionTitle="タイトル"
-        >
+        <Block sectionSubText="共通の納品までの流れ" sectionTitle="タイトル">
           <Row>
             <Column>
-            <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
+              <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
                 hoge
               </div>
               <div className="flex justify-center flex-col mx-4 p-2 bg-gray-50 w-full">
@@ -269,10 +244,6 @@ const About: React.VFC = () => {
             </Column>
           </Row>
         </Block>
-
-
-
-
       </Layout>
     </>
   );
