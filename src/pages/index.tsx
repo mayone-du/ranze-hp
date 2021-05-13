@@ -452,9 +452,7 @@ const Home: React.VFC = () => {
               <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
                 2 / 5 枠対応中！
               </span>
-              <h3 className="text-xl font-bold px-2 pt-6">
-                LINE絵文字の場合
-              </h3>
+              <h3 className="text-xl font-bold px-2 pt-6">LINE絵文字の場合</h3>
               <ul className="list-disc pt-2 pb-4 px-6">
                 <li>40個</li>
                 <li>納期：指定なし</li>
