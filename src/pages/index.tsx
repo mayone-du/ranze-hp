@@ -339,7 +339,7 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
-                src="/images/home/reviews/reviews-01.png"
+                src="/images/home/reviews/reviews-03.png"
                 width={200}
                 height={200}
                 objectFit="cover"
