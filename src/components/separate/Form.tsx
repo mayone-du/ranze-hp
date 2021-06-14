@@ -234,6 +234,7 @@ const Form: React.VFC = () => {
         {/* 問い合わせ内容 */}
         <div className="my-4">
           <TextField
+            className='w-1/5'
             type="textarea"
             multiline
             rows={4}
@@ -242,7 +243,7 @@ const Form: React.VFC = () => {
             value={formText}
             onChange={onChangeText}
             helperText={
-              inputTextError ? "1000文字以内で入力してください。" : "ok"
+              inputTextError && "1000文字以内で入力してください。"
             }
           />
         </div>

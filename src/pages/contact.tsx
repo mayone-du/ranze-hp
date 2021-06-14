@@ -20,7 +20,7 @@ const Contact: React.VFC = () => {
 
         <Block sectionSubText="お問合せフォーム" sectionTitle="CONTACT">
           <Row>
-            <Column className="bg-gray-100">
+            <Column className="bg-gray-50">
               <Form />
             </Column>
           </Row>

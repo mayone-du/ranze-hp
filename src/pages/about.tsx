@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import { CheckCircle } from "@material-ui/icons";
+// import { CheckCircle } from "@material-ui/icons";
 import { Layout } from "../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { BreadCrumb } from "../components/shared/BreadCrumb";
@@ -65,13 +65,10 @@ const About: React.VFC = () => {
                 </div>
               </div>
             </Column>
-            <Column>
-              <div className="bg-gray-50 w-full">coconala</div>
-            </Column>
           </Row>
         </Block>
 
-        <Block sectionSubText="よくある悩み" sectionTitle="サンプルテキスト">
+        {/* <Block sectionSubText="よくある悩み" sectionTitle="サンプルテキスト">
           <Row>
             <Column className="flex">
               <ul className="list-disc px-8 py-4 bg-gray-50 text-lg w-full">
@@ -152,6 +149,9 @@ const About: React.VFC = () => {
             </Column>
           </Row>
         </Block>
+       */}
+      
+      
       </Layout>
     </>
   );
