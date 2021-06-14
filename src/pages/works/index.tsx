@@ -1,7 +1,7 @@
 import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
-import Link from "next/link";
+// import Link from "next/link";
 import { Block } from "../../components/shared/generalBlock/Block";
 import { Row } from "../../components/shared/generalBlock/Row";
 import { Column } from "../../components/shared/generalBlock/Column";

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Layout } from "../../components/shared/layout/Layout";
 import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
-import { Estimate } from "../../components/separate/Estimate";
+// import { Estimate } from "../../components/separate/Estimate";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
 import { Block } from "../../components/shared/generalBlock/Block";
 import { Row } from "../../components/shared/generalBlock/Row";
@@ -105,8 +105,7 @@ const Service: React.VFC = () => {
           <Row>
             <Column>hoge</Column>
           </Row>
-        </Block>
- */}
+        </Block>*/}
 
         {/* <Block sectionTitle="ESTIMATE" sectionSubText="見積もりシュミレーター">
           <Row>
