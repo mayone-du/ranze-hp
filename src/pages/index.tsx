@@ -57,7 +57,7 @@ const Home: React.VFC = () => {
           <Row className="text-center">
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
-                src="/images/features-01.png"
+                src="/images/home/features/features-01.png"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -74,7 +74,7 @@ const Home: React.VFC = () => {
             </Column>
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
-                src="/images/features-01.png"
+                src="/images/home/features/features-02.png"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -92,7 +92,7 @@ const Home: React.VFC = () => {
 
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
-                src="/images/features-01.png"
+                src="/images/home/features/features-03.png"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -125,9 +125,10 @@ const Home: React.VFC = () => {
               <div className="w-4/12 p-2 flex items-center justify-center">
                 <Image
                   className="block w-1/3"
-                  src="/images/bg.jpg"
+                  src="/images/home/services/services-01.png"
                   width={150}
                   height={150}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
@@ -148,9 +149,10 @@ const Home: React.VFC = () => {
               <div className="w-4/12 p-2 flex items-center justify-center">
                 <Image
                   className="block w-1/3"
-                  src="/images/bg.jpg"
+                  src="/images/home/services/services-02.png"
                   width={150}
                   height={150}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
@@ -172,9 +174,10 @@ const Home: React.VFC = () => {
               <div className="w-4/12 p-2 flex items-center justify-center">
                 <Image
                   className="block w-1/3"
-                  src="/images/bg.jpg"
+                  src="/images/home/services/services-03.png"
                   width={150}
                   height={150}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
@@ -195,9 +198,10 @@ const Home: React.VFC = () => {
               <div className="w-4/12 p-2 flex items-center justify-center">
                 <Image
                   className="block w-1/3"
-                  src="/images/bg.jpg"
+                  src="/images/home/services/services-04.png"
                   width={150}
                   height={150}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
@@ -217,9 +221,10 @@ const Home: React.VFC = () => {
               <div className="w-4/12 p-2 flex items-center justify-center">
                 <Image
                   className="block w-1/3"
-                  src="/images/bg.jpg"
+                  src="/images/home/services/services-05.png"
                   width={150}
                   height={150}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
@@ -263,10 +268,10 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
-                src="/images/bg.jpg"
+                src="/images/home/reviews/reviews-01.png"
                 width={200}
                 height={200}
-                className="object-cover"
+                objectFit="cover"
                 onContextMenu={onEventDisable}
                 onMouseDown={onEventDisable}
                 onDragStart={onEventDisable}
@@ -298,10 +303,10 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
-                src="/images/bg.jpg"
+                src="/images/home/reviews/reviews-02.png"
                 width={200}
                 height={200}
-                className="object-cover"
+                objectFit="cover"
                 onContextMenu={onEventDisable}
                 onMouseDown={onEventDisable}
                 onDragStart={onEventDisable}
@@ -334,10 +339,10 @@ const Home: React.VFC = () => {
           <Row>
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
-                src="/images/bg.jpg"
+                src="/images/home/reviews/reviews-01.png"
                 width={200}
                 height={200}
-                className="object-cover"
+                objectFit="cover"
                 onContextMenu={onEventDisable}
                 onMouseDown={onEventDisable}
                 onDragStart={onEventDisable}

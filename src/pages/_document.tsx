@@ -15,7 +15,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Ranze official site" />
           <meta
             property="og:description"
-            content="イラストレーターRanzeの公式ホームページです。"
+            content="イラストレーターRanzeの公式ホームページです。LINEスタンプやイラスト、名刺制作などのご依頼を承っています！お気軽にご相談ください！"
           />
           <meta property="og:site_name" content="Ranze official site" />
           <meta property="og:image" content="/images/bg.jpg" />
