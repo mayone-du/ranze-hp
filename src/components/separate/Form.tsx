@@ -9,7 +9,6 @@ import {
   TextField,
 } from "@material-ui/core";
 import { Clear, RadioButtonUnchecked, Send } from "@material-ui/icons";
-import Router from "next/router";
 import { ChangeEventHandler, useCallback, useEffect, useState } from "react";
 
 const Form: React.VFC = () => {
@@ -118,7 +117,7 @@ const Form: React.VFC = () => {
   };
 
   // フォーム送信
-  const submitForm = () => {
+  const submitForm = async () => {
     const payload = {
       text: `
       お問い合わせがありました。\n
@@ -136,18 +135,21 @@ const Form: React.VFC = () => {
     // 開発用（挙動確認は本番にmergeしないと無理）
     const url = process.env.TEST_WEBHOOK_URL;
 
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(payload),
-    }).then(() => {
+    try {
+      await fetch(url, {
+        method: "POST",
+        body: JSON.stringify(payload),
+      });
       resetForm();
       alert(
         `送信が完了しました。\n 1~3日以内に、送信していただいたメールアドレス(${formEmail})宛にご連絡致します。`
       );
-
-      // ホーム画面へ戻す
-      Router.push("/");
-    });
+    } catch (error) {
+      alert(
+        "何らかのエラーが発生しました。時間を開けてもう一度試していただくか、Twitterなどからご連絡ください。"
+      );
+      return;
+    }
   };
 
   return (
@@ -166,7 +168,7 @@ const Form: React.VFC = () => {
             placeholder="山田 太郎"
             variant="outlined"
             onChange={onChangeName}
-            className="block w-1/3"
+            className="block md:w-1/3 w-full"
             color={inputNameError ? "secondary" : "primary"}
             helperText={inputNameError ? "必須項目です" : "ok"}
             value={formName}
@@ -186,7 +188,7 @@ const Form: React.VFC = () => {
             placeholder="example@info.com"
             variant="outlined"
             onChange={onChangeEmail}
-            className="block w-1/3"
+            className="block md:w-1/3 w-full"
             color={inputEmailError ? "secondary" : "primary"}
             helperText={
               inputEmailError
@@ -204,7 +206,7 @@ const Form: React.VFC = () => {
           ) : (
             <RadioButtonUnchecked color="primary" />
           )}
-          <FormControl component="fieldset" className="block w-1/3">
+          <FormControl component="fieldset" className="block md:w-1/3 w-full">
             <FormLabel component="legend">
               お問い合わせの種類
               <FormHelperText>必須項目です。</FormHelperText>
@@ -215,17 +217,17 @@ const Form: React.VFC = () => {
               aria-label="お問い合わせの種類"
             >
               <FormControlLabel
-                value="Consultation"
+                value="気軽な相談"
                 control={<Radio />}
                 label="気軽な相談"
               />
               <FormControlLabel
-                value="JobOffer"
+                value="依頼したい"
                 control={<Radio />}
                 label="依頼したい"
               />
               <FormControlLabel
-                value="Others"
+                value="その他"
                 control={<Radio />}
                 label="その他"
               />
@@ -236,10 +238,10 @@ const Form: React.VFC = () => {
         {/* 問い合わせ内容 */}
         <div className="flex my-4 justify-center">
           <TextField
-            className="w-1/3 block"
+            className="md:w-1/3 w-full block"
             type="textarea"
             multiline
-            rows={4}
+            rows={5}
             label="お問い合わせ内容（任意）"
             variant="outlined"
             value={formText}
@@ -268,19 +270,21 @@ const Form: React.VFC = () => {
               <Send />
             </span>
           </Button>
-          <FormHelperText>
-            {!formErrors
-              ? "ok"
-              : inputNameError
-              ? "名前を入力してください"
-              : inputEmailError
-              ? "メールアドレスを入力してください。"
-              : inputRadioError
-              ? "お問い合わせ種別を選択してください。"
-              : inputTextError
-              ? "お問い合わせ内容に不備があります。"
-              : null}
-          </FormHelperText>
+          <div className="w-1/3 mx-auto">
+            <FormHelperText className="flex justify-center py-2">
+              {!formErrors
+                ? null
+                : inputNameError
+                ? "名前を入力してください"
+                : inputEmailError
+                ? "メールアドレスを入力してください。"
+                : inputRadioError
+                ? "お問い合わせ種別を選択してください。"
+                : inputTextError
+                ? "お問い合わせ内容に不備があります。"
+                : null}
+            </FormHelperText>
+          </div>
         </div>
       </form>
     </>
