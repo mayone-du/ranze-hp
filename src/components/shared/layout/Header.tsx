@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
-import { onEventDisable } from "../../../libs/onEventDisable";
+import { memo } from "react";
+import { Logo } from "./Logo";
 // import { useState } from "react";
 // import { CustomButton } from "../CustomColorButton";
 // import { Menu, Close } from "@material-ui/icons";
 // import { Button } from "@material-ui/core";
 
-const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
+const Header: React.VFC<{ isActivePage: string }> = memo(({ isActivePage }) => {
   // const [isMenuActive, setIsMenuActive] = useState(false);
 
   // const handleToggleClick = () => {
@@ -15,19 +15,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
 
   return (
     <>
-      <h2 className="md:mt-8 mt-6 md:mb-6 mb-4">
-        <div className="text-center">
-          <Image
-            src="/images/logo.png"
-            width={110}
-            height={110}
-            className={"mx-auto"}
-            onContextMenu={onEventDisable}
-            onMouseDown={onEventDisable}
-            onDragStart={onEventDisable}
-          />
-        </div>
-      </h2>
+      <Logo />
       <header className="mx-10 md:mb-8 mb-4">
         <nav>
           <ul className="flex items-center justify-center">
@@ -91,6 +79,7 @@ const Header: React.VFC<{ isActivePage: string }> = ({ isActivePage }) => {
       </header>
     </>
   );
-};
+});
+Header.displayName = "Header";
 
 export { Header };
