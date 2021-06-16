@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
-import { Layout } from "../../components/shared/layout/Layout";
-import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
+import Link from "next/link";
 // import { Estimate } from "../../components/separate/Estimate";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
 import { Block } from "../../components/shared/generalBlock/Block";
-import { Row } from "../../components/shared/generalBlock/Row";
 import { Column } from "../../components/shared/generalBlock/Column";
+import { Row } from "../../components/shared/generalBlock/Row";
+import { Layout } from "../../components/shared/layout/Layout";
+import { SubPageMainVisual } from "../../components/shared/SubPageMainVisual";
 
 const Service: React.VFC = () => {
   const siteTitle = "Service";
@@ -17,12 +17,16 @@ const Service: React.VFC = () => {
         metaDescription="meta description"
         isActivePage={siteTitle}
       >
-        <SubPageMainVisual title={siteTitle} subText="service sub text" />
+        <SubPageMainVisual
+          title={siteTitle}
+          subText="service sub text"
+          bgImgPath="/images/backgrounds/bg.png"
+        />
         <BreadCrumb currentPage={siteTitle} />
 
         <Block sectionTitle="SERVICES LIST" sectionSubText="サービス一覧">
           <Row>
-            <Column className="bg-gray-50">
+            <Column className="bg-gray-50 text-custom-darkgray">
               <Link href="/service/line-stamp">
                 <a className="block font-bold text-center px-4 py-6">
                   <div>
@@ -33,11 +37,14 @@ const Service: React.VFC = () => {
                       objectFit="cover"
                     ></Image>
                   </div>
-                  <div>LINEスタンプ</div>
+                  <div className="py-4 text-lg">LINEスタンプ</div>
+                  <p className="p-2 mx-auto w-2/3 rounded-md font-light border border-custom-darkgray">
+                    もっと見る
+                  </p>
                 </a>
               </Link>
             </Column>
-            <Column className="bg-gray-50">
+            <Column className="bg-gray-50 text-custom-darkgray">
               <Link href="/service/line-pictograph">
                 <a className="block font-bold text-center px-4 py-6">
                   <div>
@@ -48,11 +55,14 @@ const Service: React.VFC = () => {
                       objectFit="cover"
                     ></Image>
                   </div>
-                  <div>LINE絵文字</div>
+                  <div className="py-4 text-lg">LINE絵文字</div>
+                  <p className="p-2 mx-auto w-2/3 rounded-md font-light border border-custom-darkgray">
+                    もっと見る
+                  </p>
                 </a>
               </Link>
             </Column>
-            <Column className="bg-gray-50">
+            <Column className="bg-gray-50 text-custom-darkgray">
               <Link href="/service/illust">
                 <a className="block font-bold text-center px-4 py-6">
                   <div>
@@ -63,11 +73,14 @@ const Service: React.VFC = () => {
                       objectFit="cover"
                     ></Image>
                   </div>
-                  <div>イラスト</div>
+                  <div className="py-4 text-lg">イラスト</div>
+                  <p className="p-2 mx-auto w-2/3 rounded-md font-light border border-custom-darkgray">
+                    もっと見る
+                  </p>
                 </a>
               </Link>
             </Column>
-            <Column className="bg-gray-50">
+            <Column className="bg-gray-50 text-custom-darkgray">
               <Link href="/service/sns-icon">
                 <a className="block font-bold text-center px-4 py-6">
                   <div>
@@ -78,11 +91,14 @@ const Service: React.VFC = () => {
                       objectFit="cover"
                     ></Image>
                   </div>
-                  <div>SNSアイコン</div>
+                  <div className="py-4 text-lg">SNSアイコン</div>
+                  <p className="p-2 mx-auto w-2/3 rounded-md font-light border border-custom-darkgray">
+                    もっと見る
+                  </p>
                 </a>
               </Link>
             </Column>
-            <Column className="bg-gray-50">
+            <Column className="bg-gray-50 text-custom-darkgray">
               <Link href="/service/business-card">
                 <a className="block font-bold text-center px-4 py-6">
                   <div>
@@ -93,7 +109,10 @@ const Service: React.VFC = () => {
                       objectFit="cover"
                     ></Image>
                   </div>
-                  <div>名刺</div>
+                  <div className="py-4 text-lg">名刺</div>
+                  <p className="p-2 mx-auto w-2/3 rounded-md font-light border border-custom-darkgray">
+                    もっと見る
+                  </p>
                 </a>
               </Link>
             </Column>

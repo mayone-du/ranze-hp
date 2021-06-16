@@ -382,7 +382,7 @@ const Home: React.VFC = () => {
             <Column className="shadow-sm rounded-md overflow-hidden border text-custom-darkgray relative">
               <div className="text-center">
                 <Image
-                  src="/images/home/accept/line-pictograph.png"
+                  src="/images/home/accept/line-stamp.png"
                   width={450}
                   height={250}
                   objectFit="cover"
@@ -415,7 +415,7 @@ const Home: React.VFC = () => {
             <Column className="shadow-sm rounded-md overflow-hidden border text-custom-darkgray relative">
               <div className="text-center">
                 <Image
-                  src="/images/bg.jpg"
+                  src="/images/home/accept/illust.png"
                   width={450}
                   height={250}
                   objectFit="cover"

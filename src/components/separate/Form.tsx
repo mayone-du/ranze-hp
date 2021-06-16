@@ -1,16 +1,16 @@
 import {
-  TextField,
   Button,
+  FormControl,
+  FormControlLabel,
+  FormHelperText,
+  FormLabel,
   Radio,
   RadioGroup,
-  FormHelperText,
-  FormControl,
-  FormLabel,
-  FormControlLabel,
+  TextField,
 } from "@material-ui/core";
-import { RadioButtonUnchecked, Clear, Send } from "@material-ui/icons";
-import { useEffect, useState, useCallback, ChangeEventHandler } from "react";
+import { Clear, RadioButtonUnchecked, Send } from "@material-ui/icons";
 import Router from "next/router";
+import { ChangeEventHandler, useCallback, useEffect, useState } from "react";
 
 const Form: React.VFC = () => {
   // inputのvalueのstate
@@ -154,7 +154,7 @@ const Form: React.VFC = () => {
     <>
       <form className="flex flex-col">
         {/* 名前 */}
-        <div className="flex my-4">
+        <div className="flex my-4 justify-center">
           {inputNameError ? (
             <Clear color="error" />
           ) : (
@@ -166,6 +166,7 @@ const Form: React.VFC = () => {
             placeholder="山田 太郎"
             variant="outlined"
             onChange={onChangeName}
+            className="block w-1/3"
             color={inputNameError ? "secondary" : "primary"}
             helperText={inputNameError ? "必須項目です" : "ok"}
             value={formName}
@@ -173,7 +174,7 @@ const Form: React.VFC = () => {
         </div>
 
         {/* メールアドレス */}
-        <div className="flex my-4">
+        <div className="flex my-4 justify-center">
           {inputEmailError ? (
             <Clear color="error" />
           ) : (
@@ -185,6 +186,7 @@ const Form: React.VFC = () => {
             placeholder="example@info.com"
             variant="outlined"
             onChange={onChangeEmail}
+            className="block w-1/3"
             color={inputEmailError ? "secondary" : "primary"}
             helperText={
               inputEmailError
@@ -196,13 +198,13 @@ const Form: React.VFC = () => {
         </div>
 
         {/* ラジオボタン */}
-        <div className="flex my-4">
+        <div className="flex my-4 justify-center">
           {inputRadioError ? (
             <Clear color="error" />
           ) : (
             <RadioButtonUnchecked color="primary" />
           )}
-          <FormControl component="fieldset">
+          <FormControl component="fieldset" className="block w-1/3">
             <FormLabel component="legend">
               お問い合わせの種類
               <FormHelperText>必須項目です。</FormHelperText>
@@ -232,9 +234,9 @@ const Form: React.VFC = () => {
         </div>
 
         {/* 問い合わせ内容 */}
-        <div className="my-4">
+        <div className="flex my-4 justify-center">
           <TextField
-            className='w-1/5'
+            className="w-1/3 block"
             type="textarea"
             multiline
             rows={4}
@@ -242,14 +244,12 @@ const Form: React.VFC = () => {
             variant="outlined"
             value={formText}
             onChange={onChangeText}
-            helperText={
-              inputTextError && "1000文字以内で入力してください。"
-            }
+            helperText={inputTextError && "1000文字以内で入力してください。"}
           />
         </div>
 
         {/* 送信ボタン */}
-        <div>
+        <div className="text-center">
           <Button
             size="large"
             disabled={formErrors ? true : false}
