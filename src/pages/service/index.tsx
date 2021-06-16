@@ -100,7 +100,6 @@ const Service: React.VFC = () => {
           </Row>
         </Block>
 
-
         {/* <Block sectionTitle="FLOW" sectionSubText="納品の流れ">
           <Row>
             <Column>hoge</Column>

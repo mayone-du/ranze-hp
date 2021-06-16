@@ -1,11 +1,11 @@
+import { Star } from "@material-ui/icons";
 import Image from "next/image";
 import Link from "next/link";
-import { Star } from "@material-ui/icons";
-import { Layout } from "../components/shared/layout/Layout";
 import { CustomButton } from "../components/shared/CustomColorButton";
 import { Block } from "../components/shared/generalBlock/Block";
-import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
+import { Row } from "../components/shared/generalBlock/Row";
+import { Layout } from "../components/shared/layout/Layout";
 import { onEventDisable } from "../libs/onEventDisable";
 
 const Home: React.VFC = () => {
@@ -379,18 +379,19 @@ const Home: React.VFC = () => {
 
         <Block sectionSubText="対応中のサービス" sectionTitle="ACCEPT">
           <Row>
-            <Column className="border border-custom-lightgray text-custom-darkgray relative">
+            <Column className="shadow-sm rounded-md overflow-hidden border text-custom-darkgray relative">
               <div className="text-center">
                 <Image
-                  src="/images/bg.jpg"
+                  src="/images/home/accept/line-pictograph.png"
                   width={450}
                   height={250}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
                 />
               </div>
-              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
+              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6 border-t border-b border-r">
                 満枠対応中！
               </span>
               <h3 className="text-xl font-bold px-2 pt-6">
@@ -411,18 +412,19 @@ const Home: React.VFC = () => {
                 />
               </div>
             </Column>
-            <Column className="border border-custom-lightgray text-custom-darkgray relative">
+            <Column className="shadow-sm rounded-md overflow-hidden border text-custom-darkgray relative">
               <div className="text-center">
                 <Image
                   src="/images/bg.jpg"
                   width={450}
                   height={250}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
                 />
               </div>
-              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
+              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6 border-t border-b border-r">
                 満枠対応中！
               </span>
               <h3 className="text-xl font-bold px-2 pt-6">
@@ -443,18 +445,19 @@ const Home: React.VFC = () => {
                 />
               </div>
             </Column>
-            <Column className="border border-custom-lightgray text-custom-darkgray relative">
+            <Column className="shadow-sm rounded-md overflow-hidden border text-custom-darkgray relative">
               <div className="text-center">
                 <Image
-                  src="/images/bg.jpg"
+                  src="/images/home/accept/line-pictograph.png"
                   width={450}
                   height={250}
+                  objectFit="cover"
                   onContextMenu={onEventDisable}
                   onMouseDown={onEventDisable}
                   onDragStart={onEventDisable}
                 />
               </div>
-              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6">
+              <span className="absolute block bg-red-100 py-2 px-6 shadow-sm transform -translate-y-6 border-t border-b border-r">
                 2 / 5 枠対応中！
               </span>
               <h3 className="text-xl font-bold px-2 pt-6">LINE絵文字の場合</h3>
