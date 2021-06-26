@@ -1,10 +1,10 @@
-import { Layout } from "../components/shared/layout/Layout";
-import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 import { Form } from "../components/separate/Form";
 import { BreadCrumb } from "../components/shared/BreadCrumb";
 import { Block } from "../components/shared/generalBlock/Block";
-import { Row } from "../components/shared/generalBlock/Row";
 import { Column } from "../components/shared/generalBlock/Column";
+import { Row } from "../components/shared/generalBlock/Row";
+import { Layout } from "../components/shared/layout/Layout";
+import { SubPageMainVisual } from "../components/shared/SubPageMainVisual";
 
 const Contact: React.VFC = () => {
   const siteTitle = "Contact";
@@ -20,7 +20,7 @@ const Contact: React.VFC = () => {
 
         <Block sectionSubText="お問合せフォーム" sectionTitle="CONTACT">
           <Row>
-            <Column className="bg-gray-50">
+            <Column>
               <Form />
             </Column>
           </Row>

@@ -15,7 +15,7 @@ const Works: React.VFC = () => {
         metaDescription="meta"
         isActivePage={siteTitle}
       >
-        <SubPageMainVisual title={siteTitle} subText="works sub text" />
+        <SubPageMainVisual title={siteTitle} subText="実績紹介" />
         <BreadCrumb currentPage={siteTitle} />
 
         <Block sectionSubText="制作物一覧" sectionTitle="Assets">

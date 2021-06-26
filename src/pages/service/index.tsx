@@ -19,7 +19,7 @@ const Service: React.VFC = () => {
       >
         <SubPageMainVisual
           title={siteTitle}
-          subText="service sub text"
+          subText="サービス"
           bgImgPath="/images/backgrounds/bg.png"
         />
         <BreadCrumb currentPage={siteTitle} />
