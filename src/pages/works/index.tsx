@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BreadCrumb } from "../../components/shared/BreadCrumb";
 import { Block } from "../../components/shared/generalBlock/Block";
 import { Column } from "../../components/shared/generalBlock/Column";
@@ -21,42 +20,17 @@ const Works: React.VFC = () => {
         <Block sectionSubText="制作物一覧" sectionTitle="Assets">
           <Row>
             <Column className="bg-gray-50 md:flex items-center justify-between text-center">
-              <Image
-                src="/images/bg.jpg"
-                width={200}
-                height={200}
-                objectFit="cover"
-              />
-              <Image
-                src="/images/bg.jpg"
-                width={200}
-                height={200}
-                objectFit="cover"
-              />
-              <Image
-                src="/images/bg.jpg"
-                width={200}
-                height={200}
-                objectFit="cover"
-              />
-              <Image
-                src="/images/bg.jpg"
-                width={200}
-                height={200}
-                objectFit="cover"
-              />
+              <a
+                href="https://coconala.com/users/2075712"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500"
+              >
+                ココナラの実績を見る
+              </a>
             </Column>
           </Row>
         </Block>
-
-        <a
-          href="https://coconala.com/users/2075712"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500"
-        >
-          ココナラの実績を見る
-        </a>
       </Layout>
     </>
   );
