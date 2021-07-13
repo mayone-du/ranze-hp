@@ -111,7 +111,7 @@ const Home: React.VFC = () => {
           <div className="flex justify-center">
             <CustomButton
               text="もっと見る"
-              toLink="/"
+              toLink="/about"
               outline={true}
               size="medium"
               className="mx-auto mt-4"
@@ -241,7 +241,7 @@ const Home: React.VFC = () => {
           <div className="flex justify-center">
             <CustomButton
               text="もっと見る"
-              toLink="/"
+              toLink="/service"
               outline={true}
               size="medium"
               className="mx-auto mt-4"
@@ -256,7 +256,7 @@ const Home: React.VFC = () => {
           <div className="flex justify-center">
             <CustomButton
               text="もっと見る"
-              toLink="/"
+              toLink="/works"
               outline={true}
               size="medium"
               className="mx-auto mt-4"
@@ -405,7 +405,7 @@ const Home: React.VFC = () => {
               </ul>
               <div className="flex justify-center py-4">
                 <CustomButton
-                  toLink=""
+                  toLink="/service/line-stamp"
                   text="もっと見る"
                   size="medium"
                   outline={true}
@@ -438,7 +438,7 @@ const Home: React.VFC = () => {
               </ul>
               <div className="flex justify-center py-4">
                 <CustomButton
-                  toLink=""
+                  toLink="/service/illust"
                   text="もっと見る"
                   size="medium"
                   outline={true}
@@ -469,7 +469,7 @@ const Home: React.VFC = () => {
               </ul>
               <div className="flex justify-center py-4">
                 <CustomButton
-                  toLink=""
+                  toLink="/service/line-pictgraph"
                   text="もっと見る"
                   size="medium"
                   outline={true}
@@ -480,7 +480,7 @@ const Home: React.VFC = () => {
           <div className="flex justify-center mt-4">
             <CustomButton
               text="一覧へ"
-              toLink="/"
+              toLink="/service"
               size="medium"
               outline={true}
             />
@@ -524,7 +524,7 @@ const Home: React.VFC = () => {
                 <CustomButton
                   text="無料見積もり"
                   size="medium"
-                  toLink="/"
+                  toLink="/contact"
                   outline={true}
                   className="m-4"
                 />
