@@ -7,6 +7,7 @@ export const Logo = memo(() => {
       <div className="text-center">
         <Image
           src="/images/logo.png"
+          alt="ロゴ"
           width={110}
           height={110}
           className={"mx-auto"}

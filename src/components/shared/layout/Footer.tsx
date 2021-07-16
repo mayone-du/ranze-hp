@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { onEventDisable } from "../../../libs/onEventDisable";
 
 const Footer: React.VFC = () => {
@@ -128,6 +128,7 @@ const Footer: React.VFC = () => {
               {/* <h4>Ranze | イラストレーター</h4> */}
               <Image
                 src="/images/logo1.png"
+                alt="ロゴ"
                 width={110}
                 height={110}
                 onContextMenu={onEventDisable}

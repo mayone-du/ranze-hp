@@ -58,6 +58,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
                 src="/images/home/features/features-01.png"
+                alt="かわいい猫"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -75,6 +76,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
                 src="/images/home/features/features-02.png"
+                alt="かわいい猫とハート"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -93,6 +95,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 pt-10 px-4 pb-6 shadow-sm">
               <Image
                 src="/images/home/features/features-03.png"
+                alt="ぬいぐるみを持ったかわいい恐竜"
                 width={150}
                 height={150}
                 objectFit="cover"
@@ -126,6 +129,7 @@ const Home: React.VFC = () => {
                 <Image
                   className="block w-1/3"
                   src="/images/home/services/services-01.png"
+                  alt="南国のかわいいクジラ"
                   width={150}
                   height={150}
                   objectFit="cover"
@@ -150,6 +154,7 @@ const Home: React.VFC = () => {
                 <Image
                   className="block w-1/3"
                   src="/images/home/services/services-02.png"
+                  alt="ゆるかわな白いウサギ"
                   width={150}
                   height={150}
                   objectFit="cover"
@@ -175,6 +180,7 @@ const Home: React.VFC = () => {
                 <Image
                   className="block w-1/3"
                   src="/images/home/services/services-03.png"
+                  alt="飲み物を持ったシルバーのトイプードル"
                   width={150}
                   height={150}
                   objectFit="cover"
@@ -199,6 +205,7 @@ const Home: React.VFC = () => {
                 <Image
                   className="block w-1/3"
                   src="/images/home/services/services-04.png"
+                  alt="猫のキグルミを着た女の子"
                   width={150}
                   height={150}
                   objectFit="cover"
@@ -222,6 +229,7 @@ const Home: React.VFC = () => {
                 <Image
                   className="block w-1/3"
                   src="/images/home/services/services-05.png"
+                  alt="草むらにいる白い犬"
                   width={150}
                   height={150}
                   objectFit="cover"
@@ -269,6 +277,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
                 src="/images/home/reviews/reviews-01.png"
+                alt="グッドポーズをしているトイプードル"
                 width={200}
                 height={200}
                 objectFit="cover"
@@ -304,6 +313,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
                 src="/images/home/reviews/reviews-02.png"
+                alt="茶碗に入った白い犬"
                 width={200}
                 height={200}
                 objectFit="cover"
@@ -340,6 +350,7 @@ const Home: React.VFC = () => {
             <Column className="bg-gray-50 xl:flex py-4 xl:p-8 shadow-sm text-custom-darkgray text-center xl:text-left">
               <Image
                 src="/images/home/reviews/reviews-03.png"
+                alt="星を着たゆるかわな白いうさぎ"
                 width={200}
                 height={200}
                 objectFit="cover"

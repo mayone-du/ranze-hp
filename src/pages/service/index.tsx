@@ -32,6 +32,7 @@ const Service: React.VFC = () => {
                   <div>
                     <Image
                       src="/images/service/service-list-01.png"
+                      alt="かわいいトラ模様の茶色い猫"
                       width={100}
                       height={100}
                       objectFit="cover"
@@ -50,6 +51,7 @@ const Service: React.VFC = () => {
                   <div>
                     <Image
                       src="/images/service/service-list-01.png"
+                      alt="かわいいトラ模様の茶色い猫"
                       width={100}
                       height={100}
                       objectFit="cover"
@@ -68,6 +70,7 @@ const Service: React.VFC = () => {
                   <div>
                     <Image
                       src="/images/service/service-list-01.png"
+                      alt="かわいいトラ模様の茶色い猫"
                       width={100}
                       height={100}
                       objectFit="cover"
@@ -86,6 +89,7 @@ const Service: React.VFC = () => {
                   <div>
                     <Image
                       src="/images/service/service-list-01.png"
+                      alt="かわいいトラ模様の茶色い猫"
                       width={100}
                       height={100}
                       objectFit="cover"
@@ -104,6 +108,7 @@ const Service: React.VFC = () => {
                   <div>
                     <Image
                       src="/images/service/service-list-01.png"
+                      alt="かわいいトラ模様の茶色い猫"
                       width={100}
                       height={100}
                       objectFit="cover"
